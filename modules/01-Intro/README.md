@@ -88,6 +88,21 @@ Wednesday, which we call "*Project Wednesday*", is a day which is all exercises 
 Thursday, Friday, and Saturday are free, but you may need to work on finishing your weekly assignments.
 Please, for the love of God (or whichever deity you worship), do *not* work on Saturdays!
 
+### Program modules
+
+* The program is divided into modules.
+* Each module is under the [modules](/modules) folder.
+* A module should take one day of study (theory + praxis)
+* They are sorted by the order they are encountered in the program
+* Each module includes a README (like this one!) describing what will be studied, and sometimes more.
+* Each module will include a numbered list of files that are the theory of that module:
+  * readme files (with a `.md` extension)
+  * source code (with a `.js`, `.html`, `.css` (and others) extensions)
+  * Exercises that will be done _during_ theory time. These are marked with `-E-` in their name.
+* Each module will also include a folder named `praxis` that includes the exercises for that day.
+  * Each file marked `-E-` is an exercise. Their may be other files there that are needed by the exercise.
+    They will not be marked with `-E-`.
+
 ## What we expect from you
 
 * Work hard. Even after the daily praxis time if needed. Even on Thursdays if needed.
