@@ -76,6 +76,8 @@ Interspersed in the program are three projects of increasing length and complexi
 
 ### Daily schedule
 
+(1 hour)
+
 From Sunday to Tuesday, the day will look like this:
 
 * **Challenge**: The first hour will be devoted to a progamming challenge (not in the first days)

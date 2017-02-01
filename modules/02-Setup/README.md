@@ -1,5 +1,7 @@
 # Setup
 
+(1 hour)
+
 What's a developer without her tools? We will start by installing a set of tools that we will need in the first
 few weeks.
 
