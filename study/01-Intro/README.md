@@ -101,15 +101,15 @@ Please, for the love of God (or whichever deity you worship), do *not* work on S
   praxis.
 * Don't be afraid. Don't be ashamed. We are here to help you along your way to become software engineers. Fear is
   the number one inhibitor of learning. Don't be afraid:
-  
-> I must not fear.
-> Fear is the mind-killer.
-> Fear is the little-death that brings total obliteration.
-> I will face my fear.
-> I will permit it to pass over me and through me.
+
+> I must not fear.<br/>
+> Fear is the mind-killer.<br/>
+> Fear is the little-death that brings total obliteration.<br/>
+> I will face my fear.<br/>
+> I will permit it to pass over me and through me.<br/>
 > And when it has gone past I will turn the inner eye to see its path.
-> Where the fear has gone there will be nothing.
-> Only I will remain.
+> Where the fear has gone there will be nothing.<br/>
+> Only I will remain.<br/>
 > - The Litany of Fear, Dune, Frank Herbert
 
 * [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome): the feeling we all have that we
