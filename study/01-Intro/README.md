@@ -101,6 +101,7 @@ Please, for the love of God (or whichever deity you worship), do *not* work on S
   praxis.
 * Don't be afraid. Don't be ashamed. We are here to help you along your way to become software engineers. Fear is
   the number one inhibitor of learning. Don't be afraid:
+  
 > I must not fear.
 > Fear is the mind-killer.
 > Fear is the little-death that brings total obliteration.
@@ -110,6 +111,7 @@ Please, for the love of God (or whichever deity you worship), do *not* work on S
 > Where the fear has gone there will be nothing.
 > Only I will remain.
 > - The Litany of Fear, Dune, Frank Herbert
+
 * [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome): the feeling we all have that we
   are not smart, and that sooner or later everybody will figure that out.
 * Fight impostor syndrome. If you feel stupid, then you aren't. Really - you aren't.
