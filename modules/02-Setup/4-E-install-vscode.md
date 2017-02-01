@@ -16,7 +16,7 @@ so you will be intimately familiar with it at the end of the program. In the mea
   * Open in Github
   * View in Browser
 * How to install a plugin:
-  * Open Visual Studio Code (henceforth known as Vscode)
+  * Run Visual Studio Code (henceforth known as Vscode)
   * Click on the "Extensions" icon on the left bar (or choose "View>Extensions" in the menu)
   * In the search bar of the panel that opened, write the name of the Extensions
   * In the search result, click on the "Install" button of the Extensions

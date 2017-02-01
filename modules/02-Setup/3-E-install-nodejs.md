@@ -1,6 +1,7 @@
 # Install NodeJS
 
-NodeJS is a program that allows us to run JavaScript programs in the command line. We will be using it extensively.
+NodeJS (also called "Node") is a program that allows us to run JavaScript programs in the command line.
+We will be using it extensively.
 
 ## Install NodeJS
 
@@ -8,6 +9,6 @@ NodeJS is a program that allows us to run JavaScript programs in the command lin
 
 ## Test that NodeJS works
 
-* Open a "terminal" (or Command Prompt in Windows)
+* Open a "terminal" (Mac), or "Command Prompt" (Windows)
 * Type `node --version` (note the 2 dashes, and the space before them) and press `enter`.
-* You should see one or two lines describing Node and the version installed.
+* You should see one or two lines describing NodeJS and the version installed.

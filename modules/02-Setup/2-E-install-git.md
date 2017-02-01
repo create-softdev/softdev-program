@@ -14,7 +14,7 @@ It's where developers store their code.
 
 ## Test that Git works
 
-* Open a "terminal" (or Command Prompt in Windows)
+* Open a "terminal" (Mac), or "Command Prompt" (Windows)
 * Type `git --version` (note the 2 dashes, and the space before them) and press `enter`.
 * You should see one or two lines describing git and the version installed.
-* Windows users: also open a new application called "Git Bash" and do the same.
+* Windows: also open a new application called "Git Bash" and do the same.

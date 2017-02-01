@@ -9,8 +9,9 @@ In this exercise you will install two browsers.
 
 ## Why do we need two browsers?
 
-Because there are slight differences between them, and any serious front-end developer will need to test on both.
-We _should_ also test on Safari and Internet Explorer, but for this course that's enough
+Because there are slight differences between them (when browsing through the websites you will create),
+and any serious front-end developer tests on both.
+We _should_ also test on Safari and Internet Explorer, but for this course these two browsers are good enough.
 
 ## Install Chrome
 
