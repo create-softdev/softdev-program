@@ -9,19 +9,21 @@ Welcome to the Software Engineering Program!
 ## Communication
 
 * Slack will be our main way to communicate
-* All slack communication will be in *English*
-* The following slack channels will be used:
+* All Slack communication will be in *English*
+* The following Slack channels will be used:
   * `#random`: funny stuff that you want to share
-  * `#student-todo`: the teachers will be sending you material to do via this channels
-  * `#need-help`: this is where you request help from other students and from the teachers
+  * `#praxis`: the teachers will be sending you material to do via this channels
+  * `#need-help`: where you request help from other students and from the teachers
   * `#knowledge-sharing`: where you can post links about interesting stuff (pertaining to the course)
     that you found on the internet
-* Please set your notifications however you like, but you should set `#student-todo` notifications so that you
+  * `#foooood`: tips for nice (or not nice) places you find in the area. Recipes are also welcome!
+  * `#general`: we don't really know what to put here, but it *sounds* very useful...
+* Please set your notifications however you like, but you should set `#praxis` notifications so that you
   are sure to receive them.
 * It's OK to DM (Direct Message) the teachers and not only go through the public channels.
   Please! We are here to help, so feel free to DM us on anything.
 * Most important of all - we are also available "offline", so if anything is bothering you
-  (or you just plain want to discuss something), and you wish to talk about it face to face, just ask.
+  (or you just plain want to discuss something), and you wish to talk about it face to face, just tell us.
 
 ## Logistics (class, kitchen)
 
@@ -74,48 +76,50 @@ Interspersed in the program are three projects of increasing length and complexi
 
 ### Daily schedule
 
-A typical day will look like this:
+From Sunday to Tuesday, the day will look like this:
 
 * **Challenge**: The first hour will be devoted to a progamming challenge (not in the first days)
 * **Theory**: The next three hours will be theory
-* **[https://en.wikipedia.org/wiki/Praxis](Praxis)**: The last four hours will be devoted to practicing the theory.
+* **Lunch**
+* **[Praxis](https://en.wikipedia.org/wiki/Praxis)**: The last four hours will be devoted to practicing the theory.
   You may need to finish your assignments at home.
 
 Wednesday, which we call "*Project Wednesday*", is a day which is all exercises or mini-projects.
-Thursday, Friday, and Saturday are free, but you may need to work on finish your weekly assignments.
+Thursday, Friday, and Saturday are free, but you may need to work on finishing your weekly assignments.
 Please, for the love of God (or whichever deity you worship), do *not* work on Saturdays!
 
 ## What we expect from you
 
-* Work hard. Even after the daily praxis time if needed. Even on Thursday if needed.
+* Work hard. Even after the daily praxis time if needed. Even on Thursdays if needed.
+* If you finished your assignments, you don't have to anything more to do! Go have fun instead.
 * Don't work on Saturdays
-* If you finished your assignments, you don't have to anything more! Go have fun instead.
-* Laptops are open, but please don't browse the internet during the theoretical part of the day.
+* Laptops can be open during theory time, but please don't browse the internet during that time.
 * If you get stuck, *ask for help*. And realizing that you are stuck should *not* happen after an hour. It can
-  definitely happen after 5 or 10 minutes. So please - *ask for help*.
+  definitely happen after just 5 or 10 minutes. So please - *ask for help*.
 * Don't hesitate to ask questions, all the time. That question that you think is dumb - it isn't. Really it isn't.
   If you don't ask that question, you will miss out on the material, and it will be harder for you and for us during
   praxis.
 * Don't be afraid. Don't be ashamed. We are here to help you along your way to become software engineers. Fear is
   the number one inhibitor of learning. Don't be afraid:
-  > I must not fear.
-  > Fear is the mind-killer.
-  > Fear is the little-death that brings total obliteration.
-  > I will face my fear.
-  > I will permit it to pass over me and through me.
-  > And when it has gone past I will turn the inner eye to see its path.
-  > Where the fear has gone there will be nothing.
-  > Only I will remain.
-* [https://en.wikipedia.org/wiki/Impostor_syndrome](Impostor syndrome): the feeling we all have that we
+> I must not fear.
+> Fear is the mind-killer.
+> Fear is the little-death that brings total obliteration.
+> I will face my fear.
+> I will permit it to pass over me and through me.
+> And when it has gone past I will turn the inner eye to see its path.
+> Where the fear has gone there will be nothing.
+> Only I will remain.
+> - The Litany of Fear, Dune, Frank Herbert
+* [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome): the feeling we all have that we
   are not smart, and that sooner or later everybody will figure that out.
 * Fight impostor syndrome. If you feel stupid, then you aren't. Really - you aren't.
-* Work hard.
-* Ask questions.
-* Ask for help during praxis.
-* Don't be afraid.
-* Fight impostor syndrome.
+* Work hard
+* Ask questions
+* Ask for help during praxis
+* Don't be afraid
+* Fight impostor syndrome
 
-## What you should espect from us
+## What you should expect from us
 
 * Courtesy and kindness
 * Profressionalism
@@ -123,21 +127,22 @@ Please, for the love of God (or whichever deity you worship), do *not* work on S
 * Helping you whenever you ask for help. Helping you is *not* necessarily feeding you the answer, as it can
   be a hint that *leads* you to the answer, or a link where you will find the answer.
 * Mistakes. Yes, we also make mistakes. Moreover, sometimes you will ask a question that we don't know the answer
-  to. We actually love those questions! But you *should* expect an answer, even if it is after an hour or a day.
+  to. We actually love those questions! But you should eventually expect an answer,
+  even if it is after an hour or a day.
 
 ## Code of conduct
 
 The code of conduct is applicable both to the students and to the teachers.
 
 * Don't be a jerk. Don't be an asshole. It's not that complicated.
-* A few don'ts (stolen unashamedly from [https://www.recurse.com/manual#sec-environment](the recurse center):
-  * No feigning surprise: please don't say things like "What?! You don't know that in JS arrays start from 0!?". If you
-    say it, please *will* feel stupid, and will be afraid of saying things, and we do not want that.
-  * No well-actuallys: please don't try to sound smart and add a "well, actually..." and then give a minor correction.
-    Especially if what you're saying has no bearing on the conversation. Trying to make yourself look smart also
-    leads to making others look stupid, and we do not want that.
-  * No subtle-isms: No racism, sexism, or other forms of bigotry. This is actually a hard rule to follow, as
-    sometimes we inadvertently cross that rule, as these things can be subtle. If you feel you've been hurt
-    by one of these, please point them out to the person, or to one of the teachers, and move on. Shaming is strictly
-    prohibited. If there is a recurring pattern from one of the teachers or students, please *immediately* talk
-    to the head of the school.
+* The following were stolen unashamedly from [the recurse center](https://www.recurse.com/manual#sec-environment):
+* No feigning surprise: please don't say things like "What?! You don't know that in JS arrays start from 0!?". If you
+  say it, please *will* feel stupid, and will be afraid of saying things, and we do not want that.
+* No well-actuallys: please don't try to sound smart and add a "well, actually..." and then give a minor correction.
+  Especially if what you're saying has no bearing on the conversation. Trying to make yourself look smart also
+  leads to making others look stupid, and we do not want that.
+* No subtle-isms: No racism, sexism, or other forms of bigotry. This is actually a hard rule to follow, as
+  sometimes we inadvertently break this rule, as these things can be subtle. If you feel you've been hurt
+  by one of these, please point them out to the person, or to one of the teachers, and move on. Shaming is strictly
+  prohibited. If there is a recurring pattern from one of the teachers or students, please *immediately* talk
+  to the head of the school.
