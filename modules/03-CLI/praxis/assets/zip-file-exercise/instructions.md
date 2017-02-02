@@ -8,7 +8,7 @@
    Write down the last word of the line it is in.
 6. Search for the word 'Affection'. There are two occurences.
    Write down the one with the words 'true' and 'false'. Remember the word after 'Affection'.
-7. Search for the word 'death'. It appears a lot!
+7. Search for the word 'death' (using grep). It appears a lot! Use 'less' to browse through it.
    Find the occurence where the words 'his' and 'Which' (uppercase 'W') appear.
    Write down the last word.
 
@@ -20,7 +20,7 @@ What sentence did you get from the three words you found?
 10. In the directory 'jan'. There is a file of exactly 12 characters. Write down the first letter of the contents
    of the file. Do it _without_ navigating to the directory.
 11. Now delete the directory 'jan'.
-12. Navigate to the direcotry 'feb'.
+12. Navigate to the directory 'feb'.
 13. Delete all the files that contain the letter 'a'.
 14. You are left with one file. Write fown the text it contains.
 
@@ -30,8 +30,8 @@ What sentence did you get from what you wrote down?
     Write down the 7th letter of that command.
 16. Copy the file you found in 'feb' to here.
 17. Use 'wc' to check that it has just one line, and one word. How many characters does it have?
-18. Show the contents of the file you copied. Write down the 3rd letter
-19. Go back to the 'shakespeare' directory.
+18. Show the contents of the file you copied. Write down the 2rd letter
+19. Go back to the 'shakespeare' directory. Do it with one 'cd' command.
 18. Search in 'hamlet.txt' for a sentence that contains the word 'question' and the word 'that'
 19. What is the 5th word? The 7th word? Write them down?
 20. Look for the phrase "stand alone" in all the shakespeare texts we have.
