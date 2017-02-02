@@ -7,6 +7,9 @@ so you will be intimately familiar with it at the end of the program. In the mea
 
 * Install from [here](https://code.visualstudio.com/)
 * Check that it runs
+
+## Install plugins
+
 * Install the following plugins (explanation of how to install is below):
   * Auto Complete Tag
   * Code Runner
@@ -17,8 +20,14 @@ so you will be intimately familiar with it at the end of the program. In the mea
   * View in Browser
   * EditorConfig for VS Code
 * How to install a plugin:
-  * Run Visual Studio Code (henceforth known as Vscode)
+  * Run Visual Studio Code (henceforth known as VSCode)
   * Click on the "Extensions" icon on the left bar (or choose "View>Extensions" in the menu)
   * In the search bar of the panel that opened, write the name of the Extensions
   * In the search result, click on the "Install" button of the Extensions
-  * You can reload Vscode only after you installed all the plugins
+  * You can reload VSCode only after you installed all the plugins
+
+## Run it from the command line
+
+* Run VSCode.
+* Choose "View>Command Pallete" from the menu
+* Write `shell`. You will see two options. Choose "Install 'code' command..."
