@@ -42,11 +42,11 @@ We've seen files. Now come folders, which are called *directories*.
 * `ls ~`
 * `~` expands in the shell to the home directory
 
-# Summary of commands
+# Summary
 
-* pwd
-* cd _dir_
-* .. is the parent directory
-* . is the current directory
-* ~ expands to the home directory
-* _dir_/_dir_/... is a relative path to a file or directory
+* **pwd**
+* **cd _dir_**
+* ***..*** - the parent directory
+* ***.*** - the current directory
+* ***~*** - expands to the home directory
+* **_dir_/_dir_/...** - relative path to a file or directory

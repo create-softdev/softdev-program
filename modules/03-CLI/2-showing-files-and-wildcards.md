@@ -42,8 +42,8 @@
 
 # Summary
 
-* cat _file_... - show files one after another
-* cat _file_ > _another-file_ - copy one file into another
-* Wildcard expansion with * and ?
-* ls _file..._
-* ls -l _file..._
+* **cat _file_...** - show files one after another
+* **cat _file_ > _another-file_** - copy one file into another
+* Wildcard expansion with `*` and `?`
+* **ls _file..._**
+* **ls -l _file..._**

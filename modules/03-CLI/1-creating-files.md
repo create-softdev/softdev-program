@@ -19,6 +19,6 @@
 
 # Summary
 
-* ls - list files
-* echo _parameters_... - echo parameters to terminal
-* echo _parameters_ > _file_ - create file with parameters as text
+* **ls** - list files
+* **echo _parameters_...** - echo parameters to terminal
+* **echo _parameters_ > _file_** - create file with parameters as text
