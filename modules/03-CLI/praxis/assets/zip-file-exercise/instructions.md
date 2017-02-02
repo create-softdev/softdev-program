@@ -38,3 +38,10 @@ What sentence did you get from what you wrote down?
     Write down the 6th word that appears in that sentence.
 
 What sentence did you get from what you wrote down?
+
+21. Open a new file `results-_yourname_.txt` with vi.
+22. Write down the three sentences you got.
+23. Send the file via Slack DM to the teacher.
+24. Open one of the shakespearean texts, and practice vi for a minute.
+
+Done!
