@@ -17,8 +17,8 @@
   then everything's OK.
 * What will `ls` show? It will show both `praxis` and `hello.txt`.
 
-## Summary of commands
+# Summary
 
-* `ls` - list files
-* `echo parameters...` - echo parameters to terminal
-* `echo parameters > file` - create file with parameters as text
+* ls - list files
+* echo _parameters_... - echo parameters to terminal
+* echo _parameters_ > _file_ - create file with parameters as text

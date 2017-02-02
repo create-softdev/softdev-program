@@ -4,5 +4,6 @@
     "MD013": { "line_length": 120 },
     "no-duplicate-header": false,
     "no-inline-html": false,
-    "MD026": {"punctuation": ".,;:!"}
+    "MD026": {"punctuation": ".,;:!"},
+    "single-h1": false
 }
