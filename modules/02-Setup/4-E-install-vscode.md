@@ -15,6 +15,7 @@ so you will be intimately familiar with it at the end of the program. In the mea
   * HTML Hint
   * Open in Github
   * View in Browser
+  * EditorConfig for VS Code
 * How to install a plugin:
   * Run Visual Studio Code (henceforth known as Vscode)
   * Click on the "Extensions" icon on the left bar (or choose "View>Extensions" in the menu)

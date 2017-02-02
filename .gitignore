@@ -39,3 +39,6 @@ jspm_packages
 # IDEs
 .vscode
 .idea
+
+# OS stuff
+.DS_Store
