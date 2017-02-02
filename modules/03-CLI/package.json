@@ -1,0 +1,13 @@
+{
+  "name": "CLI",
+  "version": "1.0.0",
+  "description": "* The **CLI** (Command Line Interface) is where you will be spending a lot of your time. * Developers don't always work with graphical programs, but sometimes want quick commands that they can compose   together to build complex stuff. * These quick commands are called the CLI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm dist/*.zip && cd praxis/assets && zip -ur9 ../../dist/exercise.zip ."
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

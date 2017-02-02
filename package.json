@@ -1,0 +1,21 @@
+{
+  "name": "softeng-program",
+  "version": "1.0.0",
+  "description": "All the materials needed for teaching and exercising in Crea+e's Software Engineering Program",
+  "main": "index.js",
+  "scripts": {
+    "build": "scripts/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/create-softeng/program.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/create-softeng/program/issues"
+  },
+  "homepage": "https://github.com/create-softeng/program#readme",
+  "private": true
+}
