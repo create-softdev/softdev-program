@@ -6,9 +6,9 @@ We first need to clone _this_ repository.
 But there is a problem - we will need to `push` to this repository,
 but you don't have write access to it. So what do we do? We **fork**.
 
-1. Go to this repository - [softend-program](https://github.com/create-softeng/program)
+1. Go to this repository - [softeng-program](https://github.com/create-softeng/softeng-program)
 1. Click on "Fork". On the opening dialog, choose your private user.
-1. And it's forked at `https://github.com/<your-username>/program`!
+1. And it's forked at `https://github.com/<your-username>/softeng-program`!
 
 This new repo is a "fork" of the original repo.
 The simplest way to think of it, is that this is a _copy_ of the original repo.
