@@ -15,12 +15,12 @@ We _should_ also test on Safari and Internet Explorer, but for this course these
 
 ## Install Chrome
 
-* If you haven't already, install it.
-* No need for an installation link - you can search for it on the internet.
-* If you have installed it, make sure you have automatic updates on, and that you have the latest version.
+1. If you haven't already, install it.
+1. No need for an installation link - you can search for it on the internet.
+1. If you have installed it, make sure you have automatic updates on, and that you have the latest version.
 
 ## Install Firefox
 
-* If you haven't already, install it.
-* No need for an installation link - you can search for it on the internet.
-* If you have installed it, make sure you have automatic updates on, and that you have the latest version.
+1. If you haven't already, install it.
+1. No need for an installation link - you can search for it on the internet.
+1. If you have installed it, make sure you have automatic updates on, and that you have the latest version.

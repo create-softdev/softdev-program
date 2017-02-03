@@ -1,6 +1,8 @@
 # Configure Git
 
-Git stores its configurations somewehre, and there are two things we need to configure
+Before starting the real exercise, we have lots of setup to do. This exercise and others will set us up.
+
+Git stores its configurations somewhere, and there are two things we need to configure.
 
 1. username and email, which will appear in every commit (version) that you add
 1. pull with rebase, which we can't explain because it is highly complex, but trust us - you need it.

@@ -5,10 +5,10 @@ We will be using it extensively.
 
 ## Install NodeJS
 
-* Goto [this](https://nodejs.org/en/) link, and install the latest NodeJS (the one called "Current")
+1 Goto [this](https://nodejs.org/en/) link, and install the latest NodeJS (the one called "Current")
 
 ## Test that NodeJS works
 
-* Open a "terminal" (Mac), or "Command Prompt" (Windows)
-* Type `node --version` (note the 2 dashes, and the space before them) and press `enter`.
-* You should see one or two lines describing NodeJS and the version installed.
+1. Open a "terminal" (Mac), or "Command Prompt" (Windows)
+1. Type `node --version` (note the 2 dashes, and the space before them) and press `enter`.
+1. You should see one or two lines describing NodeJS and the version installed.
