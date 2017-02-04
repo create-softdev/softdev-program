@@ -3,7 +3,7 @@
 ## more
 
 * Let's get a big file, say "Romeo and Juliette", by William Shakespeare
-* curl http://www.gutenberg.org/files/1112/1112.txt > rnj.txt
+* `curl http://www.gutenberg.org/files/1112/1112.txt > rnj.txt`
 * `cat rnj.txt`
 * Too long...
 * `more < rnj.txt`

@@ -14,4 +14,3 @@ We'll clone another repo. A famous open-source project repo
 1. Now you can push your changes.
 1. Add an 'upstream' remote, so you can pull changes from the original 'bluebird' repo.
 1. Pull from it. (it shouldn't bring in anything, but at least it won't fail.)
-

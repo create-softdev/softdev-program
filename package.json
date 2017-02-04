@@ -4,7 +4,8 @@
   "description": "All the materials needed for teaching and exercising in Crea+e's Software Engineering Program",
   "main": "index.js",
   "scripts": {
-    "build": "scripts/build.sh"
+    "build": "scripts/build.sh",
+    "test": "check-all-markdown"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
     "url": "https://github.com/create-softeng/program/issues"
   },
   "homepage": "https://github.com/create-softeng/program#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "check-all-markdown": "^1.0.0"
+  }
 }

@@ -17,6 +17,6 @@ you will understand them all.
 
 ## This Repo
 
-* Also, please goto the repo where this readme is in: [here](https://github.com/create-softeng/program).
+* Also, please goto the repo where this readme is in: [here](https://github.com/create-softeng/softeng-program).
 * You will need to follow everything here.
 * All the modules are in the `modules` folder.

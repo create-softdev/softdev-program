@@ -19,11 +19,9 @@
 
 * `history` will show everything.
 
-
 # Summary
 
 * **up-arrow and down-arrow**
 * **ctrl+r** - to search for a command via part of its text
 * **tab completion**
 * **history**
-

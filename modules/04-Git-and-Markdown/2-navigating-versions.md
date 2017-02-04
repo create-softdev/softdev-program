@@ -1,4 +1,3 @@
-
 # Navigating Versions
 
 * Let's create another version where the file `praxis.txt` is different

@@ -9,4 +9,3 @@
 1. Throw in some italics and bolds for a nice effect.
 1. Don't forget to add your picture!
 1. Commit it and check that it looks nice.
-

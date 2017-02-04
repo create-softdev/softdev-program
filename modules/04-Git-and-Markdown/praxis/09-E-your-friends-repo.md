@@ -20,4 +20,3 @@ We'll clone another repo. Your friend's repo.
 1. Ask your friend to add you as a collaborator (It's in the "Settings" tab in their repo in Github)
 1. Now try and push it.
 1. Ask them to pull it.
-

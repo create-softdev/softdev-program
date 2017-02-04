@@ -1,5 +1,7 @@
 # Instructions
 
+<!-- markdownlint-disable MD029 -->
+
 1. Hello. Welcome!
 2. Do not open this file with a text editor. If you forgot the next thing to do, 'cat' this file again.
 3. Navigate to the directory 'shakespeare'.
