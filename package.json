@@ -20,6 +20,7 @@
   "homepage": "https://github.com/create-softeng/program#readme",
   "private": true,
   "devDependencies": {
-    "check-all-markdown": "^1.0.0"
+    "check-all-markdown": "^1.0.0",
+    "htmlhint": "^0.9.13"
   }
 }
