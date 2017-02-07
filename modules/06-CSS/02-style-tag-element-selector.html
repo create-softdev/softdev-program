@@ -1,0 +1,47 @@
+<head>
+  <style>
+  p {
+    color: red;
+    border: 1px solid red;
+    width: 100px;
+  }
+
+  div {
+    color: green;
+    border-color: green;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  em {
+    color: rgb(100, 100, 100);
+    width: 600px;
+  }
+  </style>
+</head>
+<body>
+  <p>Praxis makes <em>perfect</em>!</p>
+  <ul>
+    <li>
+      <p>One sheep</p>
+    </li>
+    <li>
+      <div>Two sheep</div>
+    </li>
+  </ul>
+</body>
+
+<!--
+  * rule = selector {property: value; property: values;...}
+  * Selector defines on _which_ elements it will apply
+  * The properties are _what_ to apply
+  * Element type selector: selects an element by type.
+  * Very crude selecting, but is used.
+  * Aggregate properties: "border: width style color"; ==> border-color/width/style.
+  * width property
+  * 100px - px is the unit. There are other units which we will see shortly
+  * The default width is the width of the containing element, which is the body in this case
+  *
+  * Only block elements have a width!
+  * rgb color (numbers are from 0...255)
+-->

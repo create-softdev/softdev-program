@@ -1,0 +1,37 @@
+<head>
+  <style>
+  .outer {
+    border: 1px solid red;
+    width: 70%;
+  }
+  .inner {
+    border: 1px dashed green;
+    width: 50%;
+  }
+  .really-inner {
+    border: 1px dashed blue;
+    width: 20%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 5%;
+    background-color: yellow;
+  }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+        <div class="really-inner">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem temporibus, corporis dolores eligendi est, dolorum deserunt possimus nisi beatae culpa ea totam quaerat quo libero ipsa et laborum asperiores omnis.
+        </div>
+    </div>
+  </div>
+</body>
+
+<!--
+  * Containment hierarchy
+  * percentage is usually relative to size of parent
+  * width - percentage relative to width of parent
+  * padding
+  * padding - percentage relative to *width* (even top and bottom padding...)
+-->
