@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<style>
+  div li {
+    color: red;
+  }
+</style>
+
+<div>
+  <ul>
+    <li>Item1</li>
+    <li>Item2
+      <ul>
+        <li>SubItem</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!--
+  * Targets every element that follows an identified ancestor
+    even if the element is not a direct child of that ancestor
+
+  * Tip: if your selector looks like div ul li a span.error , then you’re doing it wrong.
+    Always ask yourself if it’s absolutely necessary to apply all of that weight.
+-->

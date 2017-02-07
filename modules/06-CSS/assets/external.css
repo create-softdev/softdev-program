@@ -1,0 +1,17 @@
+p {
+  color: red;
+  border: 1px solid red;
+  width: 100px;
+}
+
+div {
+  color: green;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+}
+
+em {
+  color: rgb(100, 100, 100);
+  width: 600px;
+}

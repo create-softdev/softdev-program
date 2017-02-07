@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <head>
   <style>
   .outer {
@@ -15,6 +16,7 @@
     padding-left: 10%;
     padding-right: 5%;
     background-color: yellow;
+    margin-top: 10px;
   }
   </style>
 </head>
@@ -29,9 +31,12 @@
 </body>
 
 <!--
+  * Note the Doctype. The box model is different without it.
   * Containment hierarchy
   * percentage is usually relative to size of parent
   * width - percentage relative to width of parent
-  * padding
+  * padding - pads the _content_ of the block. Is painted with the background
   * padding - percentage relative to *width* (even top and bottom padding...)
+  * margin - without the background.
+  * margin - percentage relative to *width* (even top and bottom margin...)
 -->
