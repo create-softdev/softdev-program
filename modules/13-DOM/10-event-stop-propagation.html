@@ -10,13 +10,13 @@
 
 <script>
 document.getElementById('outer').addEventListener('mouseover', (event) => {
-  document.getElementById('hover-message').textContent = event.target.id;
-});
+  document.getElementById('hover-message').textContent = event.target.id
+})
 
 document.getElementById('inner').addEventListener('mouseover', (event) => {
-  document.getElementById('hover-message').textContent = 'Nobody will know my ID!';
-  event.stopPropagation();
-});
+  document.getElementById('hover-message').textContent = 'Nobody will know my ID!'
+  event.stopPropagation()
+})
 </script>
 
 <!--

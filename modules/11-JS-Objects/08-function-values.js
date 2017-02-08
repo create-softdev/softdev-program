@@ -30,6 +30,7 @@ currentPresident.brag()
 
 /**
  * values can be functions
+ * They are then called "methods"
  * Either regular 'function' or arrow functions
  * Also simplified object syntax - brag() {...}
  */

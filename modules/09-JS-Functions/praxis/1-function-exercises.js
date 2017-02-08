@@ -11,7 +11,7 @@
  * upperCaseArray([]) => []
  *
  */
-function upperCaseArray(array) {
+function upperCaseArray (array) {
 
 }
 
@@ -22,7 +22,7 @@ function upperCaseArray(array) {
  * onlyIncludes(['helloy', 'boy', 'Baby'], 'oy') => ['helloy', 'boy']
  *
  */
-function onlyIncludes(array, str) {
+function onlyIncludes (array, str) {
 
 }
 
@@ -32,7 +32,7 @@ function onlyIncludes(array, str) {
  *
  * onlyIncludesYUppercase(['oy', 'vey', 'kapich?']) ==> 'OY VEY'
  */
-function onlyIncludesYUppercase(array) {
+function onlyIncludesYUppercase (array) {
 
 }
 
@@ -43,7 +43,7 @@ function onlyIncludesYUppercase(array) {
  *                                              hi
  *                                              hi
  */
-function repeat(func, n) {
+function repeat (func, n) {
 
 }
 
@@ -52,7 +52,7 @@ function repeat(func, n) {
  *                                                     4
  *                                                     5
  */
-function forEach(array, func) {
+function forEach (array, func) {
 
 }
 
@@ -73,7 +73,7 @@ function forEach(array, func) {
  *
  * Then it returns reducedValue
  */
-function reduce(array, func, initialValue) {
+function reduce (array, func, initialValue) {
 }
 
 /**
@@ -85,7 +85,7 @@ function reduce(array, func, initialValue) {
  * sumOfPairs([3, 5, 7]) => 0
  *
  */
-function sumOfPairs(array) {
+function sumOfPairs (array) {
 
 }
 
@@ -94,7 +94,7 @@ function sumOfPairs(array) {
  *
  * Implement the function max below using reduce.
  */
-function max(array) {
+function max (array) {
 
 }
 

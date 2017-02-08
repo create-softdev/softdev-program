@@ -8,7 +8,7 @@
  * isAllBlanks(' x ') => false
  * isAllBlanks('') => true
  */
-function isAllBlanks(str) {
+function isAllBlanks (str) {
 }
 
 /**
@@ -22,7 +22,7 @@ function isAllBlanks(str) {
  *
  * How do you know if a parameter was passed? Its value is undefined!
  */
-function truncate(str, maxLength, ellipsis) {
+function truncate (str, maxLength, ellipsis) {
 }
 
 /**
@@ -34,7 +34,7 @@ function truncate(str, maxLength, ellipsis) {
  * remove('Robin Hood', 'o') ==> 'Rbin Hd'
  * remove('Robin Hood', 'zzz') ==> 'Robin Hood'
  */
-function remove(str, substring) {
+function remove (str, substring) {
 
 }
 
@@ -47,7 +47,7 @@ function remove(str, substring) {
  * capitalize('') ==> ''
  * capitalize('robin    hood') ==> 'Robin Hood'
  */
-function capitalize(str) {
+function capitalize (str) {
 }
 
 /**
@@ -58,7 +58,7 @@ function capitalize(str) {
  * toInt('-4') ==> -4
  * toInt('0') ==> 0
  */
-function toInt(str) {
+function toInt (str) {
 
 }
 
@@ -70,6 +70,6 @@ function toInt(str) {
  * toString(0) ==> '0'
  * toString(-45) ==> '-45'
  */
-function toStr(num) {
+function toStr (num) {
 
 }

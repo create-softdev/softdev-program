@@ -10,6 +10,8 @@ const currentPresident = {
 
 console.log(formerPresident.firstName, formerPresident.lastName)
 
+console.log(currentPresident.firstName, currentPresident.lastName)
+
 /**
  * object is between {...}
  * A set of **properties**, where each property is associated with one **value**

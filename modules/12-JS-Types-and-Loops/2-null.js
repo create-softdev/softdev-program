@@ -1,19 +1,19 @@
-function findItem(array, func) {
+function findItem (array, func) {
   for (const item of array) {
     if (func(item)) {
-      return item;
+      return item
     }
   }
 
-  return null;
+  return null
 }
 
-let foo;
+let foo
 
-console.log(findItem([4, 5, 6], (n) => n > 5));
-console.log(findItem([4, 5, 6], (n) => n > 7));
-console.log(typeof null);
-console.log(foo);
+console.log(findItem([4, 5, 6], (n) => n > 5))
+console.log(findItem([4, 5, 6], (n) => n > 7))
+console.log(typeof null)
+console.log(foo)
 
 /**
  * null is a special value that denotes a missing value.

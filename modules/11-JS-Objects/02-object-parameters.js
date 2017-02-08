@@ -8,7 +8,7 @@ const currentPresident = {
   lastName: 'Trump'
 }
 
-function fullNameOfPresident(president) {
+function fullNameOfPresident (president) {
   return `${president.firstName} ${president.lastName}`
 }
 

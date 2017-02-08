@@ -9,6 +9,6 @@
  * frequency(['a', 'b', 'a', 'b', 'a', 'a', 'c']) => {'a': 4, 'b': 2, 'c': 1}
  * frequency([]) => {}
  */
-function frequency(arr) {
+function frequency (arr) {
 
 }

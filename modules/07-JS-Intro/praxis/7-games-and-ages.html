@@ -1,0 +1,37 @@
+<!--
+  Bonus:
+
+  Write a page that includes three fields (and a button):
+    * First player age (input type=number)
+    * Second player age (input type=number)
+    * game (input type=text)
+    * button that validates and alerts with a message if it did not pass validation
+
+    Validate that the games are one of this set:
+    "Of Thrones" (Get it...? :->)
+    "Monopoly"
+    "Cards Against Humanity"
+    "Rummikub"
+    "Barbie"
+
+    Implement a function isValidGame(gameName) to do this (it returns boolean). Test it!
+
+    Validate also that the two players can play the game, using these rules:
+      "Of Thrones" can only be played by two adults
+      "Monopoly" can be played by anyone
+      "Cards Against Humanity" can be played anyone, but if a child plays, the other player must be an adult
+      "Rummikub" can be played by anyone
+      "Barbie" can only be played by two children
+      (An adult is 18 years or higher. A kid is not an adult.)
+
+    Implement a function canPlay(gameName, age1, age2) which calls the following functions:
+      canPlayOfThrones(smallAge, bigAge)
+      canPlayMonopoly(smallAge, bigAge)
+      ...
+
+      Note the canPlay* functions get the ages sorted, so that they are simpler to implement. The canPlay
+      function will use max and min functions to pass the correct ages to them.
+
+      Test all functions! (https://drive.google.com/file/d/0B-ILgK9AyhWdSVF5c3VNcGJrdFE/view)
+
+-->

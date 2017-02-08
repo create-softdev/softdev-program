@@ -8,12 +8,12 @@
   document.querySelector('form input[name=name]')
     .addEventListener('blur', (ev) => {
       if (!ev.target.value) {
-        ev.target.placeholder = 'Pretty please no blanks?';
-        ev.target['style'].backgroundColor = 'red';
+        ev.target.placeholder = 'Pretty please no blanks?'
+        ev.target['style'].backgroundColor = 'red'
       } else {
-        ev.target.setAttribute('style', {});
+        ev.target.setAttribute('style', {})
       }
-    });
+    })
 </script>
 
 <!--

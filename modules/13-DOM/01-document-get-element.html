@@ -16,29 +16,29 @@
   document.querySelector('form input[name=name]')
     .addEventListener('blur', (ev) => {
       if (!ev.target.value) {
-        alert('Name must not be empty');
+        alert('Name must not be empty')
       }
-    });
+    })
 
   document.getElementsByClassName('year-of-birth')[0]
     .addEventListener('blur', (ev) => {
-      const yearOfBirth = parseInt(ev.target.value);
+      const yearOfBirth = parseInt(ev.target.value)
       if (yearOfBirth < 1900 || yearOfBirth > 2017) {
-        alert('Date looks too old or too new');
+        alert('Date looks too old or too new')
       }
-    });
+    })
 
   document.getElementById('sly')
     .addEventListener('blur', (ev) => {
       if (ev.target.value.split(' ').length > 4) {
-        alert('Sly comments should be short...');
+        alert('Sly comments should be short...')
       }
-    });
+    })
 
   document.getElementsByTagName('form')[0]
     .addEventListener('submit', (ev) => {
-      alert('go go go!');
-    });
+      alert('go go go!')
+    })
 </script>
 
 <!--

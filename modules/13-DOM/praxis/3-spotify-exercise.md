@@ -1,5 +1,4 @@
-Mission
-=======
+# Mission
 
 Write a page that shows all the pictures of all the artists named David Bowie.
 
@@ -22,8 +21,7 @@ Artist #2 Name
 ...
 ```
 
-Bonus
------
+## Bonus
 
 - Make it look nice
 - Have a form that requests the name of the artist, and then shows the information.

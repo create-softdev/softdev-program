@@ -8,22 +8,27 @@
   <nav>
   </nav>
   <script>
-    function buildNavigation(navigation, underThisNode) {
+    function buildNavigation (navigation, underThisNode) {
 
     }
   </script>
   <script>
     const navigation = [
       {title: 'Home', href: '#1'},
-      {title: 'Courses', children: [
-        {title: 'FED', href: '#2'},
-        {title: 'UX', href: '#3'}
-      ]},
-      {title: 'About', children: [
-        {title: 'Contact Us', href: '#2'},
-        {title: 'Location', href: '#3'}
-      ]}
-    ];
+      {
+        title: 'Courses',
+        children: [
+          {title: 'FED', href: '#2'},
+          {title: 'UX', href: '#3'}
+        ]
+      },
+      {title: 'About',
+        children: [
+          {title: 'Contact Us', href: '#2'},
+          {title: 'Location', href: '#3'}
+        ]
+      }
+    ]
 
     buildNavigation(navigation, document.getElementsByTagName('nav'));
   </script>

@@ -25,27 +25,27 @@ const books = [{
   author: 'Margaret Atwood',
   title: 'The handmaiden\'s tale',
   read: 1997
-}];
+}]
 
-const result = authorsByYear(books);
+const result = authorsByYear(books)
 
 if (result[2001].length !== 2) {
-  throw 'failed';
+  throw 'failed'
 }
 if (!result[2001].includes('Samuel R. Delany')) {
-  throw 'failed';
+  throw 'failed'
 }
 if (!result[2001].includes('J.G. Ballard')) {
-  throw 'failed';
+  throw 'failed'
 }
 if (result[1998].length !== 2) {
-  throw 'failed';
+  throw 'failed'
 }
 if (!result[1998].includes('J.K Rowling')) {
-  throw 'failed';
+  throw 'failed'
 }
 if (result[1997].length !== 1) {
-  throw 'failed';
+  throw 'failed'
 }
 
 // Implement the function below. Don't edit the lines above this one.
@@ -58,6 +58,6 @@ if (result[1997].length !== 1) {
  *   1997: ['Margaret Atwood']
  * }
  */
-function authorsByYear(books) {
+function authorsByYear (books) {
 
 }

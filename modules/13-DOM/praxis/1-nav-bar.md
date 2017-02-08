@@ -1,5 +1,4 @@
-Mission
-=======
+# Mission
 
 Implement a navigation bar. The template can be found in the exercise file.
 
@@ -15,8 +14,7 @@ and using hide/show in CSS to hide/show the relevant submenu items
 
 Don't use event delegation. Each element will have their own event handler.
 
-Bonus
------
+## Bonus
 
 - Implement more than two-levels of hierarchy
 - When opening one sub-menu, close any sub-menus already opened.

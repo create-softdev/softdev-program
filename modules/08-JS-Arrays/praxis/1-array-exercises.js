@@ -10,7 +10,7 @@
  * sum([4, 5, 6]) => 15
  * sum([]) => 0
  */
-function sum(array) {
+function sum (array) {
 
 }
 
@@ -21,7 +21,7 @@ function sum(array) {
  * average([4]) => 4
  * average([]) => 0
  */
-function average(array) {
+function average (array) {
 
 }
 
@@ -33,7 +33,7 @@ function average(array) {
  * range(4, 4) ==> []
  * range(4, 3) ==> []
  */
-function range(a, b) {
+function range (a, b) {
 }
 
 /**
@@ -45,7 +45,7 @@ function range(a, b) {
  *
  * Do not use Array.includes
  */
-function includes(array, item) {
+function includes (array, item) {
 }
 
 /**
@@ -54,7 +54,7 @@ function includes(array, item) {
  * removeValue([4, 5, 6, 4, 3], 4) => [5, 6, 3]
  * removeValue([4, 4, 4], 4) => []
  */
-function removeValue(array, value) {
+function removeValue (array, value) {
 
 }
 
@@ -66,7 +66,7 @@ function removeValue(array, value) {
  * flatten([[1, 2], []]) ==> [1, 2]
  * flatten([[]]) ==> []
  */
-function flatten(arrayOfArrays) {
+function flatten (arrayOfArrays) {
 
 }
 
@@ -82,7 +82,7 @@ function flatten(arrayOfArrays) {
  *
  * See why I don't like mutating functions? They are so much clunkier!
  */
-function insertValue(array, index, value) {
+function insertValue (array, index, value) {
 
 }
 
@@ -93,7 +93,7 @@ function insertValue(array, index, value) {
  * insertValue([4, 5, 6], 2, 999) => [4, 5, 999, 6]
  * insertValue([4, 5, 6], 3, 999) => [4, 5, 6, 999]
  */
-function insertValuePure(array, index, value) {
+function insertValuePure (array, index, value) {
 
 }
 
@@ -104,7 +104,7 @@ function insertValuePure(array, index, value) {
  * isSorted([4, 7, 3]) => false
  * isSorted([]) => true
  */
-function isSorted(array) {
+function isSorted (array) {
 
 }
 
@@ -114,7 +114,7 @@ function isSorted(array) {
  *
  * crossProduct([2, 4], [5, 8]) ==> 10 + 32 = 42
  */
-function crossProduct(vec1, vec2) {
+function crossProduct (vec1, vec2) {
 
 }
 
@@ -127,7 +127,7 @@ function crossProduct(vec1, vec2) {
  * unique([4, 5, 5, 4, 1, 5]) ==> [4, 5, 1]
  * unique([]) ==> []
  */
-function unique(array) {
+function unique (array) {
 
 }
 
@@ -143,7 +143,7 @@ function unique(array) {
  * sameMembers([1, 2, 3, 3], [3, 1, 2]) ==> false
  * sameMembers([], []) ==> true
  */
-function sameMembers(array1, array2) {
+function sameMembers (array1, array2) {
 
 }
 
@@ -154,6 +154,6 @@ function sameMembers(array1, array2) {
  *
  * mergeSorted([1, 5, 7], [2, 3, 6, 7, 8]) ==> [1, 2, 3, 5, 6, 7, 7, 8]
  */
-function mergeSorted(array1, array2) {
+function mergeSorted (array1, array2) {
 
 }

@@ -17,31 +17,31 @@
   <link rel="stylesheet" href="x.css">
   <script>
     // This function is already implemented for you. Don't worry about it.
-    function fetchSimple(url, callback, errorCallback) {
+    function fetchSimple (url, callback, errorCallback) {
       fetch(url)
         .then(response => response.status !== 200 ? errorCallback(response) : response.json())
         .then(callback)
-        .catch(errorCallback);
+        .catch(errorCallback)
     }
 
     // implement a function that returns the flickr URL for the operation.
     // Use string interpolation to return the URL
     // as specified in https://www.flickr.com/services/api/request.rest.html
-    function flickrOperationUrl(operationName, apiKey) {
-      return `https://api.flickr.com/services/rest/?method=${operationName}&api_key=${apiKey}`;
+    function flickrOperationUrl (operationName, apiKey) {
+      return `https://api.flickr.com/services/rest/?method=${operationName}&api_key=${apiKey}`
     }
 
     // implement a function that returns the flickr URL for an image.
     // Use string interpolation to return the URL
     // as specified in https://www.flickr.com/services/api/misc.urls.html
-    function flickrImageUrl(farmId, serverId, secret, id) {
-      return `https://...`;
+    function flickrImageUrl (farmId, serverId, secret, id) {
+      return `https://...`
     }
 
     // Use fetchSimple and flickOperationUrl to get the images
     // This is the function you need to call to get the images, parse the JSON, and then
     // use DOM manipulation to set the images
-    function getRecentFlickrImages(callback, errorCallback) {
+    function getRecentFlickrImages (callback, errorCallback) {
       fetchSimple(flickrOperationUrl, callback, errorCallback)
     }
 
@@ -51,8 +51,8 @@
   <!--Sample code - feel free to delete -->
   <script>
     fetchSimple('https://api.spotify.com/v1/search?q=bowie&type=artist', (json) => {
-      document.getElementById('json').textContent = JSON.stringify(json, 2);
-    }, err => console.error(err));
+      document.getElementById('json').textContent = JSON.stringify(json, 2)
+    }, err => console.error(err))
 
   </script>
   <form>

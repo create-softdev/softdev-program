@@ -7,21 +7,21 @@
   </div>
 </div>
 <script>
-  document.getElementById('inner').appendChild(document.createTextNode('!'));
+  document.getElementById('inner').appendChild(document.createTextNode('!'))
 
-  const newStrongElement = document.createElement('strong');
-  newStrongElement.appendChild(document.createTextNode("Wow! "));
+  const newStrongElement = document.createElement('strong')
+  newStrongElement.appendChild(document.createTextNode('Wow! '))
 
   document.getElementById('inner').replaceChild(
     newStrongElement,
-    document.getElementById('inner').childNodes[0]);
+    document.getElementById('inner').childNodes[0])
 
-  document.getElementById('part').remove();
+  document.getElementById('part').remove()
 
-  const newInner = document.getElementById('another-inner').cloneNode(true);
+  const newInner = document.getElementById('another-inner').cloneNode(true)
 
   document.getElementById('outer').insertBefore(
-    newInner, document.getElementById('another-inner'));
+    newInner, document.getElementById('another-inner'))
 
 </script>
 
