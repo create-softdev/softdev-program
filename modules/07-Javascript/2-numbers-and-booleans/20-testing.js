@@ -20,5 +20,6 @@ console.log(max(7, 9));
 
 /**
  * Tests
+ * throw
  */
 /* eslint no-else-return: 0 */
