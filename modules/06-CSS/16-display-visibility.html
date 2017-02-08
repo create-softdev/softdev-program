@@ -1,0 +1,29 @@
+<style>
+  .show-area {
+    padding: 20%px;
+    width: 50%;
+    background-color: blue;
+  }
+
+  .to-be-shown {
+    padding: 100px;
+    padding: 20%px;
+    width: 50%;
+    background-color: red;
+    display:none;
+  }
+
+  .show-area:hover + .to-be-shown {
+    display: block;
+  }
+</style>
+
+<div class="show-area">Hover over me</div>
+<div class="to-be-shown">
+
+<!--
+  * display: block, inline, none
+  * also block-inline: feels like inline, but also has "blockish" attributes like width.
+  * There are many more, but we'll start with this.
+  * The ability to catch :hover and things like sibling selectors, enables us to create nice interaction stuff
+-->
