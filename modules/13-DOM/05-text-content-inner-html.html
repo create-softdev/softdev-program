@@ -1,0 +1,23 @@
+<div id="outer">
+  <div id="inner">
+    This is <i id="part">some</i> Text
+  </div>
+  <div id="another-inner">
+    This is some more text
+  </div>
+</div>
+<script>
+  document.getElementById('another-inner').textContent =
+    document.getElementById('inner').textContent;
+
+  document.getElementById('part').innerHTML = '<b>some</b>';
+</script>
+
+
+<!--
+  * textContent (will look also in child nodes)
+  * innerHTML
+  * Remind people about obsolete ways:
+  *  innerText
+  *  outerHTML
+-->

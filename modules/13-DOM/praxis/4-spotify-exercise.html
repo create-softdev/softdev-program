@@ -1,0 +1,8 @@
+<script>
+  function fetchSimple(url, callback, errorCallback) {
+    fetch(url)
+    .then(response => response.status !== 200 ? errorCallback(response) : response.json())
+    .then(callback)
+    .catch(errorCallback);
+  }
+</script>

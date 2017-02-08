@@ -1,0 +1,30 @@
+<div id="outer">
+  <div id="inner">
+    This is <i id="part">some</i> Text
+  </div>
+  <div id="another-inner">
+    This is some more text
+  </div>
+</div>
+<script>
+  document.getElementById('another-inner').textContent =
+    document.getElementById('part').parentNode.textContent;
+
+  document.getElementById('inner').childNo[0].textContent = 'That was ';
+</script>
+
+<!--
+  * parentNode
+  * childNodes: remember, it's a NodeList, e.g. array-like.
+  *             It supports only "[]" and ".length".
+  * More:
+  *   children: unused here. Is a list of only the sub-elements (i.e. text nodes not included)
+  *   Element.querySelectorAll: if you want to find an element by selector, but inside an element, you
+  *                             can use querySelectorAll.
+  * Even more:
+  *   firstChild, lastChild, nextSibling, previousSibling
+  *
+  * Even more:
+  *   Node: https://developer.mozilla.org/en/docs/Web/API/Node
+  *   Element: https://developer.mozilla.org/en-US/docs/Web/API/Element
+-->

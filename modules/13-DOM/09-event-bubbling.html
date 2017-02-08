@@ -1,0 +1,25 @@
+<div id="outer">
+  <div id="inner">
+    This is <i id="part">some</i> Text
+  </div>
+  <div id="another-inner">
+    This is some more text
+  </div>
+</div>
+<div id="hover-message"></div>
+
+<script>
+document.getElementById('outer').addEventListener('mouseover', (event) => {
+  document.getElementById('hover-message').textContent = event.target.id;
+});
+
+document.getElementById('inner').addEventListener('mouseover', (event) => {
+  document.getElementById('hover-message').textContent = 'Nobody will know my ID!';
+});
+</script>
+
+<!--
+  * The inner will still show the id.
+  * Why? Because both event handlers will act, and the first will be the element's,
+  * and then the outer element.
+-->

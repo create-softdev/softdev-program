@@ -1,0 +1,26 @@
+<form>
+  <label>
+    Name:
+    <input type="text" name="name" placeholder="Name">
+  </label>
+</form>
+<script>
+  document.querySelector('form input[name=name]')
+    .addEventListener('blur', (ev) => {
+      if (!ev.target.value) {
+        ev.target.placeholder = 'Pretty please no blanks?';
+        ev.target['style'].backgroundColor = 'red';
+      } else {
+        ev.target.setAttribute('style', {});
+      }
+    });
+</script>
+
+<!--
+  * accessing attributes -
+  *   - .placeholder
+  *   - ['.style']
+  *   - getAttribute('style')
+  *   - setAttribute('style', {})
+  * style properties are an object, whose fields are camelCased, and not kebab-case.
+-->

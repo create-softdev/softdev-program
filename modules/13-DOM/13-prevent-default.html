@@ -1,0 +1,22 @@
+<input type="text" placeholder="type only lowercase" id="text">
+<div id="error" style="color:red"></div>
+<script>
+  document.getElementById('text').addEventListener('keypress', (event) => {
+    const charCode = event.key;
+
+    if (charCode < 'a' || charCode > 'z') {
+      event.preventDefault();
+      document.getElementById('error').textContent =
+        'Please use lowercase letters only';
+    }
+    else {
+      document.getElementById('error').textContent = '';
+    }
+  });
+</script>
+
+<!--
+  * event.preventDefault - prevents default behavior of an event
+  * keypress event
+  * event.key
+-->
