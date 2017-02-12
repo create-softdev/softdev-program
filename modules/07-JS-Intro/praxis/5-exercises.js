@@ -15,34 +15,53 @@ function isEven (num) {
 /**
  * Write a function that checks whether a number is odd or not. Use isEven.
  *
- * isOdd(5) ==> false
- * isOdd(896) ==> true
+ * isOdd(5) ==> true
+ * isOdd(896) ==> false
  */
 function isOdd (num) {
 
 }
 
 /**
- * returns true if n is inside the range rangeStart.. rangeEnd
- * the inclusive parameter is a boolean that says whether the range includes rangeStart and rangeEnd
+ * Write a program that receives the three grades the student got.
+ * If the average > 60, return true, otherwise return false.
+ *
+ * didStudentPass(60, 70, 80) ==> true
+ * didStudentPass(40, 50, 60) ==> false
+ */
+function didStudentPass (gradeA, gradeB, gradeC) {
+
+}
+
+/**
+ * returns true if n is inside the range rangeStart.. rangeEnd (including rangeStart and rangeEnd)
+ *
+ * insideOf(5, 4, 9) ==> true
+ * insideOf(9, 4, 9) ==> true
+ * insideOf(10, 4, 9) ==> false
+ * insideOf(3, 4, 9) ==> false
  *
  */
-function insideOf (n, rangeStart, rangeEnd, inclusive) {
+function insideOf (n, rangeStart, rangeEnd) {
 
 }
 
 /**
  * returns true if n is outside the range rangeStart.. rangeEnd
- * the inclusive parameter is a boolean that says whether the range includes rangeStart and rangeEnd
+ *
+ * outsideOf(5, 4, 9) ==> false
+ * outsideOf(9, 4, 9) ==> false
+ * outsideOf(10, 4, 9) ==> true
+ * outsideOf(3, 4, 9) ==> true
  *
  */
-function outsideOf (n, rangeStart, rangeEnd, inclusive) {
+function outsideOf (n, rangeStart, rangeEnd) {
 
 }
 
 /**
- * Write a function that translates the words "hello", "goodbye", "spanish"
- * in three languages ("english", "french", "spanish") to english.
+ * Write a function that translates the words "hello", "goodbye"
+ * in two languages ("french", "spanish") to english.
  * If it receives a word it does not know, or a language it does not now, it returns "sorry".
  */
 function translate (word, language) {
@@ -63,17 +82,8 @@ function timeOfDay (hours, minutes) {
 }
 
 /**
- * Write a program that receives the three grades the student got.
- * If the average > 60, return true, otherwise return false.
+ * Bonus:
  *
- * didStudentPass(60, 70, 80) ==> true
- * didStudentPass(40, 50, 60) ==> false
- */
-function didStudentPass (gradeA, gradeB, gradeC) {
-
-}
-
-/**
  * Reverses a one or two digit number.
  * reverseTwoDigitNumber(3) ==> 30 (because 3 "===" 03)
  * reverseTwoDigitNumber(34) ==> 43

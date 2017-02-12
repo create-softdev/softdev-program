@@ -18,6 +18,7 @@ console.log(isBetween(8, 7, 9))
 console.log(max(5, 6))
 
 /*
-** &&, ||, !
+** &&: true only iff both are true
+** ||: false only iff both are false
 ** ?:
 */
