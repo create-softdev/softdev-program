@@ -7,7 +7,7 @@ function max (a, b) {
 }
 
 // Code:
-console.log(max(parseInt('7'), parseInt('9')))
+console.log(max(parseInt('7'), parseInt('9'))) // 9
 
 /**
  * parseInt: converts strings to numbers

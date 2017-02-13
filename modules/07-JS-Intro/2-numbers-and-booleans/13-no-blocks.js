@@ -5,7 +5,7 @@ function printMax (a, b) {
     console.log(b)
 }
 
-printMax(4, 6)
+printMax(4, 6)    // 6
 
 /**
  * floating point numbers

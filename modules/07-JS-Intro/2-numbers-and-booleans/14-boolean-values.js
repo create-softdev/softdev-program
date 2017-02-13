@@ -2,11 +2,11 @@ function assert (booleanTest) {
   if (booleanTest) {
     console.log('All good!')
   } else {
-    console.log('Oh oh...')
+    console.log('Uh oh...')
   }
 }
-assert(4 > 6)
-assert(6 > 4)
+assert(4 > 6)   // Uh oh...
+assert(6 > 4)   // All good!
 
 /**
  * the "true" value.

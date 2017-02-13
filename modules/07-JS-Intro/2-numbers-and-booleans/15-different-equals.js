@@ -6,15 +6,15 @@ function assert (booleanTest) {
   }
 }
 
-assert(7 == 7)
-assert('77' == 77)
+assert(7 == 7)      // true
+assert('77' == 77)  // true
 assert('77' === 77) // false
-assert(7 != 8)
-assert('78' != 77)
+assert(7 != 8)      // true
+assert('77' != 77)  // false
 assert('77' !== 77) // true
 
 /**
- * The dofference between === and ==
+ * The difference between === and ==
  * Always use ==
  * Same for !== and !===
  */

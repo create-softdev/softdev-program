@@ -15,7 +15,7 @@ if (max(5, 4) !== 5) {
 }
 
 // Code:
-console.log(max(7, 9))
+console.log(max(7, 9))  // 9, after the bug is fixed
 
 /**
  * Tests

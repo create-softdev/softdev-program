@@ -6,13 +6,13 @@ function boolValue (a) {
   }
 }
 
-boolValue(0)
-boolValue(1)
-boolValue(3434)
-boolValue('')
-boolValue('asdfklhsdfkjh')
-boolValue([])
-boolValue({})
+boolValue(0)    // falsy
+boolValue(1)    // truthy
+boolValue(3434) // truthy
+boolValue('')   // falsy
+boolValue('asdfklhsdfkjh')  // truthy
+boolValue([])   // truthy
+boolValue({})   // truthy
 
 /*
 ** false/true vs. falsy/truthy
