@@ -12,12 +12,12 @@ function fullNameOfPresident (president) {
   return `${president.firstName} ${president.lastName}`
 }
 
-console.log(fullNameOfPresident(formerPresident))
-console.log(fullNameOfPresident(currentPresident))
+console.log(fullNameOfPresident(formerPresident))     // Barach Obama
+console.log(fullNameOfPresident(currentPresident))    // Donald Trump
 
-console.log(fullNameOfPresident({firstName: 'George', lastName: 'Washington'}))
+console.log(fullNameOfPresident({firstName: 'George', lastName: 'Washington'})) // George Washington
 
-console.log(fullNameOfPresident({firstName: 'Eminem'}))
+console.log(fullNameOfPresident({firstName: 'Eminem'}))  // Eminem undefined
 
 /**
  * Functions can accept objects.

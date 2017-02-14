@@ -22,11 +22,11 @@ const currentPresident = {
   }
 }
 
-console.log(currentPresident.tweet('Mexican problem'))
+console.log(currentPresident.tweet('Mexican problem')) // Mexican problem is because of the Democrats. SAD!
 
-currentPresident.buildWall()
+currentPresident.buildWall() // Building wall with mexican money. All they have left is 9900
 
-currentPresident.brag()
+currentPresident.brag()      // I am making America great again!
 
 /**
  * values can be functions

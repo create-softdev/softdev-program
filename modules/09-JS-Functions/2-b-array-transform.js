@@ -15,8 +15,8 @@ function map (arr, func) {
   return ret
 }
 
-console.log(map([2, 5, 3], increment))
-console.log(map([2, 5, 3], decrement))
+console.log(map([2, 5, 3], increment))  // [ 3, 6, 4 ]
+console.log(map([2, 5, 3], decrement))  // [ 1, 4, 2 ]
 
 /**
  * Functions as values ("first-class citizens")

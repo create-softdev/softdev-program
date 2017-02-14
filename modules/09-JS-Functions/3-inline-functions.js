@@ -8,8 +8,8 @@ function map (arr, func) {
   return ret
 }
 
-console.log(map([2, 5, 3], function (n) { return n + 1 }))
-console.log(map([2, 5, 3], function (n) { return n - 1 }))
+console.log(map([2, 5, 3], function (n) { return n + 1 })) // [ 3, 6, 4 ]
+console.log(map([2, 5, 3], function (n) { return n - 1 })) // [ 1, 4, 2 ]
 
 /**
  * Anonymous functions

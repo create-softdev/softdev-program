@@ -8,13 +8,13 @@ const currentPresident = {
   'last-name': 'Trump'
 }
 
-console.log(currentPresident['first-name'], currentPresident['last-name'])
+console.log(currentPresident['first-name'], currentPresident['last-name']) // Donald Trump
 
 function fullNameOfPresident (president) {
   return `${president['first-name']} ${president['last-name']}`
 }
 
-console.log(fullNameOfPresident(formerPresident))
+console.log(fullNameOfPresident(formerPresident))   // Barack Obama
 
 /**
  * Properties are always strings.

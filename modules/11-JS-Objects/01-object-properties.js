@@ -8,9 +8,9 @@ const currentPresident = {
   lastName: 'Trump'
 }
 
-console.log(formerPresident.firstName, formerPresident.lastName)
+console.log(formerPresident.firstName, formerPresident.lastName)    // Barack Obama
 
-console.log(currentPresident.firstName, currentPresident.lastName)
+console.log(currentPresident.firstName, currentPresident.lastName)  // Donald Trump
 
 /**
  * object is between {...}

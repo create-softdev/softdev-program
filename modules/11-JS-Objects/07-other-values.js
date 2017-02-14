@@ -11,15 +11,15 @@ const formerPresident = {
   }
 }
 
-console.log(formerPresident.muslim)
+console.log(formerPresident.muslim)        // false
 
-console.log(formerPresident.children[0])
+console.log(formerPresident.children[0])   // Sasha
 
 // or...
 
 const children = formerPresident.children
 
-console.log(children[0])
+console.log(children[0])                    // Sasha
 
 /**
  * values can be whatever they want.

@@ -14,7 +14,7 @@ function arrayMax (arr) {
   return maxTillNow
 }
 
-console.log(arrayMax([]))
+console.log(arrayMax([]))       // undefined
 
 if (arrayMax([7, 1, 12]) !== 12) {
   throw 'failed'

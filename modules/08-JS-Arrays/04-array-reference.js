@@ -3,8 +3,8 @@ const cities = ['Tel Aviv', 'Jerusalem', 'Haifa']
 const list = cities
 
 cities[2] = 'Netanya'
-console.log(cities)
-console.log(list)
+console.log(cities)  // ['Tel Aviv', 'Jerusalem', 'Netanya']
+console.log(list)    // ['Tel Aviv', 'Jerusalem', 'Netanya']
 
 /**
  * An array variable is a *reference* to the array, it is not the array itself.

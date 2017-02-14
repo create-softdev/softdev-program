@@ -10,10 +10,10 @@ function findItem (array, func) {
 
 let foo
 
-console.log(findItem([4, 5, 6], (n) => n > 5))
-console.log(findItem([4, 5, 6], (n) => n > 7))
-console.log(typeof null)
-console.log(foo)
+console.log(findItem([4, 5, 6], (n) => n > 5))    // 6
+console.log(findItem([4, 5, 6], (n) => n > 7))    // null
+console.log(typeof null)                          // object
+console.log(foo)                                  // undefined
 
 /**
  * null is a special value that denotes a missing value.

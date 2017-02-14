@@ -1,10 +1,10 @@
 const cities = ['Tel Aviv', 'Jerusalem', 'Haifa']
 
 cities[2] = "B'eer Sheva"
-console.log(cities)
+console.log(cities) // ['Tel Aviv', 'Jerusalem', "B'eer Sheva"]
 
-cities[3] = "Nazareth"
-console.log(cities)
+cities[3] = 'Nazareth'
+console.log(cities)  // ['Tel Aviv', 'Jerusalem', "B'eer Sheva", 'Nazareth']
 
 /**
  * Setting a value with the assignment operator

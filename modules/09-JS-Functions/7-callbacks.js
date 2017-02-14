@@ -4,6 +4,12 @@ setInterval(() => console.log('hi'), 1000)
 
 console.log('after')
 
+// before
+// after
+// hi
+// hi
+// ...
+
 /**
  * setInterval
  * Arrow functions with no arguments

@@ -1,20 +1,21 @@
 const arr = ['hi']
 
 arr.push('bye')
-console.log(arr)
+console.log(arr)      // ['hi', 'bye']
 
 const last = arr.pop()
-console.log(last)
-console.log(arr)
+console.log(last)     // 'bye'
+console.log(arr)      // ['hi']
 
 const another = ['a', 'b', 'c', 'd', 'e']
 
-console.log(another.slice(2, 4))
+console.log(another.slice(2, 4))   // [ 'c', 'd' ]
 
-console.log(another.concat(arr, 'h', ['i', 'j']))
+console.log(another.concat(arr, 'h', ['i', 'j']))  // [ 'a', 'b', 'c', 'd', 'e', 'hi', 'h', 'i', 'j' ]
 
+another[0] = 'x'
 another.sort()
-console.log(another)
+console.log(another)       // [ 'b', 'c', 'd', 'e', 'x' ]
 
 /**
  * push - appends value (mutates)

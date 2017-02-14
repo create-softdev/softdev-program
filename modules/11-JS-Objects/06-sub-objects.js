@@ -8,13 +8,13 @@ const formerPresident = {
   }
 }
 
-console.log(formerPresident.address.state)
+console.log(formerPresident.address.state) // D.C.
 
 // or...
 
 const presidentAddress = formerPresident.address
 
-console.log(presidentAddress.hood)
+console.log(presidentAddress.hood)        // Kalorama
 
 /**
  * values

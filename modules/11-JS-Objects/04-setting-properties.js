@@ -6,11 +6,12 @@ const currentPresident = {
 currentPresident.firstName = 'Mr.'
 currentPresident.lastName = 'President'
 
+console.log(fullNameOfPresident(currentPresident))   // Mr. President
+
 function fullNameOfPresident (president) {
   return `${president.firstName} ${president.lastName}`
 }
 
-console.log(fullNameOfPresident(currentPresident))
 
 /**
  * const only relates to the reference!

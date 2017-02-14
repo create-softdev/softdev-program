@@ -1,7 +1,7 @@
 
 const mexicans = {
   mexicanBalance: 10000,
-  extractMoney: (howMuch) => {
+  extractMoney (howMuch) {
     this.mexicanBalance -= howMuch
 
     return this.mexicanBalance
@@ -21,6 +21,8 @@ const currentPresident = {
 }
 
 currentPresident.buildWall()
+// Mexican problem is because of the Democrats. SAD!
+// Building wall with mexican money. All they have left is 9900
 
 /**
  * this - the current object

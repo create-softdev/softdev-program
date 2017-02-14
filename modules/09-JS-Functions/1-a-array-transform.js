@@ -17,9 +17,9 @@ function decrementByOnePure (arr) {
 const arr = [2, 4, 8]
 
 incrementByOneMutating(arr)
-console.log(arr)
+console.log(arr)                            // [ 3, 5, 9 ]
 
-console.log(decrementByOnePure([2, 5, 3]))
+console.log(decrementByOnePure([2, 5, 3]))  // [ 3, 6, 4 ]
 
 /**
  * Mutating functions vs pure functions

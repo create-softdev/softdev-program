@@ -3,9 +3,9 @@ const obj = {
   b: [4, 5]
 }
 
-console.log(JSON.stringify(obj))
+console.log(JSON.stringify(obj))                  // {"a":4,"b":[4,5]}
 
-console.log(JSON.parse('{"a": 4, "b": [4, 5]}'))
+console.log(JSON.parse('{"a": 4, "b": [4, 5]}'))  // { a: 4, b: [ 4, 5 ] }
 
 /**
  * What is JSON? When is it used?
