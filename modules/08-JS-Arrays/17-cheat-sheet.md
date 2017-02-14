@@ -33,7 +33,7 @@ for (const i in arr) {
 ```js
 const arr = ['a', 'b', 'c'];
 
-for (const v in arr) {
+for (const v of arr) {
   console.log(v);
 }
 // a
@@ -94,4 +94,25 @@ console.log(x) // 8
 
 x /= 2
 console.log(x) // 4
+```
+
+- Array functions
+```js
+let arr = ['hi']
+arr.push('bye')
+console.log(arr)      // ['hi', 'bye']
+
+arr = ['hi']
+const last = arr.pop()
+console.log(last)     // 'bye'
+console.log(arr)      // ['hi']
+
+const another = ['a', 'b', 'c', 'd', 'e']
+
+console.log(another.slice(2, 4))   // [ 'c', 'd' ]
+console.log(another.concat(arr, 'h', ['i', 'j']))  // [ 'a', 'b', 'c', 'd', 'e', 'hi', 'h', 'i', 'j' ]
+
+another[0] = 'x'
+another.sort()
+console.log(another)       // [ 'b', 'c', 'd', 'e', 'x' ]
 ```
