@@ -11,3 +11,9 @@ if (stats.isDirectory()) {
 } else {
   console.log(dirToList)
 }
+
+/**
+ * A compatible version of Unix's 'ls'
+ *
+ * If the file is a file, just output it, otherwise list the files and directories inside
+ */

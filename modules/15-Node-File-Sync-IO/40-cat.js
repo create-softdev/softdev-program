@@ -7,3 +7,9 @@ for (const fileToRead of filesToRead) {
 
   console.log(text)
 }
+
+/**
+ * This is 'cat' from the CLI. An exact implementation.
+ *
+ * To run it, you need a terminal, because of the arguments
+ */
