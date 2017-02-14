@@ -12,6 +12,18 @@ function isAllBlanks (str) {
 }
 
 /**
+ * Capitalize the words in the sentence. You can use split and join to separate the words and bring
+ * them back together, capitalized
+ * (If you don't know how to uppercase, well, search for it!)
+ *
+ * capitalize('robin hood') ==> 'Robin Hood'
+ * capitalize('') ==> ''
+ * capitalize('robin    hood') ==> 'Robin Hood'
+ */
+function capitalize (str) {
+}
+
+/**
  * Truncates to a specific width, with ellipsis characters if needed.
  *
  * truncate('Robin Hood') ==> 'Robin Hood'
@@ -36,18 +48,6 @@ function truncate (str, maxLength, ellipsis) {
  */
 function remove (str, substring) {
 
-}
-
-/**
- * Capitalize the words in the sentence. You can use split and join to separate the words and bring
- * them back together, capitalized
- * (If you don't know how to uppercase, well, search for it!)
- *
- * capitalize('robin hood') ==> 'Robin Hood'
- * capitalize('') ==> ''
- * capitalize('robin    hood') ==> 'Robin Hood'
- */
-function capitalize (str) {
 }
 
 /**
