@@ -4,11 +4,13 @@ function resetArray (arr) {
   }
 }
 
-const arr = [0, 1, 2]
+const arr1 = [0, 1, 2]
 
-resetArray(arr)
+resetArray(arr1)
 
-if (arr !== [0, 0, 0]) {
+console.log(arr1)
+
+if (arr1 !== [0, 0, 0]) {
   throw 'failed!'
 }
 

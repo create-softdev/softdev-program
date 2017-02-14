@@ -79,3 +79,19 @@ function isArrayEqual(array1, array2) {
   return true;
 }
 ```
+
+- Incrementing variables
+
+```js
+let x = 4
+
+console.log(++x) // 5
+console.log(x++) // 5
+console.log(x)   // 6
+
+x += 2
+console.log(x) // 8
+
+x /= 2
+console.log(x) // 4
+```
