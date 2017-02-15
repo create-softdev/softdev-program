@@ -26,17 +26,6 @@ function average (array) {
 }
 
 /**
- * Returns an array with the numbers from a to b, not including b.
- *
- * range(4, 7) ==> [4, 5, 6]
- * range(4, 5) ==> [4]
- * range(4, 4) ==> []
- * range(4, 3) ==> []
- */
-function range (a, b) {
-}
-
-/**
  * Checks whether the item is in the array (using ===).
  *
  * includes([4, 5, 6], 7) ==> false
@@ -46,6 +35,17 @@ function range (a, b) {
  * Do not use Array.includes
  */
 function includes (array, item) {
+}
+
+/**
+ * Returns an array with the numbers from a to b, not including b.
+ *
+ * range(4, 7) ==> [4, 5, 6]
+ * range(4, 5) ==> [4]
+ * range(4, 4) ==> []
+ * range(4, 3) ==> []
+ */
+function range (a, b) {
 }
 
 /**
