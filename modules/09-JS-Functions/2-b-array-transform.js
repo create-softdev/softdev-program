@@ -8,8 +8,8 @@ function decrement (n) {
 function map (arr, func) {
   const ret = []
 
-  for (const i in arr) {
-    ret.push(func(arr[i]))
+  for (const v of arr) {
+    ret.push(func(v))
   }
 
   return ret
