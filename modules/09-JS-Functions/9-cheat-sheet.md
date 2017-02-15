@@ -42,10 +42,22 @@ array.filter(_function_) // returns new array with only the elements that _funct
 
 # Callbacks
 
+* setInterval
+
 ```js
 
 setInterval(_function_, _milliseconds_) // calls _function_ every milliseconds, forever
 
 // example
 setInterval(() => console.log("I'm called every second"), 1000)
+```
+
+* setCallback
+
+```js
+
+setCallback(_function_, _milliseconds_) // calls _function_ after milliseconds, once
+
+// example
+setInterval(() => console.log("I am called after a second"), 1000)
 ```

@@ -13,4 +13,6 @@ setInterval(() => {
 
 /**
  * When you have one statement or more, you need {} in arrow functions
+ *
+ * setInterval
  */
