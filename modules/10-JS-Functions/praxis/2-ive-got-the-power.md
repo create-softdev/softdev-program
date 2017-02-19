@@ -1,5 +1,4 @@
-Mission
-=======
+# Mission
 
 Write a page that contains ten divs,
 and a script that calculates the powers of the numbers in those divs.

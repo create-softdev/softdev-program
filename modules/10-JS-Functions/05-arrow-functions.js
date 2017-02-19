@@ -10,8 +10,9 @@ function map (arr, func) {
 
 console.log(map([2, 5, 3], (n) => n + 1)) // [ 3, 6, 4 ]
 console.log(map([2, 5, 3], (n) => n - 1)) // [ 1, 4, 2 ]
+console.log(map([2, 5, 3], n => n * n))   // [ 4, 25, 9 ]
 
 /**
- * Functions as values ("first-class citizens")
- * Go over two implementations
+ * Arrow functions
+ * Parameter can be with or without ()
  */

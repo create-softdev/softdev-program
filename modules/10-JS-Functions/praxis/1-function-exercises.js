@@ -1,5 +1,5 @@
 /**
- * Implement the tests below. Don't forget to use isArrayEqual to check
+ * Implement the code below. Don't forget to use isArrayEqual to check
  * that two arrays are equal when testing.
  */
 
@@ -15,6 +15,14 @@ function upperCaseArray (array) {
 
 }
 
+// Tests:
+if (isArrayEqual(upperCaseArray(['hello', 'world']), ['HELLO', 'WORLD'])) {
+  throw 'failed'
+}
+if (isArrayEqual(upperCaseArray([]), [])) {
+  throw 'failed'
+}
+
 /**
  * Use Array.filter to write a function below that returns
  * an array that contains only strings that include the string 'str'
@@ -26,15 +34,8 @@ function onlyIncludes (array, str) {
 
 }
 
-/**
- * Use some of the above functions to return a string concatenates all the strings that include
- * the character 'y'. The array will be returned uppercase
- *
- * onlyIncludesYUppercase(['oy', 'vey', 'kapich?']) ==> 'OY VEY'
- */
-function onlyIncludesYUppercase (array) {
-
-}
+// Tests:
+// write the tests...
 
 /**
  * Write a function repeat that repeats a call to a function n times.
@@ -47,6 +48,8 @@ function repeat (func, n) {
 
 }
 
+// Tests: you can't really test it, so don't.
+
 /* Write a function forEach that calls a func on each array value
  * forEach([1, 4, 5], (x) => console.log(x)) => prints 1
  *                                                     4
@@ -54,6 +57,18 @@ function repeat (func, n) {
  */
 function forEach (array, func) {
 
+}
+
+// Tests:
+let result = []
+forEach([1, 4, 5], x => result.push(x))
+if (!isArrayEqual(result, [1, 4, 5])) {
+  throw 'failed'
+}
+result = []
+forEach([], x => result.push(x))
+if (!isArrayEqual(result, [])) {
+  throw 'failed'
 }
 
 /**
@@ -76,6 +91,14 @@ function forEach (array, func) {
 function reduce (array, func, initialValue) {
 }
 
+// Tests:
+if (reduce(['a', 'b', 'c'], (a, b) => a + b, '') !== 'abc') {
+  throw 'failed'
+}
+if (reduce([], (a, b) => a + b, 4) !== 4) {
+  throw 'failed'
+}
+
 /**
  * Bonus:
  *
@@ -88,6 +111,8 @@ function reduce (array, func, initialValue) {
 function sumOfPairs (array) {
 
 }
+// Tests:
+// write the tests
 
 /**
  * Bonus:
@@ -97,7 +122,19 @@ function sumOfPairs (array) {
 function max (array) {
 
 }
+// Tests:
+// write the tests
 
-// setInterval
-// map/filter
+function isArrayEqual (array1, array2) {
+  if (array1.length !== array2.length) {
+    return false
+  }
 
+  for (const i in array1) {
+    if (array1[i] !== array2[i]) {
+      return false
+    }
+  }
+
+  return true
+}
