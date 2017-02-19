@@ -11,6 +11,17 @@
 function isAllBlanks (str) {
 }
 
+// Tests:
+if (isAllBlanks('   ') !== true) {
+  throw 'failed'
+}
+if (isAllBlanks(' x ') !== false) {
+  throw 'failed'
+}
+if (isAllBlanks('') !== true) {
+  throw 'failed'
+}
+
 /**
  * Capitalize the words in the sentence. You can use split and join to separate the words and bring
  * them back together, capitalized
@@ -22,6 +33,9 @@ function isAllBlanks (str) {
  */
 function capitalize (str) {
 }
+
+// Tests:
+// write the tests...
 
 /**
  * Truncates to a specific width, with ellipsis characters if needed.
@@ -36,9 +50,10 @@ function capitalize (str) {
  */
 function truncate (str, maxLength, ellipsis) {
 }
+// Tests:
+// write the tests...
 
 /**
- * Bonus:
  * Removes substrings from a string
  *
  * remove('Robin Hood', ' ') ==> 'RobinHood'
@@ -49,6 +64,8 @@ function truncate (str, maxLength, ellipsis) {
 function remove (str, substring) {
 
 }
+// Tests:
+// write the tests...
 
 /**
  * Bonus:
@@ -61,6 +78,8 @@ function remove (str, substring) {
 function toInt (str) {
 
 }
+// Tests:
+// write the tests...
 
 /**
  * Bonus:
@@ -73,3 +92,5 @@ function toInt (str) {
 function toStr (num) {
 
 }
+// Tests:
+// write the tests...

@@ -30,7 +30,7 @@ for (const ch of stringWithUnicode) {
 // d
 
 // iterate by turning it into an array
-const arrayOfChars = Array.from(stringWithUnicode)
+const arrayOfChars = [...stringWithUnicode]
 
 console.log(arrayOfChars.filter((x) => x !== 'o'))  // [ 'R', 'b', 'i', 'n', ' ', 'H', '😀', '😀', 'd' ]
 
@@ -40,6 +40,7 @@ console.log(arrayOfChars.join('')) // Robin H😀😀d
 /**
  * Strings are immutable!
  * And all the above methods...
- * And how to get all the characters in a Unicode reliant way
+ * And how to get all the characters in a Unicode reliant way.
+ * Remember [..._html_collection_]? we can use it here too!
  */
 /* eslint no-console: 0 */
