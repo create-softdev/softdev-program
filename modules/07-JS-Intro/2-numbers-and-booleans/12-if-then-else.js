@@ -7,6 +7,7 @@ function printMax (a, b) {
 }
 
 printMax(4, 6)    // 6
+printMax(19, 6)   // 19
 
 /**
  * else

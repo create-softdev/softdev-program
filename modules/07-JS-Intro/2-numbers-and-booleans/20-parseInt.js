@@ -1,15 +1,9 @@
-function max (a, b) {
-  if (a > b) {
-    return a
-  } else {
-    return b
-  }
-}
-
 // Code:
-console.log(max(parseInt('7'), parseInt('9'))) // 9
+console.log(parseInt('7')) // 9
+console.log(parseInt('ceci nest pas une nombre')) // NaN
 
 /**
  * parseInt: converts strings to numbers
+ * NaN: Not a Number
  */
 /* eslint no-else-return: 0 */

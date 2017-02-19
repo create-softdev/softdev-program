@@ -1,3 +1,44 @@
+
+/**
+ * Write the function min that will return the minimum of the two parameters:
+ *
+ * min(4, 5) => 4
+ * min(6, 2) => 2
+ * min(3, 3) => 3
+ *
+ * Test this function!
+ */
+function min(a, b) {
+
+}
+
+// Tests:
+if (min(4, 5) !== 4) {
+  throw 'failed'
+}
+if (min(6, 2) !== 2) {
+  throw 'failed'
+}
+if (min(3, 3) !== 3) {
+  throw 'failed'
+}
+
+/**
+ * Write the function max that will return the maximum of the two parameters:
+ *
+ * min(4, 5) => 5
+ * min(6, 2) => 6
+ * min(3, 3) => 3
+ *
+ * Test this function!
+ */
+function max(a, b) {
+
+}
+
+// Tests:
+// write the tests...
+
 /**
  * Function that returns true if the number is even or divides by 5
  *
@@ -12,30 +53,21 @@
 function isEvenOrDividesBy5 (num) {
 }
 
-/**
- * Write the function min that will return the minimum of the two parameters:
- *
- * min(4, 5) => 4
- * min(6, 2) => 2
- * min(3, 3) => 3
- *
- * Test this function!
- */
-function min (a, b) {
-
+// Tests...
+if (isEvenOrDividesBy5(6) !== true) {
+  throw 'failed'
 }
-
-/**
- * Write the function max that will return the maximum of the two parameters:
- *
- * min(4, 5) => 5
- * min(6, 2) => 6
- * min(3, 3) => 3
- *
- * Test this function!
- */
-function max (a, b) {
-
+if (isEvenOrDividesBy5(10) !== true) {
+  throw 'failed'
+}
+if (isEvenOrDividesBy5(15) !== true) {
+  throw 'failed'
+}
+if (isEvenOrDividesBy5(7) !== false) {
+  throw 'failed'
+}
+if (isEvenOrDividesBy5(9) !== false) {
+  throw 'failed'
 }
 
 /**
@@ -52,6 +84,9 @@ function sort (a, b) {
 
 }
 
+// Tests...
+// write the tests...
+
 /**
  * Check whether two players can play the game of thrones. True only iff both are adults (>= 18)
  *
@@ -63,6 +98,17 @@ function sort (a, b) {
  */
 function canPlayGameOfThrones (age1, age2) {
 
+}
+
+// Tests:
+if (canPlayGameOfThrones(7, 19) !== false) {
+  throw 'failed'
+}
+if (canPlayGameOfThrones(18, 19) !== true) {
+  throw 'failed'
+}
+if (canPlayGameOfThrones(8, 8) !== false) {
+  throw 'failed'
 }
 
 /**
@@ -80,6 +126,9 @@ function canPlayCardsAgainstHumanity (age1, age2) {
 
 }
 
+// Tests:
+// write the tests...
+
 /**
  * Check whether two players can play Barbie.
  * True only iff none of them are aduly(>= 18)
@@ -93,6 +142,19 @@ function canPlayCardsAgainstHumanity (age1, age2) {
  */
 function canPlayBarbie (age1, age2) {
 
+}
+
+if (canPlayBarbie(7, 19) !== false) {
+  throw 'failed'
+}
+if (canPlayBarbie(18, 7) !== false) {
+  throw 'failed'
+}
+if (canPlayBarbie(7, 8) !== true) {
+  throw 'failed'
+}
+if (canPlayBarbie(20, 20) !== false) {
+  throw 'failed'
 }
 
 /**
@@ -109,3 +171,6 @@ function canPlayBarbie (age1, age2) {
 function canPlay (game, age1, age2) {
 
 }
+
+// Tests:
+// write the tests...

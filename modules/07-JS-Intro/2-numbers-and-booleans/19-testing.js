@@ -10,6 +10,7 @@ function max (a, b) {
 if (max(4, 5) !== 5) {
   throw 'failed!'
 }
+
 if (max(5, 4) !== 5) {
   throw 'failed!'
 }
