@@ -1,4 +1,4 @@
-# Recursive LS
+# Recursive LS (BONUS)
 
 Write an ls that is "recursive".
 

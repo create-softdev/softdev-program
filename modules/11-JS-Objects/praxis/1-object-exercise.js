@@ -50,7 +50,7 @@ if (result[1997].length !== 1) {
 
 // Implement the function below. Don't edit the lines above this one.
 /**
- * Returns authors by year (sorted by author name), that given an array of objects like above,
+ * Returns authors by year, that given an array of objects like above,
  * will returns an object thus:
  * {
  *   2001: ['J.G. Ballard', 'Samuel R. Delany'],

@@ -1,4 +1,6 @@
 /**
+ * Bonus:
+ *
  * Write a program that accepts a file or directory as an argument
  *
  * If it is a file, just delete it
