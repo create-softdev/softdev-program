@@ -1,4 +1,3 @@
-console.log(typeof undefined)         // undefined
 console.log(typeof 4)                 // number
 console.log(typeof 'Robin Hood')      // string
 console.log(typeof function () {})    // function
@@ -6,6 +5,7 @@ console.log(typeof true)              // boolean
 console.log(typeof {})                // object
 console.log(typeof [])                // object (WAT!)
 console.log(Array.isArray([]))        // true
+console.log(typeof undefined)         // undefined
 console.log(typeof null)              // object
 
 /**
