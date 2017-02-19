@@ -12,12 +12,12 @@
 * We will use the `git remote add` command, to add a remote, which is traditionally called `upstream`
 
 ```sh
-$ git remote add upstream git@github.com:create-softeng/softeng-program.git
+$ git remote add upstream git@github.com:create-softdev/softdev-program.git
 $ git remote -v
-origin git@github.com:giltayar/softeng-program.git (push)
-origin git@github.com:giltayar/softeng-program.git (fetch)
-upstream git@github.com:create-softeng/softeng-program.git (fetch)
-upstream git@github.com:create-softeng/softeng-program.git (push)
+origin git@github.com:giltayar/softdev-program.git (push)
+origin git@github.com:giltayar/softdev-program.git (fetch)
+upstream git@github.com:create-softdev/softdev-program.git (fetch)
+upstream git@github.com:create-softdev/softdev-program.git (push)
 ```
 
 * Now we can pull from the remote we've just created.
@@ -29,7 +29,7 @@ remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (1/1), done.
 remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From github.com:create-softeng/softeng-program
+From github.com:create-softdev/softdev-program
  * branch            master     -> FETCH_HEAD
  * [new branch]      master     -> upstream/master
 First, rewinding head to replay your work on top of it...
@@ -48,7 +48,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 316 bytes | 0 bytes/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To github.com:giltayar/softeng-program.git
+To github.com:giltayar/softdev-program.git
    2046a69..4ebfbea  master -> master
 ```
 

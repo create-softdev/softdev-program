@@ -1,6 +1,6 @@
 # INTRO
 
-Welcome to the Software Engineering Program!
+Welcome to the Software Development Program!
 
 ## Personal introduction
 

@@ -1,7 +1,7 @@
 {
-  "name": "softeng-program",
+  "name": "softdev-program",
   "version": "1.0.0",
-  "description": "All the materials needed for teaching and exercising in Crea+e's Software Engineering Program",
+  "description": "All the materials needed for teaching and exercising in Crea+e's Software Development Program",
   "main": "index.js",
   "scripts": {
     "build": "scripts/build.sh",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/create-softeng/program.git"
+    "url": "git+https://github.com/create-softdev/program.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/create-softeng/program/issues"
+    "url": "https://github.com/create-softdev/program/issues"
   },
-  "homepage": "https://github.com/create-softeng/program#readme",
+  "homepage": "https://github.com/create-softdev/program#readme",
   "private": true,
   "devDependencies": {
     "check-all-markdown": "^1.0.0",

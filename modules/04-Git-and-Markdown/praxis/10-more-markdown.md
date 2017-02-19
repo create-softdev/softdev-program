@@ -1,7 +1,7 @@
 # Creating Your CV Using Markdown
 
 1. Create your CV using Markdown
-1. The CV should be in a directory named `cv` in your softeng-program repo (in the root directory)
+1. The CV should be in a directory named `cv` in your softdev-program repo (in the root directory)
 1. It should include sections for "Experience", "Hobbies", "Education".
 1. The experience should have a sub-heading for each previous job (if you didn't have one, invent ones!)
 1. Same for "Education" and "Hobbies".
