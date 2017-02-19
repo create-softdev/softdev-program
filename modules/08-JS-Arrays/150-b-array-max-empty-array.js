@@ -1,6 +1,6 @@
 function arrayMax (arr) {
   if (arr.length === 0) {
-    return undefined
+    return NaN
   }
 
   let maxTillNow = arr[0]
@@ -14,7 +14,7 @@ function arrayMax (arr) {
   return maxTillNow
 }
 
-console.log(arrayMax([]))       // undefined
+console.log(arrayMax([]))       // Nan
 
 if (arrayMax([7, 1, 12]) !== 12) {
   throw 'failed'
@@ -28,10 +28,11 @@ if (arrayMax([14]) !== 14) {
   throw 'failed'
 }
 
-if (arrayMax([]) !== undefined) {
+if (!Number.isNaN(arrayMax([]))) {
   throw 'failed'
 }
 
 /**
- * the 'undefined' value
+ * the NaN value
+ * Number.isNan
  */

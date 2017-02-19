@@ -17,4 +17,5 @@ if (arr1 !== [0, 0, 0]) {
 /**
  * array parameters
  * equality doesn't work with arrays.
+ * Can changing the array work with for-of? No!
 */

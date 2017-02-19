@@ -65,18 +65,18 @@ console.log(arr.length); // 3
 - isArrayEqual
 
 ```js
-function isArrayEqual(array1, array2) {
+function isArrayEqual (array1, array2) {
   if (array1.length !== array2.length) {
-    return false;
+    return false
   }
 
   for (const i in array1) {
     if (array1[i] !== array2[i]) {
-      return false;
+      return false
     }
   }
 
-  return true;
+  return true
 }
 ```
 
@@ -115,4 +115,10 @@ console.log(another.concat(arr, 'h', ['i', 'j']))  // [ 'a', 'b', 'c', 'd', 'e',
 another[0] = 'x'
 another.sort()
 console.log(another)       // [ 'b', 'c', 'd', 'e', 'x' ]
+```
+
+- Converting HTMLCollection to array
+
+```js
+[...document.getElementsByClassName('foo')]
 ```

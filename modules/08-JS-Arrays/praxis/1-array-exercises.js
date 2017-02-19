@@ -14,6 +14,14 @@ function sum (array) {
 
 }
 
+// Tests:
+if (sum([4, 5, 6]) !== 15) {
+  throw 'failed'
+}
+if (sum([]) !== 0) {
+  throw 'failed'
+}
+
 /**
  * Returns the average of an array. Use sum function above.
  *
@@ -24,6 +32,9 @@ function sum (array) {
 function average (array) {
 
 }
+
+// Tests:
+// write the tests...
 
 /**
  * Checks whether the item is in the array (using ===).
@@ -37,6 +48,17 @@ function average (array) {
 function includes (array, item) {
 }
 
+// Tests:
+if (includes([4, 5, 6], 7) !== false) {
+  throw 'failed'
+}
+if (includes([4, 7, 5, 6], 7) !== true) {
+  throw 'failed'
+}
+if (includes([], 7) !== false) {
+  throw 'failed'
+}
+
 /**
  * Returns an array with the numbers from a to b, not including b.
  *
@@ -48,6 +70,21 @@ function includes (array, item) {
 function range (a, b) {
 }
 
+if (!isArrayEqual(range(4, 7), [4, 5, 6])) {
+  throw 'failed'
+}
+if (!isArrayEqual(range(4, 5), [4])) {
+  throw 'failed'
+}
+if (!isArrayEqual(range(4, 4), [])) {
+  throw 'failed'
+}
+if (!isArrayEqual(range(4, 3), [])) {
+  throw 'failed'
+}
+
+// Tests:
+
 /**
  * Returns an array that does not contain the value.
  *
@@ -57,6 +94,10 @@ function range (a, b) {
 function removeValue (array, value) {
 
 }
+
+// Tests:
+// write the tests...
+
 
 /**
  * receives an array whose elements are also arrays. Returns an array with the
@@ -68,6 +109,17 @@ function removeValue (array, value) {
  */
 function flatten (arrayOfArrays) {
 
+}
+
+// Tests:
+if (!isArrayEqual(flatten([[1, 2], [4, 3]]), [1, 2, 4, 3])) {
+  throw 'failed'
+}
+if (!isArrayEqual(flatten([[1, 2], []]), [1, 2])) {
+  throw 'failed'
+}
+if (!isArrayEqual(flatten([[]]), [])) {
+  throw 'failed'
 }
 
 /**
@@ -86,6 +138,9 @@ function insertValue (array, index, value) {
 
 }
 
+// Tests:
+// write the tests. Be careful, they look a little different...
+
 /**
  * Same as above, but returns a new array.
  *
@@ -96,6 +151,8 @@ function insertValue (array, index, value) {
 function insertValuePure (array, index, value) {
 
 }
+// Tests:
+// write the tests...
 
 /**
  * Returns whether an array is sorted.
@@ -108,14 +165,15 @@ function isSorted (array) {
 
 }
 
-/**
- * Returns the cross product of the two vectors.
- * This is defined as vec1[0]*vec1[0] + vec1[1]*vec2[1] + ... vec1[n - 1] * vec2[n - 1]
- *
- * crossProduct([2, 4], [5, 8]) ==> 10 + 32 = 42
- */
-function crossProduct (vec1, vec2) {
-
+// Tests:
+if (isSorted([4, 5, 6]) !== true) {
+  throw 'failed'
+}
+if (isSorted([4, 7, 3]) !== false) {
+  throw 'failed'
+}
+if (isSorted([]) !== true) {
+  throw 'failed'
 }
 
 /**
@@ -130,6 +188,9 @@ function crossProduct (vec1, vec2) {
 function unique (array) {
 
 }
+
+// Tests:
+// write the tests...
 
 /**
  * Bonus:
@@ -147,8 +208,11 @@ function sameMembers (array1, array2) {
 
 }
 
+// Tests:
+// write the tests...
+
 /**
- * Bonus:
+ * Big Bonus!
  *
  * returns a sorted array that is the merge of two other sorted arrays.
  *
@@ -156,4 +220,23 @@ function sameMembers (array1, array2) {
  */
 function mergeSorted (array1, array2) {
 
+}
+
+// Tests:
+// write the tests...
+
+
+// Utility function
+function isArrayEqual (array1, array2) {
+  if (array1.length !== array2.length) {
+    return false
+  }
+
+  for (const i in array1) {
+    if (array1[i] !== array2[i]) {
+      return false
+    }
+  }
+
+  return true
 }
