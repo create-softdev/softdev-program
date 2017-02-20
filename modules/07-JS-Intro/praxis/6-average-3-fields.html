@@ -1,0 +1,46 @@
+<!--
+  Write a page that includes 3 numeric fields (<input type=numeric>),
+  and a button that computes the average of the three fields: when the button is pressed it inserts
+  the average into a div.
+  Use a function `average3` that computes the average of the 3 values. Don't forget to test it...
+
+  Remember:
+  * use document.getElementById('_the_id_of_the_element_').value; to get the string value. Don't forget to parseInt it.
+  * use document.getElementById('_the_id_of_the_element_').textContent = ...; to set the text of a div
+
+  Hint:
+
+  1. first write the HTML code. Then add a function in a script tag, and call it from
+  onclick (see "using-stuff-in-html" in the theory session to see how it's done).
+
+    <button onclick="calculateAverage()"> in the button, and in the script:
+      function calculateAverage() {
+
+      }
+
+  2. Add an 'alert in the function to see whether it works.
+
+  function calculateAverage() {
+    alert('yay!')
+  }
+
+  3. Now try to change the id of the div element to something stupid like 'foo' - just to see that you can
+     do it when the user clicks on the button
+
+     div.getElementById('max-value').textContent = 'foo' // the id of the element may be different in your html.
+
+  4. You're almost there! Now read the 3 values from the numeric fields, and use alert to check that you
+     read them.
+
+     const v1 = document.getElementById('v1').value // the id of the input element may be different in your html
+     // ...
+
+  5. You have the right values? In const variables? Just average them, and the result put into the div, instead
+     of the foo.
+
+  6. And you're done!
+
+  Tip: instead of alert, you can use console.log. Where does the log show up in? Ask your instructor or colleague.
+
+-->
+<!-- Your code here. Don't edit the lines above this one. -->

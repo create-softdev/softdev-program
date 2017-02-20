@@ -5,3 +5,6 @@
  *
  * Don't forget to test the function!
  */
+
+
+console.log(average(4, 5, 6))

@@ -4,6 +4,16 @@
 
 /**
  * Checks whether a string contains only blanks
+ *
+ * Hint:
+ *
+ * 1. Iterate over all the characters (using for-of).
+ * 2. Print them, just to check iteration is ok
+ * 3. If there is a non-blank, print it again, just to check that your condition is ok
+ * 4. If there is a non-blank, return false.
+ * 5. At the end of the loop, you didn't find any non-blanks, so you can return true
+ *
+ *
  * isAllBlanks('   ') => true
  * isAllBlanks(' x ') => false
  * isAllBlanks('') => true
@@ -27,6 +37,9 @@ if (isAllBlanks('') !== true) {
  * them back together, capitalized
  * (If you don't know how to uppercase, well, search for it!)
  *
+ * Hint:
+ * (Do this step by step, with lots of console.logs to see what you are doing.)
+ *
  * capitalize('robin hood') ==> 'Robin Hood'
  * capitalize('') ==> ''
  * capitalize('robin    hood') ==> 'Robin Hood'
@@ -39,6 +52,13 @@ function capitalize (str) {
 
 /**
  * Truncates to a specific width, with ellipsis characters if needed.
+ *
+ * Hint:
+ * 1. If the string's length is <= maxLength, there is nothing to do, so you can just return the string
+ * 2. Otherwise, the string's length is maximum maxLength, but we need to leave place for the ellipsis,
+ *    so you need to take maxLength - elllipsis.length from the string, and append to it the ellipsis.
+ * (Do this step by step, with lots of console.logs to see what you are doing.)
+ *
  *
  * truncate('Robin Hood') ==> 'Robin Hood'
  * truncate('Robin Hood', 5) ==> 'Robin'
@@ -54,14 +74,20 @@ function truncate (str, maxLength, ellipsis) {
 // write the tests...
 
 /**
- * Removes substrings from a string
+ * Removes characters from a string
+ *
+ * Hint:
+ * 1. Iterate over the characters in the array
+ * 2. Use an accumulator string, which starts empty, to accumulate those characters that you iterate over
+ * 3. Now if you return the accumulator, you will get a copy of the string, which is close.
+ * 4. Now, in the loop, don't append to the accumulator if the value is equal to `char`
+ * (Do this step by step, with lots of console.logs to see what you are doing.)
  *
  * remove('Robin Hood', ' ') ==> 'RobinHood'
- * remove('Robin Hood', 'Ho') ==> 'Robin od'
  * remove('Robin Hood', 'o') ==> 'Rbin Hd'
- * remove('Robin Hood', 'zzz') ==> 'Robin Hood'
+ * remove('Robin Hood', 'z') ==> 'Robin Hood'
  */
-function remove (str, substring) {
+function remove (str, char) {
 
 }
 // Tests:

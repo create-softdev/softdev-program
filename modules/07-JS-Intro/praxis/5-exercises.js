@@ -4,7 +4,12 @@
  */
 
 /**
- * Write a function that checks whether a number is even or not
+ * Write a function that checks whether a number is even or not.
+ *
+ * Hint: How does one know if a number is even? Because dividing by zero has a zero remainder.
+ * And how do you find the remainder? Using the `%` operator.
+ *
+ * Hint: It does not _print_ the boolean, but rather _returns_ it.
  *
  * isEven(5) ==> false
  * isEven(896) ==> true
@@ -22,7 +27,9 @@ if (isEven(896) !== true) {
 }
 
 /**
- * Write a function that checks whether a number is odd or not. Use isEven.
+ * Write a function that checks whether a number is odd or not.
+ *
+ * Hint: Use isEven.
  *
  * isOdd(5) ==> true
  * isOdd(896) ==> false
@@ -55,6 +62,8 @@ if (didStudentPass(40, 50, 60) !== false) {
 
 /**
  * returns true if n is inside the range rangeStart.. rangeEnd (including rangeStart and rangeEnd)
+ *
+ * Hint: 5 is inside the range 4..9 because 5 is bigger than 4 and 5 is smaller than 9.
  *
  * insideOf(5, 4, 9) ==> true
  * insideOf(9, 4, 9) ==> true
@@ -136,11 +145,15 @@ if (translate('boooloooo', 'burmesian') !== 'sorry') {
  * afternoon - 13:01 - 17:00
  * evening - 17:01 - 20:30
  * night - 20:31 - 5:59
+ *
+ * Hint: it's morning if the hour is between 6 and 10. The hour 11 is special because if the hour is 11
+ * then the minutes have to be smaller than 30. Do the same for the rest of the ranges.
  */
-function timeOfDay (hours, minutes) {
+function timeOfDay (hour, minute) {
 
 }
 
+// Tests:
 if (timeOfDay(6, 0) !== 'morning') {
   throw 'failed'
 }

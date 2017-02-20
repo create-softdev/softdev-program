@@ -8,7 +8,7 @@
  *
  * Test this function!
  */
-function min(a, b) {
+function min (a, b) {
 
 }
 
@@ -32,7 +32,7 @@ if (min(3, 3) !== 3) {
  *
  * Test this function!
  */
-function max(a, b) {
+function max (a, b) {
 
 }
 
@@ -76,7 +76,8 @@ if (isEvenOrDividesBy5(9) !== false) {
  * sort(4, 7) => prints 4 7
  * sort(7, 4) => prints 4 7
  *
- * Use min and max that you wrote above for that
+ * Hint: Use min and max that you wrote above for that. First number is the minimum of the two numbers,
+ * and the second number is the maximum of the two numbers.
  *
  * Test this function!
  */
