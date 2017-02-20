@@ -12,7 +12,5 @@ You need to learn the Flickr API by yourself, specifically using:
 * [How to fetch JSON data from Flickr](https://www.flickr.com/services/api/request.rest.html)
 * [The API to fetch recent pictures](https://www.flickr.com/services/api/flickr.photos.getRecent.html)
 
-To fetch a JSON from a URL, use the function `fetchSimple`, that is found in the exercise file.
-You can see sample usage of this function below.
+The HTML of the exercise has a skeleton of the code, which you need to fill in.
 
-You can find a template of the page in the exercise file.

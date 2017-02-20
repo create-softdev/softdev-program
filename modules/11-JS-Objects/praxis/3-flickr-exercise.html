@@ -24,8 +24,8 @@
         .catch(errorCallback)
     }
 
-    // implement a function that returns the flickr URL for the operation.
-    // Use string interpolation to return the URL
+    // This is a function that returns the flickr URL for the operation.
+    // It uses string interpolation to return the URL
     // as specified in https://www.flickr.com/services/api/request.rest.html
     function flickrOperationUrl (operationName, apiKey) {
       return `https://api.flickr.com/services/rest/?method=${operationName}&api_key=${apiKey}`
@@ -42,7 +42,6 @@
     // This is the function you need to call to get the images, parse the JSON, and then
     // use DOM manipulation to set the images
     function getRecentFlickrImages (callback, errorCallback) {
-      fetchSimple(flickrOperationUrl, callback, errorCallback)
     }
 
   </script>
