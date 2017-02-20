@@ -8,7 +8,6 @@ console.log('Foo bar'.toUpperCase())   // FOO BAR
 /**
  * Arrays
  */
-
 console.log(['a', 'b'].length)         // 2
 console.log(['a', 'b'].join(' '))      // a b
 

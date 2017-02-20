@@ -9,7 +9,7 @@ const currentPresident = {
 }
 
 function fullNameOfPresident (president) {
-  return `${president.firstName} ${president.lastName}`
+  return president.firstName + ' ' + president.lastName
 }
 
 console.log(fullNameOfPresident(formerPresident))     // Barach Obama

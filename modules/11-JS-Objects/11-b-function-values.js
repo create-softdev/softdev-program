@@ -29,9 +29,9 @@ currentPresident.buildWall() // Building wall with mexican money. All they have 
 currentPresident.brag()      // I am making America great again!
 
 /**
- * values can be functions
- * They are then called "methods"
- * Either regular 'function' or arrow functions
+ * Methods can be regular 'function' or arrow functions
  * Also simplified object syntax - brag() {...}
+ *
+ * Let's dry run this code
  */
 

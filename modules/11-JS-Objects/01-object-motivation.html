@@ -1,0 +1,28 @@
+<div id='an-element' style="color:red">text</div>
+<script>
+  const element = document.getElementById('an-element')
+
+  console.log(element.id) // an-element
+
+  console.log(element.textContent) // text
+
+  element.textContent = 'another text'
+
+  console.log(element.textContent) // another text
+
+  console.log(element.style)  // {...}
+
+  console.log(element.style.color)  // red
+
+  console.log(element.getClientRects()) // {..}
+
+
+</script>
+
+<!--
+  * attributes are properties of element
+  * there are other properties, like 'textContent'
+  * You can change properties, just like any object
+  * There are sub-objects
+  * There are functions on the objects
+-->

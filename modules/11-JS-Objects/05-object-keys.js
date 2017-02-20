@@ -11,14 +11,14 @@ const currentPresident = {
 console.log(currentPresident['first-name'], currentPresident['last-name']) // Donald Trump
 
 function fullNameOfPresident (president) {
-  return `${president['first-name']} ${president['last-name']}`
+  return president['first-name'] + ' ' + president['last-name']
 }
 
 console.log(fullNameOfPresident(formerPresident))   // Barack Obama
 
 /**
  * Properties are always strings.
- * They are a lot of times called keys.
+ * They are a lot of times called keys, or fields ("sadot").
  * Strings with non-identifier characters need single or double-quotes
  * accessing them is through [...]
  */
