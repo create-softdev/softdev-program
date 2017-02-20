@@ -13,7 +13,6 @@ function myTypeof (entity) {
  * Write a function that accepts 1, 2, 3, or 4 numbers and calculates the average
  * (depending on how many were passed).
  * How do you know how many were passed? If 3 were passed, then d will be undefined, etc.
- * For each number, it should also
  */
 function average4 (a, b, c, d) {
 

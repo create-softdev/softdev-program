@@ -22,7 +22,7 @@ function reverseNumber (n) {
  * Write a function that returns an array with the range startRange, endRange
  * (including startRange, not including endRange).
  *
- * You are not allowed to use for.
+ * You are not allowed to use for. Hint: but you _can_ use while...
  */
 function printRange (startRange, endRange) {
 
