@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="outer">
   <div id="inner">
     This is <i id="part">some</i> Text
@@ -7,8 +8,8 @@
   </div>
 </div>
 <script>
-  document.getElementById('another-inner').textContent =
-    document.getElementById('inner').textContent
+  console.log(document.getElementById('inner').textContent)
+  console.log(document.getElementById('inner').innerHTML)
 
   document.getElementById('part').innerHTML = '<b>some</b>'
 </script>
@@ -17,7 +18,4 @@
 <!--
   * textContent (will look also in child nodes)
   * innerHTML
-  * Remind people about obsolete ways:
-  *  innerText
-  *  outerHTML
 -->

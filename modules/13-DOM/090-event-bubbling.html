@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="outer">
   <div id="inner">
     This is <i id="part">some</i> Text
@@ -9,12 +10,12 @@
 <div id="hover-message"></div>
 
 <script>
-document.getElementById('outer').addEventListener('mouseover', (event) => {
-  document.getElementById('hover-message').textContent = event.target.id
+document.getElementById('outer').addEventListener('click', (event) => {
+  console.log('outer event', event.target.id)
 })
 
-document.getElementById('inner').addEventListener('mouseover', (event) => {
-  document.getElementById('hover-message').textContent = 'Nobody will know my ID!'
+document.getElementById('inner').addEventListener('click', (event) => {
+  console.log('inner event', event.target.id)
 })
 </script>
 

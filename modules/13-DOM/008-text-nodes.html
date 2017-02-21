@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<div id="an-element">Some text</div>
+<button onclick="changeIt()">Change it</button>
+<script>
+  const theDivElement = document.getElementById('an-element')
+
+  function changeIt() {
+    const italicsNode = document.createElement('i')
+    const textNode = document.createTextNode('some more text')
+
+    italicsNode.appendChild(textNode)
+
+    theDivElement.appendChild(italicsNode)
+  }
+</script>
+
+<!--
+  * Creating text nodes nodes
+  * Adding them as a child to an element.
+  * When you set textContent of an element, this is what happens:
+    * deletes all the children of the element
+    * Creates a text node, and appends it to element.
+-->

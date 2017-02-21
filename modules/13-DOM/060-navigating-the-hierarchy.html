@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="outer">
   <div id="inner">
     This is <i id="part">some</i> Text
@@ -7,10 +8,13 @@
   </div>
 </div>
 <script>
-  document.getElementById('another-inner').textContent =
-    document.getElementById('part').parentNode.textContent
+  const partElement = document.getElementById('part')
 
-  document.getElementById('inner').childNo[0].textContent = 'That was '
+  console.log(partElement.parentNode.textContent)
+
+  const childrenOfInner = document.getElementById('inner').childNodes
+
+  childrenOfInner[0].textContent = 'That was '
 </script>
 
 <!--

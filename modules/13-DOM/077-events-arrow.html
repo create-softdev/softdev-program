@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div id="outer">
+  <div id="inner">
+    This is <i id="part">some</i> Text
+  </div>
+  <div id="another-inner">
+    This is some more text
+  </div>
+</div>
+<div id="hover-message"></div>
+
+<script>
+const partElement = document.querySelector('#part')
+
+partElement.addEventListener('mouseover', event => {
+  console.log(event)
+})
+
+</script>
+
+
+<!--
+  * addEventListener
+  * mouseover
+  * click
+  * The `event` object
+  *
+  * Other events:
+  *   mouseclick
+  *   mouseenter
+  *   mouseleave
+  *   submit (for forms)
+  *   focus
+  *   blur
+-->

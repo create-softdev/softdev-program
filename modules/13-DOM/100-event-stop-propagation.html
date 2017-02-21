@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<div id="outer">
+  <div id="inner">
+    This is <i id="part">some</i> Text
+  </div>
+  <div id="another-inner">
+    This is some more text
+  </div>
+</div>
+<div id="hover-message"></div>
+
+<script>
+document.getElementById('outer').addEventListener('click', (event) => {
+  console.log('outer event', event.target.id)
+})
+
+document.getElementById('inner').addEventListener('click', (event) => {
+  console.log('inner event', event.target.id)
+  event.stopPropagation()
+})
+</script>
+
+<!--
+  * event.stopPropagation.
+  * This time, outer will not get the click event when inner gets it.
+-->

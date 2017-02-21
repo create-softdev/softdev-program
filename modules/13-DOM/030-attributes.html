@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<input type="text" name="name" placeholder="Name">
+<button onclick="doSomething()">Check</button>
+<script>
+  const input = document.querySelector('input')
+  console.log(input.placeholder)
+
+  function check() {
+    if (!input.value) {
+      input.placeholder = 'Pretty please no blanks?'
+      input['style'].backgroundColor = 'red'
+    } else {
+      input.setAttribute('style', {})
+    }
+  }
+</script>
+
+<!--
+  * accessing attributes -
+  *   - .placeholder
+  *   - ['style']
+  *   - getAttribute('style')
+  *   - setAttribute('style', {})
+  * style properties are an object, whose fields are camelCased, and not kebab-case.
+-->

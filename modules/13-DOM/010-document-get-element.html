@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<form>
+  <label>
+    Name:
+    <input type="text" name="name" placeholder="Name">
+  </label>
+  <label>
+    Year of birth:
+    <input type="number" class="year-of-birth" name="yearOfBirth" placeholder="Year">
+  </label>
+  <label>
+    <input type="text" id="sly" placeholder="Sly comment">
+  </label>
+  <button value="Submit">
+</form>
+<script>
+  const nameInput = document.querySelector('form input[name=name]')
+  const allInputs = document.querySelectorAll('input')
+  const slyCommentInput = document.getElementById('sly')
+  const yearOfBirthInput = document.getElementsByClassName('year-of-birth')[0]
+  const form = document.getElementsByTagName('form')[0]
+
+  console.log(nameInput)
+  console.log(allInputs)
+  console.log(slyCommentInput)
+  console.log(yearOfBirthInput)
+  console.log(form)
+
+</script>
+
+<!--
+  * document.getElementById
+  * document.getElementByTagName
+  * document.getElementByClassName
+  * document.querySelector[All]
+-->

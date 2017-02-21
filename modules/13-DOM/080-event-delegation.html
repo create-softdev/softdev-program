@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="outer">
   <div id="inner">
     This is <i id="part">some</i> Text
@@ -9,16 +10,18 @@
 <div id="hover-message"></div>
 
 <script>
-document.getElementById('outer').addEventListener('mouseover', (event) => {
-  document.getElementById('hover-message').textContent = event.target.id
-})
+  const outerElement = document.getElementById('outer')
+
+  outerElement.addEventListener('mouseover', (event) => {
+    console.log(event.target.id)
+  })
 </script>
 
 
 <!--
   * addEventListener
   * mouseover
-  * Event delegation works because event bubbles up
+  * Event delegation works because events bubbles up
   * event.target
   * Remember the DOM hierarchy:
   *   https://docs.google.com/presentation/d/1luOPPgTV24eFl2bI_SM-ibt-vqYfQek2lcHEb2ifT1o/edit?usp=sharing
