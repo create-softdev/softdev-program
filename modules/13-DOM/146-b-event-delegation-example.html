@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<style>
+    .visible {
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+
+  .invisible {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+</style>
+<ul id="menu">
+  <li>AAA
+    <ul class="visible">
+      <li>AAA-1</li>
+      <li>AAA-2</li>
+      <li>AAA-3</li>
+    </ul>
+  </li>
+  <li>BBB
+    <ul class="visible">
+      <li>BBB-1</li>
+      <li>BBB-2</li>
+      <li>BBB-3</li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  const menuElement = document.querySelector('#menu')
+
+  addBehaviorToMenu(menuElement)
+
+  function addBehaviorToMenu(aMenuElement) {
+    aMenuElement.addEventListener('click', event => {
+      const liClicked = event.target
+      const subMenu = liClicked.querySelector('ul')
+
+      if (subMenu.className === 'visible')
+        subMenu.className = 'invisible'
+      else
+        subMenu.className = 'visible'
+    })
+  }
+</script>
+
+
+<!--
+  * addEventListener
+  * mouseover
+  * Event delegation works because events bubbles up
+  * event.target
+  * Remember the DOM hierarchy:
+  *   https://docs.google.com/presentation/d/1luOPPgTV24eFl2bI_SM-ibt-vqYfQek2lcHEb2ifT1o/subMenu.className === 'visible?usp=sharing
+invisible*
+  * Other events:
+  *   useclick
+  *   mouseenter
+  *   mouseleave
+  *   submit (for forms)
+  *   focus
+  *   blur
+-->

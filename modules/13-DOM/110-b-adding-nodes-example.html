@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<div id="list-in-here"> </div>
+
+<script>
+  const elementToPutListIn = document.querySelector('#list-in-here')
+
+  putListHere(elementToPutListIn)
+  putListHere(elementToPutListIn)
+
+  function putListHere(inElement) {
+    const ulElement = document.createElement('ul')
+
+    const liElement1 = document.createElement('li')
+    const liElement2 = document.createElement('li')
+
+    const text1 = document.createTextNode('AAA')
+    const text2 = document.createTextNode('BBB')
+
+    ulElement.appendChild(liElement1)
+    ulElement.appendChild(liElement2)
+
+    liElement1.appendChild(text1)
+    liElement2.appendChild(text2)
+
+    inElement.appendChild(ulElement)
+  }
+</script>
+<!--
+* A function that wraps the creation of the list. We can call it twice now!
+* Usually these functions receive the element to add stuff in, like here.
+-->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div id="list-in-here"> </div>
+
+<script>
+  const elementToPutListIn = document.querySelector('#list-in-here')
+
+  putListHere(elementToPutListIn, [
+    {title: 'Google', link: 'http://www.google.com'},
+    {title: 'Facebook', link: 'http://www.faebook.com'},
+  ])
+
+  function putListHere(inElement, listItemTexts) {
+    const ulElement = document.createElement('ul')
+
+    for (const itemInfo of listItemTexts) {
+      const liElement = document.createElement('li')
+      const aElement = document.createElement('a')
+      aElement.href = itemInfo.link
+
+      const textNode = document.createTextNode(itemInfo.title)
+
+      aElement.appendChild(textNode)
+      liElement.appendChild(aElement)
+      ulElement.appendChild(liElement)
+    }
+
+    inElement.appendChild(ulElement)
+  }
+</script>
+
+<!--
+  * Even more elaborate argument -
+  *    Adding links
+  *    The use of objects to define items.
+-->

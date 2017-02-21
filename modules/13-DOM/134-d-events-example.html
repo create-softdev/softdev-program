@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<style>
+  .visible {
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+
+  .invisible {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+</style>
+<ul>
+  <li id="sub-menu">
+    Item
+    <ul class="visible">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+    </ul>
+  </li>
+</ul>
+<script>
+  const menuElement = document.querySelector('#sub-menu')
+
+  let subMenuVisible = true
+
+  menuElement.addEventListener('click', event => {
+    const subMenu = menuElement.querySelector('ul')
+
+    subMenuVisible = !subMenuVisible
+    if (subMenuVisible)
+      subMenu.className = 'visible'
+    else
+      subMenu.className = 'invisible'
+  })
+</script>
+
+
+<!--
+  * addEventListener
+  * mouseover
+  * click
+  * The `event` object
+  *
+  * Other events:
+  *   mouseclick
+  *   mouseenter
+  *   mouseleave
+  *   submit (for forms)
+  *   focus
+  *   blur
+-->

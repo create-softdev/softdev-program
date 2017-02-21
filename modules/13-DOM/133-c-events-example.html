@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<ul>
+  <li id="sub-menu">
+    Item
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+    </ul>
+  </li>
+</ul>
+<script>
+  const menuElement = document.querySelector('#sub-menu')
+
+  let subMenuVisible = true
+  menuElement.addEventListener('click', event => {
+    const subMenu = menuElement.querySelector('ul')
+
+    subMenuVisible = !subMenuVisible
+    if (subMenuVisible)
+      subMenu.style.display = 'block'
+    else
+      subMenu.style.display = 'none'
+  })
+</script>
+
+
+<!--
+  * addEventListener
+  * mouseover
+  * click
+  * The `event` object
+  *
+  * Other events:
+  *   mouseclick
+  *   mouseenter
+  *   mouseleave
+  *   submit (for forms)
+  *   focus
+  *   blur
+-->

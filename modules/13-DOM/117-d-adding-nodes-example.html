@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<div id="list-in-here"> </div>
+
+<script>
+  const elementToPutListIn = document.querySelector('#list-in-here')
+
+  putListHere(elementToPutListIn, ['aaa', 'bbb', 'ccc'])
+
+  const subListElement = elementToPutListIn.querySelector('li:nth-child(2)')
+
+  putListHere(subListElement, ['x', 'y', 'z'])
+
+  function putListHere(inElement, listItemTexts) {
+    const ulElement = document.createElement('ul')
+
+    for (const text of listItemTexts) {
+      const liElement = document.createElement('li')
+      const textNode = document.createTextNode(text)
+
+      liElement.appendChild(textNode)
+
+      ulElement.appendChild(liElement)
+    }
+
+    inElement.appendChild(ulElement)
+  }
+
+</script>
+<!--
+  * We can use this function to create sub-items!
+-->
