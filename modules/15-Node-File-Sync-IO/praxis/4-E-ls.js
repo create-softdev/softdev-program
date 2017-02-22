@@ -5,9 +5,10 @@
  * check whether the file is a dir or a file.
  * If it's a file, it shows the name and finishes executing.
  * Otherwise, it will list the items in the directory (using fs.readdir),
- * use the function findLengthOfLongestString (which you write below) to find
+ * use the function findLengthOfLongestString (which is given to you below) to find
  * how much space each item should take, figure out how many items can be in a row
- * and print the items.
+ * and print the items. To make the items all the same length, use padEnd and in the length,
+ * give the length you received from findLengthOfLongestString (+ 1).
  * Use process.stdout.columns to determine the width of the terminal
  *
  * Example:
@@ -21,6 +22,7 @@
  *  a.txt   b.txt
  *  ccc.txt z.txt
  */
+const assert = require('assert')
 
 /**
  * This function accepts an array of strings, and returns the length of the longest string
@@ -31,9 +33,12 @@
  *
  * Don't forget to write tests!
  */
-function findLengthOfLongestString(strings) {
-
+function findLengthOfLongestString (strings) {
+  return strings.reduce((prev, curr) => curr.length > prev ? curr.length : prev, 0)
 }
+assert.equal(findLengthOfLongestString([]), 0)
+assert.equal(findLengthOfLongestString(['a', 'bb']), 2)
+assert.equal(findLengthOfLongestString(['a', 'bb', 'ccc', 'ddd']), 3)
 
 /**
  * Accepts a str and a length, and if the str's length is smaller than 'length', it pads
@@ -47,6 +52,15 @@ function findLengthOfLongestString(strings) {
  * Don't forget to write tests!
  *
  */
-function padEnd(str, length) {
-
+function padEnd (str, length) {
+  if (str.length >= length) {
+    return str
+  } else {
+    return str + ' '.repeat(length - str.length)
+  }
 }
+
+assert.equal(padEnd('a', 3), 'a  ')
+assert.equal(padEnd('abc', 3), 'abc')
+assert.equal(padEnd('abcd', 3), 'abcd')
+assert.equal(padEnd('ab', 5), 'ab   ')

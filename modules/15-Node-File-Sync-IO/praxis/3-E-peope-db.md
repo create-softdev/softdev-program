@@ -4,13 +4,19 @@ Write a program that manages a database of people.
 
 It accepts as parameters a command.
 
-If command is 'list', it will show the list of people
 If command is 'add', it will add a person
+If command is 'list', it will show the list of people
 If command is 'delete', it will delete a person by index
-If command is 'find', it will show the index of that person
-if command is 'findByAge', it will show all the people of a certain age
+Bonus: If command is 'find', it will show the index of that person
+Bonus: if command is 'findByAge', it will show all the people of a certain age
 
-Each person has
+Each person has a first name, a last name, and an age.
+
+## Hints
+
+* Start small. Do the `add` code, and check that the file is OK. Use the similar code that we saw in the theory part.
+* Then do the `list` code.
+* Once you do that, `delete` will be easier, and you're done.
 
 ## Example
 

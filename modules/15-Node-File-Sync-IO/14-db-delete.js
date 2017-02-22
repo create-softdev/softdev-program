@@ -15,16 +15,16 @@ function addDirector (director) {
   fs.writeFileSync(DB_FILE, JSON.stringify(db))
 }
 
+function listDirectors () {
+  return JSON.parse(fs.readFileSync(DB_FILE))
+}
+
 function deleteDirector (index) {
   const db = JSON.parse(fs.readFileSync(DB_FILE))
 
   db.splice(index, 1)
 
   fs.writeFileSync(DB_FILE, JSON.stringify(db))
-}
-
-function listDirectors () {
-  return JSON.parse(fs.readFileSync(DB_FILE))
 }
 
 initializeDirectors()
