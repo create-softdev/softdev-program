@@ -92,7 +92,12 @@ if (o1.age !== 70) {
  * isObjectEqual({name: 'Donald', age: 70}, {age: 70, name: 'Donald'}) ==> true
  * isObjectEqual({name: 'Donald', age: 70, wife: 'Melania'}, {age: 70, name: 'Donald'}) ==> false
  *
- * Use Object.keys(o) to get an array of key names from an object, and then iterate on them.
+ * Use Object.keys(o) to get an array of key names from an object,
+ * and then iterate on them in tandem using a:
+ * for (i in Object.keys(o1)) {
+ * }
+ *
+ * In the body of the loop you can check for equality of the values in o1 and o2.
  */
 function isObjectEqual (o1, o2) {
 
