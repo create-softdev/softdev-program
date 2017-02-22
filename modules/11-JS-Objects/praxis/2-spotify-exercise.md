@@ -15,8 +15,8 @@ src, using - `imgElement.src = _the_src_`.
 You should probably do it in steps:
 
 1. Write a loop that goes over the ten images, and fills them with one image,
-   for example [this one](http://lorempixel.com/400/200/) - note that this will generate a different
-   image every time.
+   for example [this one](http://lorempixel.com/400/200/cats/2/here-kitty/) -
+   note that this will generate a different image every time.
 1. Now that you know that you can traverse and fill the images, let's do the other thing:
    go over the json returned from the spotify URL. Goto that URL, and copy/paste
    the result into a variable in your code (yes, it's very long). Now write code that
