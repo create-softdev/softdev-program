@@ -1,0 +1,19 @@
+const fs = require('fs')
+
+const filesToRead = process.argv.slice(2)
+
+for (const fileToRead of filesToRead) {
+  fs.readFile(fileToRead, {encoding: 'utf-8'}, (err, content) => {
+    if (err) {
+      console.error(err)
+      return
+    }
+    console.log(content)
+  })
+}
+
+/**
+ * This doesn't work. Try `node 60-a-cat.js workfiles/a.txt workfiles/b.txt workfiles/c.txt`
+ * If you run this a couple of times, you will see the order is different each time.
+ * This is because the callback is called *asynchronously*
+ */
