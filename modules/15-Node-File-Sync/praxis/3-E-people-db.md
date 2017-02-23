@@ -12,11 +12,14 @@ Bonus: if command is 'findByAge', it will show all the people of a certain age
 
 Each person has a first name, a last name, and an age.
 
+The DB operations need to be in a separate module
+
 ## Hints
 
 * Start small. Do the `add` code, and check that the file is OK. Use the similar code that we saw in the theory part.
 * Then do the `list` code.
 * Once you do that, `delete` will be easier, and you're done.
+* Once you're done - separate the db operations to a separate module, just like was done in the theory part
 
 ## Example
 
