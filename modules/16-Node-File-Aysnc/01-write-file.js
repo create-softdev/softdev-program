@@ -6,4 +6,9 @@ function callback () {
 
 fs.writeFile(`${__dirname}/workfiles/hello.txt`, 'hello, world', callback)
 
+/**
+ * async function (writeFile)
+ * callback
+ * Do not explain about how the program ends immediately and yet waits for the callback.
+ */
 /* eslint handle-callback-err: 0 */

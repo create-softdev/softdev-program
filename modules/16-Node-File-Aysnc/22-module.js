@@ -18,3 +18,7 @@ directorsDb.initializeDirectors((err) => {
     })
   })
 })
+
+/**
+ * Encapsulating it in a module.
+ */

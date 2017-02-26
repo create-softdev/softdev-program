@@ -24,3 +24,8 @@ copyFile(`${__dirname}/workfiles/hello.txt`,
     }
     console.log('copied the content:', content)
   })
+
+/**
+ * creating an async function - all async functions also receive a cb.
+ * And instead of console.error-ing it, they delegate the handling to the "parent cb.
+ */

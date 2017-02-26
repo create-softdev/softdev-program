@@ -12,3 +12,9 @@ fs.readFile(`${__dirname}/workfiles/hello.txt`, {encoding: 'utf-8'}, (err, conte
     }
   })
 })
+
+/**
+ * copying a file.
+ * The writeFile occurs _inside_ the callback
+ * You should detail how it works, but don't get too much into it.
+ */

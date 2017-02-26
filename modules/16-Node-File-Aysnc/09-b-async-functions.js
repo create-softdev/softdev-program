@@ -32,3 +32,8 @@ copyFile(`${__dirname}/workfiles/hello.txt`,
         console.log('copied the content', content)
       })
   })
+
+/**
+ * Another example of using async functions twice.
+ * These happen one after another
+ */

@@ -21,5 +21,6 @@ fs.readFile(filesToRead[0], {encoding: 'utf-8'}, (err, content) => {
 })
 
 /**
- * Two files
+ * Let's start with just two files. How would we do this? Just like we did in copyFile -
+ * in the callback, we console.log the output, then do it again.
  */

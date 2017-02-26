@@ -33,5 +33,5 @@ fs.readFile(filesToRead[0], {encoding: 'utf-8'}, (err, content) => {
 
 
 /**
- * Two files
+ * Three files? Same.
  */

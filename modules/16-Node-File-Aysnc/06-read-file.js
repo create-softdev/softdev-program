@@ -7,3 +7,8 @@ fs.readFile(`${__dirname}/workfiles/hello.txt`, {encoding: 'utf-8'}, (err, conte
   }
   console.log(content)
 })
+
+/**
+ * fs.readFile
+ * The additional parameter with the information. It is always the _second_ parameter.
+ */

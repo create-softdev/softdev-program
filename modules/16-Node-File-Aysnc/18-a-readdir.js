@@ -12,9 +12,5 @@ fs.readdir(dirToList, (err, files) => {
 })
 
 /**
- * A compatible version of Unix's 'ls'
- *
- * If the file is a file, just output it, otherwise list the files and directories inside
- *
- * But, we've ignored testing till now. Is this code testable? No.
+ * The async version of readdir
  */

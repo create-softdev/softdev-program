@@ -45,3 +45,8 @@ initializeDirectors((err) => {
     })
   })
 })
+
+/**
+ * The async version of the db operations.
+ * Notice the pyramid of doom!
+ */

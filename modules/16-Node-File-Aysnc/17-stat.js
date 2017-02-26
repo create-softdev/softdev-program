@@ -10,3 +10,7 @@ fs.stat(`${__filename}`, (err, stats) => {
   console.log(stats.mtime)         // something like `2017-02-13T20:38:52.000Z`
   console.log(stats)
 })
+
+/**
+ * The async version of stat
+ */

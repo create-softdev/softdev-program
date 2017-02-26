@@ -33,5 +33,6 @@ catFiles(filesToRead, (err) => {
 })
 
 /**
- * This does work!
+ * Encapsulating it in a function.
+ * Function inside a function - done all the time in JavaScript.
  */

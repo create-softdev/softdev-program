@@ -12,6 +12,5 @@ fs.unlink(fileToDelete, (err) => {
 })
 
 /**
- * unlink === delete.
- * path.join: OS independent creation of paths. Adds '/' in Unix and '\' in Windows
+ * The async version of unlink.
  */

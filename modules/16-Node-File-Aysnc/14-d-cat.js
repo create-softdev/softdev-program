@@ -21,5 +21,8 @@ function readFile (i) {
 readFile(0)
 
 /**
- * This does work!
+ * So we have this pattern of reading a file, print it, and then doing it again with the next file
+ * The "it again" - we put in a function.
+ *
+ * This is "recursion" - a function calling itself.
  */

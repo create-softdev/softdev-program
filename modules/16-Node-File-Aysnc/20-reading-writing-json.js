@@ -28,7 +28,5 @@ fs.writeFile(DB_FILE, directorString, (err) => {
 })
 
 /**
- * Why we can't just read/write objects to files
- * Reminder on JSON.stringify and JSON.parse
- * Converting a file string to/from objects is called "serialization/deserialization"
+ * Writing and reading a db file.
  */
