@@ -24,6 +24,7 @@ const directorsDb = require('create-softdev-directors-db')
   { firstName: 'Steven', lastName: 'Spielberg' },
   { firstName: 'Wes', lastName: 'Anderson' }
 ```
+
 * Yes!
 
 ## How Node `require` uses `node_modules`
