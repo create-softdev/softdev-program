@@ -1,4 +1,4 @@
-# Cheat Sheet for Node File I/O (Synchronous)
+# Cheat Sheet for Node File I/O (Asynchronous)
 
 ## Importing the fs module
 
@@ -12,18 +12,19 @@ const fs = require('fs')
 
 ## File Operations
 
-* **fs.readFileSync**(_filename_, [{encoding: 'utf-8'}]): returns a string with the contents of the file _filename_
-* **fs.writeFilSynce**(_filename_, _content_): rrites the content into the file _filename_
-* **fs.unlinkSync**(_filename_): deletes the file _filename_
-* **fs.statSync**(_filename_): returns an object with information about file:
+* **fs.readFile**(_filename_, [{encoding: 'utf-8'}], (err, content) => {...}):
+  calls back with the contents of the file _filename_
+* **fs.writeFile**(_filename_, _content_, err => {...}):
+  writes the content into the file _filename_
+* **fs.unlink**(_filename_, err => {...}): deletes the file _filename_
+* **fs.stat**(_filename_, (err, stats) => {...}): calls back with an object with information about file:
   * `isDirectory()`: whether the item is a directory
   * `isFile()`: whether the item is a file
   * `mtime`: the `Date` of last modification
 
 ## Directory Operations
 
-* **fs.readdir**(_dirname_, (err, files) => {,,,}):
-  calls back with an array with the names of the items (files and directories)
+* **fs.readdirSync**(_dirname_): an array with the names of the items (files and directories)
   in the directory
 
 ## Command Line Arguments
