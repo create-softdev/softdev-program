@@ -13,13 +13,7 @@
   const newStrongElement = document.createElement('strong')
   newStrongElement.appendChild(document.createTextNode('Wow! '))
 
-  document.getElementById('inner').replaceChild(
-    newStrongElement,
-    document.getElementById('inner').childNodes[0])
-
   document.getElementById('part').remove()
-
-  const newInner = document.getElementById('another-inner').cloneNode(true)
 
   document.getElementById('outer').insertBefore(
     newInner, document.getElementById('another-inner'))
@@ -31,10 +25,8 @@
   * createTextNode
   *
   * appendChild
-  * replaceChild
   * remove
   * insertBefore
-  * cloneNode
   *
   * And more:
   *   Node: https://developer.mozilla.org/en/docs/Web/API/Node
