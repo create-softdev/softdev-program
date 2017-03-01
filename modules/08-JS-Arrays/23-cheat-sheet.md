@@ -97,6 +97,7 @@ console.log(x) // 4
 ```
 
 - Array functions
+
 ```js
 let arr = ['hi']
 arr.push('bye')

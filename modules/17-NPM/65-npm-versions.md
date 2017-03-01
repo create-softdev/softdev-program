@@ -1,7 +1,7 @@
 # NPM Versions
 
 What happens when we change the package's implementation?
-Does the package consumer get the new implementation? The answer is yes, but it's complicated.
+Does the package consumer get the new implementation? The answer is yes, but it's complica`ted.
 
 ## Upgrading a package
 
