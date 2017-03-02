@@ -108,7 +108,9 @@ Please, for the love of God (or whichever deity you worship), do *not* work on S
 ## What we expect from you
 
 * Work hard. Even after the daily praxis time if needed. Even on Thursdays if needed.
-* If you finished your assignments, you don't have to anything more to do! Go have fun instead.
+* If you finished your assignments, you don't have to anything more to do! But others may need
+  help. Help them!
+* Help others even if you haven't finished your assignments. Team work is important.
 * Don't work on Saturdays
 * Laptops can be open during theory time, but please don't browse the internet during that time.
 * If you get stuck, *ask for help*. And realizing that you are stuck should *not* happen after an hour. It can
