@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-app.use('/static', express.static(path.join(__dirname, '/assets')))
+app.use('/static', express.static(path.join(__dirname, '/assets/simple')))
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening...')
