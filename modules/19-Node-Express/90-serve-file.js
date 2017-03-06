@@ -15,7 +15,7 @@ app.get('/hello', function (req, res) {
   })
 })
 
-app.listen(process.env.PORT || 3000, {foo: 4}, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Listening...')
 })
 
