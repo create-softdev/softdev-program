@@ -5,7 +5,7 @@ package that will enable storing the Todos of the user.
 
 ## Requirements
 
-* Write and publish an npm package named _your_github_username_-todo-db
+* Write and publish an npm package named _yourGithubUsername_-todo-db
 * It should export the following functions:
   * (`cb` in the following text means the reguale NodeJS style callback)
   * `initializeDatabase(dir, cb)`: initialize the database. Create the db file in the specified directory.
