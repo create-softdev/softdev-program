@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const handleBars = require('handlebars')
+const ejs = require('ejs')
 
 const app = express()
 
@@ -15,18 +15,17 @@ app.get('/', (req, res) => {
   const page = `
 <h1>People</h1>
 <ul>
-  {{#each peopleList}}
+  <% for (const person of peopleList) { %>
     <li>
-      {{name}} ({{age}})
+      <%= person.name %> (<%= person.age %>)
     </li>
-  {{/each}}
+  <% } %>
 </ul>
 <div>
   <a href='/static/add-person'>add person</a>
 </div>
   `
-  const template = handleBars.compile(page)
-  const renderedPage = template({peopleList: people})
+  const renderedPage = ejs.render(page, {peopleList: people})
 
   res.send(renderedPage)
 })
@@ -47,7 +46,7 @@ app.listen(process.env.PORT || 3000, function () {
 })
 
 /**
- * Using "handlebars" - a template language
- * http://handlebarsjs.com/
+ * Using "ejs" - a template language
+ * http://ejs.co/
  * Easy to understand - you can read it yourself.
  */

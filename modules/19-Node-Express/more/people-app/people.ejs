@@ -1,0 +1,12 @@
+<h1>People</h1>
+<ul>
+  <% for (const person of peopleList) { %>
+    <li>
+      <%= person.name %> (
+        <%= person.age %>)
+    </li>
+    <% } %>
+</ul>
+<div>
+  <a href='/static/add-person'>add person</a>
+</div>

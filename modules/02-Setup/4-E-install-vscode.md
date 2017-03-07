@@ -19,6 +19,7 @@ so you will be intimately familiar with it at the end of the program. In the mea
    * Open in Github
    * View in Browser
    * EditorConfig for VS Code
+   * .ejs
 1. How to install a plugin:
    * Run Visual Studio Code (henceforth known as VSCode)
    * Click on the "Extensions" icon on the left bar (or choose "View>Extensions" in the menu)

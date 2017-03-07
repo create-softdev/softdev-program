@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const handleBars = require('handlebars')
+const ejs = require('ejs')
 const fs = require('fs')
 
 const app = express()
@@ -13,11 +13,10 @@ const people = [
 ]
 
 app.get('/', (req, res) => {
-  fs.readFile(path.join(__dirname, 'more/people-app/people.hbs'), {encoding: 'utf-8'}, (err, content) => {
+  fs.readFile(path.join(__dirname, 'more/people-app/people.ejs'), {encoding: 'utf-8'}, (err, content) => {
     if (err) return res.sendStatus(500)
 
-    const template = handleBars.compile(content)
-    const renderedPage = template({ peopleList: people })
+    const renderedPage = ejs.render(content, { peopleList: people })
 
     res.send(renderedPage)
   })
@@ -39,6 +38,6 @@ app.listen(process.env.PORT || 3000, function () {
 })
 
 /**
- * Handlebars template is now an external file
+ * EJS template is now an external file
  * We need to read it, and _then_ use it.
  */
