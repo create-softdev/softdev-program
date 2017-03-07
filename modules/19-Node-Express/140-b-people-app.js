@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 
 const app = express()
 
@@ -17,15 +18,21 @@ app.get('/', (req, res) => {
     html += '</li>'
   }
   html += '</ul>'
+  html += `
+<div>
+  <a href='/static/add-person'>add person</a>
+</div>
+  `
 
   res.send(html)
 })
+
+app.use('/static', express.static(path.join(__dirname, 'more/people-app'), {extensions: ['html']}))
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening...')
 })
 
 /**
- * The `person` "Database"
- * Generating HTML dynamically from "database"
+ * Link to add person page - which is static, so we use express.static.
  */
