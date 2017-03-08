@@ -1,0 +1,43 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    const xhr = new XMLHttpRequest()
+
+    xhr.open('GET', '/people')
+    xhr.addEventListener('load', () => {
+      const people = JSON.parse(xhr.responseText)
+
+      addPeople(people)
+    })
+    xhr.send()
+
+    function addPeople(people) {
+      const peopleContainer = document.querySelector('.people')
+
+      for (const person of people) {
+        const li = document.createElement('li')
+        li.textContent = `${person.name} (${person.age})`
+
+        peopleContainer.appendChild(li)
+      }
+    }
+
+  </script>
+</body>
+
+<!--
+  * http://localhost:3000/static/40-accessing-people-from-html.html
+  * XMLHttpRequest
+  * xhr.open
+  * 'load' event
+  * xhr.send
+  * xhr.responseText
+
+  * The moniker Ajax.
+
+  * Show network
+  * Content type is text/html. Not good.
+-->

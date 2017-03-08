@@ -1,0 +1,22 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    const people = [
+      { name: 'Danny', age: 33 },
+      { name: 'Sunny', age: 22 }
+    ]
+
+    const peopleContainer = document.querySelector('.people')
+
+    for (const person of people) {
+      const li = document.createElement('li')
+      li.textContent = `${person.name} (${person.age})`
+
+      peopleContainer.appendChild(li)
+    }
+
+  </script>
+</body>
