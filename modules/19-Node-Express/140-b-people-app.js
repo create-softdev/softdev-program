@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 app.use('/static', express.static(path.join(__dirname, 'more/people-app'), {extensions: ['html']}))
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log('Listening...')
 })
 

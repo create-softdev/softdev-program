@@ -6,7 +6,7 @@ app.get('/add', function (req, res) {
   res.send((parseInt(req.query.a, 10) + parseInt(req.query.b, 10)).toString())
 })
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log('Listening...')
 })
 

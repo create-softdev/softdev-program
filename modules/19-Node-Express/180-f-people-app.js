@@ -33,7 +33,7 @@ app.post('/add-person', (req, res) => {
   res.sendStatus(302)
 })
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log('Listening...')
 })
 

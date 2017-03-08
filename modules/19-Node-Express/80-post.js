@@ -12,7 +12,7 @@ app.post('/add', function (req, res) {
   res.send(`<h1>The sum of ${a} + ${b} is ${a + b}</h1>`)
 })
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log('Listening...')
 })
 

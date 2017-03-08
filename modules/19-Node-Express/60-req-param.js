@@ -6,7 +6,7 @@ app.get('/add/:a/:b', function (req, res) {
   res.send((parseInt(req.params.a) + parseInt(req.params.b)).toString())
 })
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(3000, function () {
   console.log('Listening...')
 })
 
