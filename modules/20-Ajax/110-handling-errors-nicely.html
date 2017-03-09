@@ -1,0 +1,86 @@
+<body>
+  <style>
+    #error-message {
+      position: fixed;
+      background-color: red;
+      padding: 10px;
+    }
+    .hidden {
+      display: none
+    }
+  </style>
+  <div id="error-message" class="hidden"></div>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    listPeople()
+
+    function listPeople() {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('GET', '/people')
+      xhr.addEventListener('load', () => {
+        const people = JSON.parse(xhr.responseText)
+
+        addPeople(people)
+      })
+      xhr.send()
+    }
+
+    function addPeople(people) {
+      const peopleContainer = document.querySelector('.people')
+
+      for (const personIndex in people) {
+        const person = people[personIndex]
+        const li = document.createElement('li')
+        li.textContent = `${person.name} (${person.age})`
+
+        const deleteButton = document.createElement('button')
+        deleteButton.textContent = 'delete'
+        li.appendChild(deleteButton)
+        deleteButton.addEventListener('click', () => {
+          deletePerson(personIndex)
+        })
+
+        peopleContainer.appendChild(li)
+      }
+    }
+
+    function deletePerson(index) {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('POST', '/delete-person-xxxx')
+      xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) {
+          showError('Problem deleting person')
+          return
+        }
+        document.querySelectorAll('.people li')[index].remove()
+      })
+      xhr.addEventListener('error', (ev) => {
+        showError('Problem deleting person. Not connected?')
+      })
+
+      xhr.setRequestHeader('content-type', 'application/json')
+      xhr.send(JSON.stringify({index: index}))
+    }
+
+    function showError(errorMessage) {
+      const errorElement = document.querySelector('#error-message')
+      errorElement.textContent = errorMessage
+
+      errorElement.classList.remove('hidden')
+      setTimeout(() => {
+        errorElement.classList.add('hidden')
+      }, 3000)
+    }
+  </script>
+</body>
+
+<!--
+  * http://localhost:3000/static/110-handling-errors-nicely.html
+  * error event.
+  * You get no information about the error!
+-->

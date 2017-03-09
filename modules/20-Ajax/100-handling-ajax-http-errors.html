@@ -1,0 +1,62 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    listPeople()
+
+    function listPeople() {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('GET', '/people')
+      xhr.addEventListener('load', () => {
+        const people = JSON.parse(xhr.responseText)
+
+        addPeople(people)
+      })
+      xhr.send()
+    }
+
+    function addPeople(people) {
+      const peopleContainer = document.querySelector('.people')
+
+      for (const personIndex in people) {
+        const person = people[personIndex]
+        const li = document.createElement('li')
+        li.textContent = `${person.name} (${person.age})`
+
+        const deleteButton = document.createElement('button')
+        deleteButton.textContent = 'delete'
+        li.appendChild(deleteButton)
+        deleteButton.addEventListener('click', () => {
+          deletePerson(personIndex)
+        })
+
+        peopleContainer.appendChild(li)
+      }
+    }
+
+    function deletePerson(index) {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('POST', '/delete-person-that-does-not-exist')
+      xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) {
+          alert('Problem deleting person:' + xhr.statusText)
+          return
+        }
+        document.querySelectorAll('.people li')[index].remove()
+      })
+
+      xhr.setRequestHeader('content-type', 'application/json')
+      xhr.send(JSON.stringify({index: index}))
+    }
+  </script>
+</body>
+
+<!--
+  * http://localhost:3000/static/100-handling-ajax-http-errors.html
+  * no error event!
+  * xhr.status and xhr.statusText
+-->

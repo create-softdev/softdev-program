@@ -1,0 +1,127 @@
+<body>
+  <style>
+    #error-message {
+      position: fixed;
+      background-color: red;
+      padding: 10px;
+    }
+    .hidden {
+      display: none
+    }
+  </style>
+  <div id="error-message" class="hidden"></div>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <div class="add-person">
+    <label>
+      Name: <input type="text" id="name-input">
+    </label>
+    <label>
+      Age: <input type="number" id="age-input">
+    </label>
+    <button>Add</button>
+  </div>
+  <script>
+    listPeople()
+
+    document.querySelector('.add-person button').addEventListener('click', () => {
+      addPerson()
+    })
+
+    function listPeople() {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('GET', '/people')
+      xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) return showError('Could not list person')
+        const people = JSON.parse(xhr.responseText)
+
+        addPeopleToView(people)
+      })
+      xhr.addEventListener('error', () => showError('Could not list people'))
+      xhr.send()
+    }
+
+    function deletePerson(index) {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('POST', '/delete-person')
+      xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) return showError('Could not delete person')
+        deletePersonFromView(index)
+      })
+      xhr.addEventListener('error', () => showError('Could not delete person'))
+
+      xhr.setRequestHeader('content-type', 'application/json')
+      xhr.send(JSON.stringify({index: index}))
+    }
+
+    function deletePersonFromView(index) {
+      document.querySelectorAll('.people li')[index].remove()
+    }
+
+    function addPeopleToView(people) {
+      for (const personIndex in people) {
+        addPersonToView(personIndex, people[personIndex])
+      }
+    }
+
+    function addPersonToView(personIndex, person) {
+      const peopleContainer = document.querySelector('.people')
+
+      const li = document.createElement('li')
+      li.textContent = `${person.name} (${person.age})`
+
+      const deleteButton = document.createElement('button')
+      deleteButton.textContent = 'delete'
+      li.appendChild(deleteButton)
+      deleteButton.addEventListener('click', () => {
+        deletePerson(personIndex)
+      })
+
+      peopleContainer.appendChild(li)
+    }
+
+    function addPerson() {
+      const xhr = new XMLHttpRequest()
+      const nameFromInput = document.querySelector('#name-input').value
+      const ageFromInput = parseInt(document.querySelector('#age-input').value)
+      const person = {name: nameFromInput, age: ageFromInput}
+
+      xhr.open('POST', '/add-person')
+      xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) return showError('Could not add person')
+
+        addPersonToView(document.querySelectorAll('.people li').length, person)
+        document.querySelector('#name-input').value = ''
+        document.querySelector('#age-input').value = ''
+      })
+      xhr.addEventListener('error', () => showError('Could not add person'))
+
+      xhr.setRequestHeader('content-type', 'application/json')
+
+      xhr.send(JSON.stringify(person))
+    }
+
+    function showError(errorMessage) {
+      const errorElement = document.querySelector('#error-message')
+      errorElement.textContent = errorMessage
+
+      errorElement.classList.remove('hidden')
+      setTimeout(() => {
+        errorElement.classList.add('hidden')
+      }, 3000)
+    }
+  </script>
+</body>
+
+<!--
+  * http://localhost:3000/static/140-error-handling-makes-it-unwieldy.html
+  * listPerson is separated with addPersonToView to make it reusable
+  * Same - deletePerson is separated with deletePersonFromView, to make it nicer.
+  * Added an "add person" row
+  * Logic for adding is in addPerson, which is split between XHR-ing to server
+    and adding person to view with addPersonToView.
+-->
