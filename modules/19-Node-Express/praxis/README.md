@@ -8,7 +8,7 @@ Don't worry, we'll do it slowly.
 
 We need to create a project in Github, and an NPM package. You know the drill:
 
-1. Create a Github repo named todomvc.
+1. Create a Github repo named todo.
 1. Create an npm package in it (using `npm init -y`)
 1. Commit and push.
 
@@ -21,7 +21,7 @@ In this step, we'll create a server (yay! my first real backend program!) that s
 1. Create an index.js that:
    1. imports express
    1. Adds a "get handler" (`app.get`) to the path `/` that uses `res.send` to return the HTML `<h1>Todos</h1>`
-1. Run it.
+1. Run it, and check that it works.
 
 You're on your way! Don't forget to breath, commit, and push.
 
@@ -35,7 +35,7 @@ In this step, we'll use ejs to show the same page we showed earlier.
 1. Create a file `index.ejs`, with regular HTML, and the H1 from the previous step
 1. Instead of rendering a string, create the string using ejs's `render`
    (see [this](../170-e-people-app.js)).
-1. Run it.
+1. Run it, and check that it works.
 
 Don't forget to breath, commit, and push.
 
