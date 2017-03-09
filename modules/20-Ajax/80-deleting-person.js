@@ -21,7 +21,6 @@ app.post('/delete-person', (req, res) => {
   res.send('')
 })
 
-
 app.listen(3000, function () {
   console.log('Listening...')
 })
