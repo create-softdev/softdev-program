@@ -1,8 +1,8 @@
 # Client-side Rendering vs. Server-side Rendering
 
 * Contrast:
-  * [Client-side rendering](40-accessing-people-from-html.html)
-  * [Server-side rendering](../19-Node-Express/130-a-people-app.js)
+  * [Client-side rendering](04-accessing-people-from-html.html)
+  * [Server-side rendering](../19-Node-Express/14-a-people-app.js)
 * In both cases, there is dynamic generation of HTML.
 * In both cases, the data sits on the server
 * In server-side rendering, the data stays on the server and is rendered to the client.

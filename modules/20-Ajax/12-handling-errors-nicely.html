@@ -1,4 +1,15 @@
 <body>
+  <style>
+    #error-message {
+      position: fixed;
+      background-color: red;
+      padding: 10px;
+    }
+    .hidden {
+      display: none
+    }
+  </style>
+  <div id="error-message" class="hidden"></div>
   <h1>People</h1>
   <ul class='people'>
 
@@ -40,24 +51,36 @@
     function deletePerson(index) {
       const xhr = new XMLHttpRequest()
 
-      xhr.open('POST', '/delete-person')
+      xhr.open('POST', '/delete-person-xxxx')
       xhr.addEventListener('load', () => {
+        if (xhr.status !== 200) {
+          showError('Problem deleting person')
+          return
+        }
         document.querySelectorAll('.people li')[index].remove()
+      })
+      xhr.addEventListener('error', (ev) => {
+        showError('Problem deleting person. Not connected?')
       })
 
       xhr.setRequestHeader('content-type', 'application/json')
       xhr.send(JSON.stringify({index: index}))
     }
+
+    function showError(errorMessage) {
+      const errorElement = document.querySelector('#error-message')
+      errorElement.textContent = errorMessage
+
+      errorElement.classList.remove('hidden')
+      setTimeout(() => {
+        errorElement.classList.add('hidden')
+      }, 3000)
+    }
   </script>
 </body>
 
 <!--
-  * http://localhost:3000/static/70-deleting-person.html
-  * listPerson is added to make code nicer.
-  * Added a delete button. click handler calls deletePerson
-  * deletePerson - xhr POST to `/delete-person`, and waits for response
-  * When gets response -
-  * It is very naive code. When two deletes happen at the same time, the index will be wrong
-    for one of them.
-  * What about errors? We'll see later.
+  * http://localhost:3000/static/12-handling-errors-nicely.html
+  * error event.
+  * You get no information about the error!
 -->

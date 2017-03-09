@@ -44,10 +44,6 @@
       xhr.addEventListener('load', () => {
         document.querySelectorAll('.people li')[index].remove()
       })
-      xhr.addEventListener('error', (ev) => {
-        console.log(xhr, ev)
-        alert('problem deleting person...')
-      })
 
       xhr.setRequestHeader('content-type', 'application/json')
       xhr.send(JSON.stringify({index: index}))
@@ -56,7 +52,12 @@
 </body>
 
 <!--
-  * http://localhost:3000/static/90-handling-ajax-connection-errors.html
-  * error event.
-  * You get no information about the error!
+  * http://localhost:3000/static/08-deleting-person.html
+  * listPerson is added to make code nicer.
+  * Added a delete button. click handler calls deletePerson
+  * deletePerson - xhr POST to `/delete-person`, and waits for response
+  * When gets response -
+  * It is very naive code. When two deletes happen at the same time, the index will be wrong
+    for one of them.
+  * What about errors? We'll see later.
 -->

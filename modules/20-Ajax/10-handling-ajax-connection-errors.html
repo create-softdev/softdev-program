@@ -40,13 +40,13 @@
     function deletePerson(index) {
       const xhr = new XMLHttpRequest()
 
-      xhr.open('POST', '/delete-person-that-does-not-exist')
+      xhr.open('POST', '/delete-person')
       xhr.addEventListener('load', () => {
-        if (xhr.status !== 200) {
-          alert('Problem deleting person:' + xhr.statusText)
-          return
-        }
         document.querySelectorAll('.people li')[index].remove()
+      })
+      xhr.addEventListener('error', (ev) => {
+        console.log(xhr, ev)
+        alert('problem deleting person...')
       })
 
       xhr.setRequestHeader('content-type', 'application/json')
@@ -56,7 +56,7 @@
 </body>
 
 <!--
-  * http://localhost:3000/static/100-handling-ajax-http-errors.html
-  * no error event!
-  * xhr.status and xhr.statusText
+  * http://localhost:3000/static/10-handling-ajax-connection-errors.html
+  * error event.
+  * You get no information about the error!
 -->

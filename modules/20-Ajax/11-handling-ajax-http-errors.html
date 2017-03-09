@@ -1,15 +1,4 @@
 <body>
-  <style>
-    #error-message {
-      position: fixed;
-      background-color: red;
-      padding: 10px;
-    }
-    .hidden {
-      display: none
-    }
-  </style>
-  <div id="error-message" class="hidden"></div>
   <h1>People</h1>
   <ul class='people'>
 
@@ -51,36 +40,23 @@
     function deletePerson(index) {
       const xhr = new XMLHttpRequest()
 
-      xhr.open('POST', '/delete-person-xxxx')
+      xhr.open('POST', '/delete-person-that-does-not-exist')
       xhr.addEventListener('load', () => {
         if (xhr.status !== 200) {
-          showError('Problem deleting person')
+          alert('Problem deleting person:' + xhr.statusText)
           return
         }
         document.querySelectorAll('.people li')[index].remove()
-      })
-      xhr.addEventListener('error', (ev) => {
-        showError('Problem deleting person. Not connected?')
       })
 
       xhr.setRequestHeader('content-type', 'application/json')
       xhr.send(JSON.stringify({index: index}))
     }
-
-    function showError(errorMessage) {
-      const errorElement = document.querySelector('#error-message')
-      errorElement.textContent = errorMessage
-
-      errorElement.classList.remove('hidden')
-      setTimeout(() => {
-        errorElement.classList.add('hidden')
-      }, 3000)
-    }
   </script>
 </body>
 
 <!--
-  * http://localhost:3000/static/110-handling-errors-nicely.html
-  * error event.
-  * You get no information about the error!
+  * http://localhost:3000/static/11-handling-ajax-http-errors.html
+  * no error event!
+  * xhr.status and xhr.statusText
 -->
