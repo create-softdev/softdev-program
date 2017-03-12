@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const fileToDelete = path.join(__dirname, 'workfiles', 'hello.txt')
+const fileToDelete = path.join(__dirname, 'more', 'hello.txt')
 
 fs.unlink(fileToDelete, (err) => {
   if (err) {

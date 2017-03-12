@@ -1,4 +1,4 @@
-const directorsDb = require('./workfiles/directors-db')
+const directorsDb = require('./more/directors-db')
 
 directorsDb.initializeDirectors((err) => {
   if (err) console.error(err)

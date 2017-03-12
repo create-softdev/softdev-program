@@ -7,7 +7,7 @@ Work on [this](workfiles/personal-vcard.html) file.
 
 ## Screenshot
 
-![Screenshot](../assets/personal-vcard-example.png)
+![Screenshot](../more/personal-vcard-example.png)
 
 ## Requirements
 

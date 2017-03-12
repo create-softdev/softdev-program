@@ -16,8 +16,8 @@ function copyFile (source, target, cb) {
   })
 }
 
-copyFile(`${__dirname}/workfiles/hello.txt`,
-  `${__dirname}/workfiles/hello-copy-1.txt`, (err, content) => {
+copyFile(`${__dirname}/more/hello.txt`,
+  `${__dirname}/more/hello-copy-1.txt`, (err, content) => {
     if (err) {
       console.error(err)
       return
@@ -25,8 +25,8 @@ copyFile(`${__dirname}/workfiles/hello.txt`,
     console.log('copied the content', content)
   })
 
-copyFile(`${__dirname}/workfiles/hello.txt`,
-  `${__dirname}/workfiles/hello-copy-2.txt`, (err, content) => {
+copyFile(`${__dirname}/more/hello.txt`,
+  `${__dirname}/more/hello-copy-2.txt`, (err, content) => {
     if (err) {
       console.error(err)
       return

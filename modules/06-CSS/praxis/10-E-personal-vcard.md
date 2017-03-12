@@ -1,6 +1,6 @@
 # Style your personal vcard
 
-1. Copy your [personal vcard](../../05-HTML/praxis/workfiles/personal-vcard.html) to [workfile](workfile)
+1. Copy your [personal vcard](../../05-HTML/praxis/workfiles/personal-vcard.html) to [workfiles](workfiles)
 1. Style it
 
 ## Requirements

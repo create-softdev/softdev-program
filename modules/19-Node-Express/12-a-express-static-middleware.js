@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-app.use('/static', express.static(path.join(__dirname, '/assets/simple')))
+app.use('/static', express.static(path.join(__dirname, '/more/simple')))
 
 app.listen(3000, function () {
   console.log('Listening...')

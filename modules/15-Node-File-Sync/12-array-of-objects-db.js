@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const DB_FILE = path.join(__dirname, 'workfiles', 'db.json')
+const DB_FILE = path.join(__dirname, 'more', 'db.json')
 
 const director1 = {
   firstName: 'Stanley',

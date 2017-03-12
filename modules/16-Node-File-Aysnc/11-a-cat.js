@@ -15,7 +15,7 @@ for (const fileToRead of filesToRead) {
 /**
  * Trying to build an asynchronous version of the synchronous cat.
  *
- * This doesn't work. Try `node 60-a-cat.js workfiles/a.txt workfiles/b.txt workfiles/c.txt`
+ * This doesn't work. Try `node 60-a-cat.js more/a.txt more/b.txt more/c.txt`
  * If you run this a couple of times, you will see the order is different each time.
  * This is because the callback is called *asynchronously*
  *

@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 
 app.get('/hello', function (req, res) {
-  fs.readFile(path.join(__dirname, 'assets/simple/hello.html'), function (err, content) {
+  fs.readFile(path.join(__dirname, 'more/simple/hello.html'), function (err, content) {
     if (err) {
       res.sendStatus(500)
       return

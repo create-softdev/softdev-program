@@ -18,14 +18,23 @@
     background-color: yellow;
     margin-top: 10px;
   }
+  .inner2 {
+    height: 5rem;
+    background-color: red;
+  }
   </style>
 </head>
 <body>
   <div class="outer">
     <div class="inner">
         <div class="really-inner">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem temporibus, corporis dolores eligendi est, dolorum deserunt possimus nisi beatae culpa ea totam quaerat quo libero ipsa et laborum asperiores omnis.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Rem temporibus, corporis dolores eligendi est, dolorum deserunt possimus nisi beatae culpa ea
+          totam quaerat quo libero ipsa et laborum asperiores omnis.
         </div>
+    </div>
+    <div class="inner2">
+      I have a specific height
     </div>
   </div>
 </body>
@@ -35,6 +44,7 @@
   * Containment hierarchy
   * percentage is usually relative to size of parent
   * width - percentage relative to width of parent
+  * height - is always a problem in HTML. Percentage doesn't really work. Better to specify it absolutely.
   * padding - pads the _content_ of the block. Is painted with the background
   * padding - percentage relative to *width* (even top and bottom padding...)
   * margin - without the background.

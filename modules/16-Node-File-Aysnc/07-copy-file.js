@@ -1,11 +1,11 @@
 const fs = require('fs')
 
-fs.readFile(`${__dirname}/workfiles/hello.txt`, {encoding: 'utf-8'}, (err, content) => {
+fs.readFile(`${__dirname}/more/hello.txt`, {encoding: 'utf-8'}, (err, content) => {
   if (err) {
     console.error(err)
     return
   }
-  fs.writeFile(`${__dirname}/workfiles/hello-copy.txt`, content, (err) => {
+  fs.writeFile(`${__dirname}/more/hello-copy.txt`, content, (err) => {
     if (err) {
       console.error(err)
       return

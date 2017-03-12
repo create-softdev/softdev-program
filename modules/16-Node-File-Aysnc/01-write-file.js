@@ -4,7 +4,7 @@ function callback () {
   console.log('File was written!')
 }
 
-fs.writeFile(`${__dirname}/workfiles/hello.txt`, 'hello, world', callback)
+fs.writeFile(`${__dirname}/more/hello.txt`, 'hello, world', callback)
 
 /**
  * async function (writeFile)

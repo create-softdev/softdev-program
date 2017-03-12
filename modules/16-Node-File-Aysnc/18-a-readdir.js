@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const dirToList = path.join(__dirname, 'workfiles')
+const dirToList = path.join(__dirname, 'more')
 
 fs.readdir(dirToList, (err, files) => {
   if (err) {
