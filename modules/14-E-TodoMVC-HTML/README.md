@@ -3,9 +3,14 @@
 We'll start writing the [TodoMVC application](http://todomvc.com/). We'll not go all the way today, but
 we're starting it today!
 
+## Things to learn
+
+* list-style-type: none; - ST
+* list-style-position: inside; - ST
+
 ## Requirements
 
-* Build the TodoMVC to look nice (see [screenshot](../workfiles/todomvc-screenshot.png))
+* Build the TodoMVC to look nice (see [screenshot](../more/todomvc-screenshot.png))
 * Writing something in the new item box, and leaving it will create a new item.
 * Clicking on the checkbox will toggle the item's strikethrough
 * Clicking on the delete button of an item will delete the item

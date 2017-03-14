@@ -1,0 +1,19 @@
+<style>
+.visible-if-checked {
+  display: none;
+}
+
+.a-checkbox:checked ~ .visible-if-checked {
+  display: inline;
+}
+.a-checkbox:checked ~ .bold-if-checked {
+  font-weight: bold;
+}
+</style>
+
+<input type="checkbox" class="a-checkbox"><span class="visible-if-checked">I can see you!</span>
+<br>
+<input type="checkbox" class="a-checkbox"><span class="bold-if-checked">I can see you!</span>
+<!--
+  * :checked is like :hover, but only for checkboxes
+-->

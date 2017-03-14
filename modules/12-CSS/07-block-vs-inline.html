@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .first {
+      width: 100px;
+      height: 70px;
+      border: 1px solid red;
+      box-shadow: 5px 5px 5px darkblue;
+    }
+    .second-span {
+      width: 100px;
+      height: 70px;
+      border: 1px solid red;
+      box-shadow: 5px 5px 5px darkblue;
+    }
+
+  </style>
+  <div class="first">I am a block, but <span>I am inline</span></div>
+  <div class="second">I am another block, yet <span class="second-span">I am another inline</span></div>
+</body>
+</html>
+
+<!--
+  * Blocks: are on separate lines and have width and height. Default width is 100% of parent.
+  * spans: are part of blocks and have no intrinsic width or height.
+  * box-shadow: learn it yourself: https://markusstange.wordpress.com/2009/02/15/fun-with-box-shadows/
+  * second-span width and height - no effect!
+  * But border and box-shadow do!
+-->
