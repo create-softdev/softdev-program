@@ -13,7 +13,7 @@
   }
 </style>
 <ul>
-  <li id="sub-menu">
+  <li class="sub-menu">
     Item
     <ul class="visible">
       <li>A</li>
@@ -21,35 +21,32 @@
       <li>C</li>
     </ul>
   </li>
+  <li class="sub-menu">
+    Another Item
+    <ul class="invisible">
+      <li>D</li>
+      <li>E</li>
+      <li>F</li>
+    </ul>
+  </li>
 </ul>
 <script>
-  const menuElement = document.querySelector('#sub-menu')
+  const menuElements = document.querySelectorAll('.sub-menu')
 
-  let subMenuVisible = true
+  for (const menuElement of menuElements) {
+    menuElement.addEventListener('click', event => {
+      const subMenu = menuElement.querySelector('ul')
 
-  menuElement.addEventListener('click', event => {
-    const subMenu = menuElement.querySelector('ul')
-
-    subMenuVisible = !subMenuVisible
-    if (subMenuVisible)
-      subMenu.className = 'visible'
-    else
-      subMenu.className = 'invisible'
-  })
+      if (subMenu.className === 'invisible')
+        subMenu.className = 'visible'
+      else
+        subMenu.className = 'invisible'
+    })
+  }
 </script>
 
 
 <!--
-  * addEventListener
-  * mouseover
-  * click
-  * The `event` object
-  *
-  * Other events:
-  *   mouseclick
-  *   mouseenter
-  *   mouseleave
-  *   submit (for forms)
-  *   focus
-  *   blur
+  * Same but on a set of elements
+  * Note the use of `menuElement` inside the listener.
 -->

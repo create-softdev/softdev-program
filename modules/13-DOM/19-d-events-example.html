@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<style>
+  .visible {
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+
+  .invisible {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+  }
+</style>
+<ul>
+  <li id="sub-menu">
+    Item
+    <ul class="visible">
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+    </ul>
+  </li>
+</ul>
+<script>
+  const menuElement = document.querySelector('#sub-menu')
+
+  menuElement.addEventListener('click', event => {
+    const subMenu = menuElement.querySelector('ul')
+
+    if (subMenu.className === 'invisible')
+      subMenu.className = 'visible'
+    else
+      subMenu.className = 'invisible'
+  })
+</script>
+
+
+<!--
+  * Using `class` is better, because we have more control
+  * (no need ot explain transition, overflow, etc - just an intuitive understanding)
+-->
