@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Todo</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <style>
@@ -20,18 +20,17 @@
     list-style-position: inside;
   }
   .new-item, li {
-    width: 20rem;
-    height: 4rem;
-    border: 0;
+    padding: 0.7rem;
     border: 1px solid rgb(237, 237, 237);
     font-size: 1.5rem;
     font-weight: 300;
   }
   .new-item input {
     border: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    font: inherit;
+    font-size: 1.5rem;
+    font-weight: normal;
   }
   main, h1 {
     margin-left: 20%;
@@ -44,18 +43,15 @@
     margin-top: 1rem;
   }
   li input[type="checkbox"] {
-    height: 100%;
     width: 2rem;
   }
   li label span {
-    vertical-align: 60%;
     display: inline-block;
+    vertical-align: middle;
     width: 80%;
   }
   li .close {
-    vertical-align: 150%;
     width: 20px;
-    height: 20px;
   }
 </style>
 <body>
@@ -63,11 +59,11 @@
   <main>
     <div class="list-with-new-item">
       <div class="new-item">
-        <button class="check-all">v</button><input type="text" placeholder="What needs to be done?">
+        <input type="text" placeholder="What needs to be done?">
       </div>
       <ul>
-        <li><label><input type="checkbox"><span>Wash the dishes</span></label><button class="close">x</button></li>
-        <li><label><input type="checkbox"><span>Laundry</span></label><button class="close">x</button></li>
+        <li><label><input type="checkbox"><span>Wash the dishes</span></label><button class="close">&times;</button></li>
+        <li><label><input type="checkbox"><span>Laundry</span></label><button class="close">&times;</button></li>
       </ul>
     </div>
     <p class="number-items-left">2 items left</p>
