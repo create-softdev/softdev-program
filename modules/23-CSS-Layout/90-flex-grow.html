@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .container {
+      display: flex;
+    }
+
+    .item {
+      flex-grow: 1;
+    }
+    .i1 {
+      width: 50%;
+    }
+
+    .i3 {
+      flex-grow: 2;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div>
+    <div class="item i3">item 3</div>
+    <div class="item i4">item 4</div>
+  </div>
+</body>
+</html>
+
+<!--
+  * flex-grow: <integer>;
+  * Defines how much of the _remaining_ space of the container,
+    after the widths of the items are calculated, the item takes.
+  * This is important. If one item is longer than the rest, it will still be longer
+    without regards to the grow. (e.g. i1)
+  * Default - 0, meaning it doesn't take any of the remaining space of the container.
+  * https://css-tricks.com/flex-grow-is-weird/
+-->

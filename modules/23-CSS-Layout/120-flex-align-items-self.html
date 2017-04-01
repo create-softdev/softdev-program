@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .container {
+      display: flex;
+      align-items: center;
+      height: 50vh;
+    }
+
+    .i2 {
+      align-self: flex-end;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div>
+    <div class="item i3">item 3</div>
+    <div class="item i4">item 4</div>
+  </div>
+
+</body>
+</html>
+
+<!--
+  * align-items: aligns the items inside the container, on the cross axis.
+  * Also allows:
+    * flex-start (on the _cross_ axis!)
+    * flex-end   (on the _cross_ axis!)
+    * baseline
+    * stretch
+  * default is "stretch"
+  * align-self: allows an item to have a different alignment
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 50%;
+    }
+
+    .i1 {
+      height: 50px;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div>
+    <div class="item i3">item 3</div>
+    <div class="item i4">item 4</div>
+  </div>
+
+</body>
+</html>
+
+<!--
+  * flex-wrap: *if* the width of items are more than the line,
+     whether to `wrap` the items or force them on one line (`nowrap`).
+  * Note the height of i2 is also 50px. This is because
+    the default for `align-items` is `self`.
+-->
