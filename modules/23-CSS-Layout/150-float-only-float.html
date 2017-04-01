@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .container {
+      width: 50vw;
+      clear: both;
+    }
+    .item {
+      width: 40px;
+      float: right;
+    }
+    .i4 {
+      float: left;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div>
+    <div class="item i3">item 3</div>
+    <div class="item i4">item 4</div>
+    <div class="after">After</div>
+  </div>
+  <div>After container</div>
+</body>
+</html>
+
+<!--
+  * display: float;
+  * The floated elements do not contribute to the container element, and can be larger than it.
+-->
