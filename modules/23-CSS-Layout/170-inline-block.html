@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .item {
+      display: inline-block;
+    }
+    .i2 {
+      height: 50px;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div><div class="item i3">
+      item 3
+    </div><div class="item i4">
+      item 4
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+  * display: inline-block
+  * Also have width and height
+  * For simple stuff, it's the easiest.
+  * Note that because they're inline, whitespace is significant, and to eliminate
+    it, you have to not separate the div-s.
+-->

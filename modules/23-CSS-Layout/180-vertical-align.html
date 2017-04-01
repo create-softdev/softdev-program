@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+    .before, .after {border: 1px solid blue; }
+
+    .item {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .i2 {
+      height: 50px;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item i1">item 1</div>
+    <div class="item i2">item 2</div><div class="item i3">
+      item 3
+    </div><div class="item i4">
+      item 4
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+  * vertical-align: bottom | top | center
+  * **ONLY** works between inline elements in the same container.
+  * Usually doesn't work as we expect it too.
+  * In this case, it does.
+-->
