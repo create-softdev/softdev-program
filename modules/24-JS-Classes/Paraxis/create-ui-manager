@@ -1,0 +1,27 @@
+# Mission
+
+Create a simple UI manager that implements a dynamic creation of controls: button, label and panel
+You'll be using HTML divs for all controls.
+
+General:
+Each control has its width, height, top and left values
+
+Button:
+Rectange with frame, color and text.
+On click it alerts its name.
+
+Label:
+Text that is shown in the page
+
+panel
+Rectangle with frame and color that can contain buttons and labels on it
+
+## Hint
+
+1. Look at the static HTML first that has divs for a button, label and panel that's holding them
+   Use sub divs if nessecary.
+2. Your mission is to create classes that manages dynamic creation of controls.
+3. Start with the classes. Do you need a base class? If so, what will it contain?
+4. After implementing the classes, test them with console logs
+5. If everything is all right you can move on to creating the elements on an HTML page.
+   
