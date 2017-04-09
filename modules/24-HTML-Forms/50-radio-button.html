@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+  <style>
+    input[type=radio],
+    label.radio-label > span {
+      vertical-align: middle;
+    }
+  </style>
+  <div>
+    <label class="radio-label"><input name="personality" type="radio"><span>Nice</span></label>
+    <label class="radio-label"><input name="personality" type="radio" checked><span>Funny</span></label>
+    <label class="radio-label"><input name="personality" type="radio"><span>Charming</span></label>
+  </div>
+</body>
+<!--
+  * <label> - besides including text, when clicking on it, it will set focus on the input inside it.
+  * Can also be used _outside_ the input by using the `for` attribute that references the id of the `input` tag.
+-->
