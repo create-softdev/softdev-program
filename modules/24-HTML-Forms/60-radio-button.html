@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<body>
+  <style>
+    input[type=radio],
+    label.radio-label > span {
+      vertical-align: middle;
+    }
+  </style>
+  <div>
+    <label class="radio-label"><input name="personality" type="radio" value="nice"><span>Nice</span></label>
+    <label class="radio-label"><input name="personality" type="radio" checked value="funny"><span>Funny</span></label>
+    <label class="radio-label"><input name="personality" type="radio" value="charming"><span>Charming</span></label>
+  </div>
+
+    <button onclick="findValue()">Show value</button>
+
+    <script>
+      function findValue() {
+        for (const radio of document.querySelectorAll('input[type=radio]')) {
+          if (radio.checked) {
+            alert(radio.value)
+          }
+        }
+      }
+    </script>
+
+</body>
+<!--
+  * <label> - besides including text, when clicking on it, it will set focus on the input inside it.
+  * Can also be used _outside_ the input by using the `for` attribute that references the id of the `input` tag.
+-->
