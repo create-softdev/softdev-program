@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fixing Stacking order</title>
+
+  <style>
+    body {
+      font: 12px Arial;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    #container1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .lev1 {
+      width: 250px;
+      height: 70px;
+      border: 2px outset #669966;
+      background-color: rgba(204, 255, 204, 0.9);
+    }
+
+    #container2 {
+      position: absolute;
+      top: 25px;
+      left: 60px;
+    }
+
+    .lev2 {
+      width: 200px;
+      height: 60px;
+      position: relative;
+      border: 2px outset #990000;
+      background-color: rgba(255, 221, 221, 0.9);
+    }
+
+    #container3 {
+      position: absolute;
+      top: 25px;
+      left: 100px;
+    }
+
+    .lev3 {
+      width: 100px;
+      border: 2px outset #000099;
+      background-color: rgba(221, 221, 255, 0.9);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <ul id="container1">
+    <li class="lev1">Level #1
+      <ul id="container2">
+        <li class="lev2">Level #2
+          <ul id="container3">
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+            <li class="lev3">Level #3</li>
+          </ul>
+        </li>
+        <li class="lev2">Level #2</li>
+      </ul>
+    </li>
+    <li class="lev1">Level #1</li>
+    <li class="lev1">Level #1</li>
+    <li class="lev1">Level #1</li>
+  </ul>
+
+</body>
+
+</html>
+
+<!--
+
+  Fix the incorrect stacking order ONLY with CSS.
+
+-->
