@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<body>
+  <style>
+    label, input[type=submit] {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+  <form action="http://localhost:3000/data-get" method="GET">
+    <label>Name:
+      <input type="text" placeholder="Enter name" name="name" required maxlength="10">
+    </label>
+    <label>Age:
+      <input type="number" name="age" min="1" max="120">
+    </label>
+    <input type="submit" value="OK">
+  </form>
+  <script>
+    document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
+      event.preventDefault()
+      const xhr = new XMLHttpRequest()
+      xhr.open('POST', 'http://localhost:3000/data-json')
+
+      xhr.setRequestHeader('Content-Type', 'application/json')
+
+      const name = document.getElementsByName('name')[0].value
+      const age = parseInt(document.getElementsByName('age')[0].value, 10)
+
+      xhr.send(JSON.stringify({name: name, age: age}))
+
+      xhr.addEventListener('load', () => {
+        alert(`Form submitted: ${xhr.responseText}`)
+      })
+    })
+  </script>
+</body>
+<!--
+  * Most form posts today use Ajax to send the request.
+  * This is an example of how to do this, using the submit event.
+-->

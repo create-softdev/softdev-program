@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+  <form action="http://localhost:3000/data-post" method="POST">
+    <input type="text" placeholder="Enter name" name="name">
+    <input type="number" name="age">
+
+    <input type="submit" value="OK">
+
+  </form>
+</body>
+<!--
+  * <form action=POST>: data is not sent in URL, but rather in the "body" (see this in the network tab)
+  * Good for lots of data
+  * But refresh is problematic - the browser always reprompts. This is not used anymore, but was used extensively
+    in the early days.
+-->

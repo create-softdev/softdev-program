@@ -16,7 +16,7 @@
 
     <script>
       function findValue() {
-        for (const radio of document.querySelectorAll('input[type=radio]')) {
+        for (const radio of document.querySelectorAll('input[name=personality]')) {
           if (radio.checked) {
             alert(radio.value)
           }
@@ -26,6 +26,6 @@
 
 </body>
 <!--
-  * <label> - besides including text, when clicking on it, it will set focus on the input inside it.
-  * Can also be used _outside_ the input by using the `for` attribute that references the id of the `input` tag.
+  * All `input[type=radio]` that are in the same group must have the same name.
+  * To figure out the value, you need a function that iterates and checks with is `.checked`.
 -->

@@ -1,0 +1,18 @@
+{
+  "name": "25-HTML-Forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "more/server.js",
+  "scripts": {
+    "start": "node more/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "lodash.escape": "^4.0.1"
+  }
+}

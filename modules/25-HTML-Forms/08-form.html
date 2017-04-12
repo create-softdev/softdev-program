@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+  <form action="http://localhost:3000/data-get" method="GET">
+    <input type="text" placeholder="Enter name" name="name">
+    <input type="number" name="age">
+
+    <input type="submit" value="OK">
+
+  </form>
+</body>
+<!--
+  * <form action>: where to send the **named** inputs. (if the input is not named, it won't be sent.)
+  * The method is _how_ to send the named inputs.
+  * The GET method sends it to a URL, and adds the named inputs as "urlencoded": name=value&name=value&...
+  * To submit the form, you need to add an <input type=submit>.
+  * You can also press enter to submit.
+
+  * The URL here is a dummy server. Do `npm install` and then `npm start` to run it.
+-->

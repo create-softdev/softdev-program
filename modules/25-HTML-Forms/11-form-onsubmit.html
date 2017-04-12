@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<body>
+  <style>
+    label, input[type=submit] {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+  <form action="http://localhost:3000/data-get" method="GET">
+    <label>Name:
+      <input type="text" placeholder="Enter name" name="name" required maxlength="10">
+    </label>
+    <label>Age:
+      <input type="number" name="age" min="1" max="120">
+    </label>
+    <input type="submit" value="OK">
+  </form>
+  <script>
+    document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
+      const name = document.getElementsByName("name")[0].value
+
+      if (name.split(' ').length !== 2) {
+        alert('Name must have a first and last name')
+
+        event.preventDefault();
+      }
+    })
+  </script>
+</body>
+<!--
+  * To do more validation, you can use the 'submit' event to check more validation
+  * Calling `preventDefault` on the event will make the form not submit.
+-->

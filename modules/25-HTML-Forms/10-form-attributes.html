@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+  <style>
+    label, input[type=submit] {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+  <form action="http://localhost:3000/data-get" method="GET">
+    <label>Name:
+      <input type="text" placeholder="Enter name" name="name" required maxlength="10">
+    </label>
+    <label>Age:
+      <input type="number" name="age" min="1" max="120">
+    </label>
+    <input type="submit" value="OK">
+  </form>
+</body>
+<!--
+  * maxlength: maximum length of characters
+  * required: ensures user inputs the value - only checked on form submit
+  * <input type=number>: allows only numbers as input  - only checked on form submit
+    * min/max: requires that the number be between those values
+-->
