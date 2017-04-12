@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<style>
+  * {margin: 0; padding: 0}
+
+  .inner {
+    position: static;
+  }
+
+  div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  .outer {
+    height: 1000px;
+    width: 300px;
+    background-color: coral;
+  }
+
+  .inner {
+    height: 75px;
+    width: 75px;
+    background-color: deepskyblue;
+  }
+</style>
+
+<div class="outer">
+  <p>Outer Div.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+
+  <div class="inner">Inner Div</div>
+
+  <p>Outer Div II.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+</div>
+
+<!--
+  * Look at the `div.inner`: it's default position is according to the default CSS rules we've learned till now.
+  * It participates in the "flow" of the document (i.e. "Outer Div II" is positioned after it).
+  * This kind of positioning is called "static", and it is the default if not defined.
+  * `position: static`
+-->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<style>
+  * {margin: 0; padding: 0}
+
+  .inner {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: top 0.5s ease-in-out, opacity 0.5s;
+  }
+
+  div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  .outer {
+    height: 1000px;
+    width: 300px;
+    margin-top: 50px;
+    background-color: coral;
+  }
+
+  .inner {
+    height: 50px;
+    width: 300px;
+    background-color: deepskyblue;
+  }
+
+  .inner-hidden {
+    top: -54px;
+    opacity: 0;
+  }
+</style>
+
+<div class="outer">
+  <p>Outer Div.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+
+  <div class="inner">Inner Div</div>
+
+  <p>Outer Div II.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+</div>
+<script>
+  const body = document.querySelector('body');
+  const inner = document.querySelector('.inner');
+
+  window.addEventListener('scroll', (event) => {
+    console.log(body.scrollTop)
+    if (body.scrollTop > 50) {
+      inner.classList.add('inner-hidden')
+    }
+    else {
+      inner.classList.remove('inner-hidden')
+    }
+  })
+</script>
+
+<!--
+  * Using the scroll event for showing/hiding menus is popular today
+  * Use `element.scrollTop` to verify where the element is. 0 means its at the top, and the higher
+    it goes, the more it is scrolled from the top.
+  * We hide the element using opacity and changing the top to make it invisible
+  * Ignore the `transition` - it's a way to make the disappearance animate - we will talk about it in another day.
+-->

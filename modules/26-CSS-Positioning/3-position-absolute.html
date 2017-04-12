@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<style>
+  * {margin: 0; padding: 0}
+
+  .inner {
+    position: absolute;
+    /*top: 20px;*/
+    /*left: 50px;*/
+    /*bottom: 100px;*/
+    /*right: 50px;*/
+  }
+  .outer {
+    position: relative;
+    margin: 100px;
+  }
+
+  div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  .outer {
+    height: 1000px;
+    width: 300px;
+    background-color: coral;
+  }
+
+  .inner {
+    height: 75px;
+    width: 75px;
+    background-color: deepskyblue;
+  }
+</style>
+
+<div class="outer">
+  <p>Outer Div.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+
+  <div class="inner">Inner Div</div>
+
+  <p>Outer Div II.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aspernatur
+    consequuntur expedita fuga iusto modi, molestias nam nemo numquam officiis porro praesentium
+    quaerat quia quisquam sint ullam vel vitae.</p>
+</div>
+
+<!--
+  * `position: absolute`: relative to the body, or to the first parent that is not static.
+     we will call this element the "container".
+  * In this case, the container is the outer div, due to its use of `position: relative`.
+  * It goes "out of the flow" of the parent and is above them.
+  * `top`: relative to its container's top, with the values going down.
+  * `left`: relative to its container's left, with the values going to the right.
+  * `bottom`: relative to its container's bottom, with the values going up
+    (i.e a positive value will move the element _up_)
+  * `right`: relative to its container's right, with the values going keft
+    (i.e a positive value will move the element _left_)
+-->
