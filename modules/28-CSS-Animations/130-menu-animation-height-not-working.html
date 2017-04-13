@@ -13,7 +13,6 @@
       cursor: pointer;
     }
     ul {
-      border: 1px solid red;
       display: block;
       height: 0;
       transition: height 1s;
@@ -37,3 +36,13 @@
   </ul>
 </body>
 </html>
+
+<!--
+  * First try - animate the `height` property.
+  * But this is not working. Why?
+  * Add a border to the ul to see why.
+  * Because even though the height of the ul is 0, the `li`-s are not hidden in it.
+    This is the default behavior of CSS.
+  * Also, a quick Google tells us that we cannot animate height with `auto` value,
+    which is why the transition of height is not animated.
+-->

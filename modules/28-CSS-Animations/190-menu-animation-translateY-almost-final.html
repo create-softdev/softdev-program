@@ -9,8 +9,17 @@
 <body>
   <style>
     * {padding: 0; margin: 0;}
+    body {
+      margin: 100px;
+    }
+    nav {
+      overflow: hidden;
+    }
     div {
       cursor: pointer;
+      position: relative;
+      z-index: 1;
+      background-color: white;
     }
     ul {
       display: block;
@@ -28,18 +37,24 @@
       list-style: none;
     }
   </style>
-  <div>Hamburger</div>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
+  <nav>
+    <div>Hamburger</div>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </nav>
 </body>
 </html>
 
 <!--
-  * It seems that translateX/Y can use percent values.
-  * These are percents of the width and height of the bounding box of the element (not the parent!)
-  * Which is perfect - we specify 100% to make it exactly above where it should be.
-  * Now to solve the problem of the overlap.
+* We need to do two things
+* Make the div higher by using `z:index; 1`. We did not forget to `position: relative` to make
+  `z-index` work.
+* Make it not transparent using `background-color: white`.
+* We're done!
+
+* Or are we? Add `body {margin: 100px}` to see the problem.
+* How do we solve it?
 -->

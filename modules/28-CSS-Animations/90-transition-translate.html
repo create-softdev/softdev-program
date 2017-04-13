@@ -23,7 +23,7 @@
       left: 0;
       top: 0;
       box-shadow: 3px 7px 5px 0px #D7BCE0;
-      transition: transform 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+      transition: transform 1s;
     }
 
     #animated.other {
@@ -38,3 +38,18 @@
   <button onclick="document.getElementById('animated').classList.toggle('other')">Toggle class</button>
 </body>
 </html>
+
+<!--
+  * But nobody animates position using `left`. It is considered bad practice
+    because it has bad performance on mobile and in complicated situations.
+  * Instead, we use transform: translate.
+  * translating accepts two values - x, y, and translates the
+  * But! It does it without changing the position of the element, using the GPU, as if in
+    a separate layer, without repainting the layer below. Very very technical. Not
+    important to understand.
+  * What is important is:
+    1. Very very fast!
+    2. Does not change position if queried via JS.
+    3. `transform` can do much more than translation, which we will see later.
+    4. Never transform left/top/bottom/right.
+-->
