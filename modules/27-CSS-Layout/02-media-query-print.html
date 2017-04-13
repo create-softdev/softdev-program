@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {margin: 0; padding: 0}
+    .container { border: 1px solid red; }
+    .item { border: 1px solid green; }
+
+    .container {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      width: 50%;
+    }
+
+    @media print {
+      .container {
+        font-family: 'Times New Roman', Times, serif;
+        display: block;
+      }
+      .item {
+        width: 100%;
+      }
+    }
+  </style>
+  <div class="container">
+    <div class="item i1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ipsam. Dignissimos odio, magnam illo sequi neque omnis, labore iure itaque tempora magni, mollitia accusantium. Nesciunt asperiores officia dolores incidunt tempora?</div>
+    <div class="item i2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, magni at voluptates quasi. Nisi asperiores facere quibusdam, doloribus. Sapiente iure saepe est, maxime ab optio ratione. Adipisci quibusdam numquam sapiente.</div>
+  </div>
+</body>
+</html>
+
+<!--
+  * @media: medias separated by `,`. medias are `print`/`screen` or a query in parentheses.
+  * max-width: the rules inside are relevant from 0 to the max-width defined.
+
+  * This kind of layout is called - **desktop-first**:
+    You start with the desktop layout, and then adapt it with a media query to mobile.
+
+  * The 768px is called a **breakpoint** - the point where the design changes.
+    There can be more than one breakpoint.
+-->

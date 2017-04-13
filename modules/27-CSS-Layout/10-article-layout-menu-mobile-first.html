@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Article</title>
+  <style>
+    * {margin: 0; padding: 0}
+    header { border: 1px solid red; }
+    main { border: 1px solid green; }
+    article { border: 1px solid blue; }
+    aside { border: 1px solid dimgrey; }
+    footer { border: 1px solid black; }
+    .article-and-aside {
+      display: flex;
+      flex-direction: column;
+    }
+    article {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .article-and-aside {
+        flex-direction: row;
+      }
+      article {
+        width: 80%;
+      }
+      aside {
+        width: 20%;
+      }
+
+      header, main, footer {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+
+    /*************** Menu ****************/
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+    nav .hamburger:hover ~ ul, nav ul:hover {
+      display: flex;
+    }
+    nav li {
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger {
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      .hamburger {
+        display: none;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+      }
+      nav li {
+        flex-grow: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">Hamburger</div>
+      <ul>
+        <li>Logo</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Technology</li>
+        <li>Social</li>
+        <li>Politics</li>
+        <li>Science</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>H1</h1>
+    <p>P underneath H1</p>
+
+    <div class='article-and-aside'>
+      <article>
+        <h2>Article H2</h2>
+        <p>Article P</p>
+        <p>Article P</p>
+        <p>Article P</p>
+      </article>
+      <aside>
+        <h3>Aside H3</h3>
+        <blockquote>Don't believe everything you hear on the Internet (Abraham Lincoln)</blockquote>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <section>Footer section #1</section>
+    <section>Footer section #2</section>
+  </footer>
+</body>
+</html>
+
+<!--
+  * Now, in the desktop, We can make it a horizontal menu, so this is what we do.
+-->
