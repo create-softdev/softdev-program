@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {padding: 0; margin: 0;}
+    div {
+      cursor: pointer;
+    }
+    ul {
+      border: 1px solid red;
+      display: block;
+      transform-origin: top;
+      transform: scaleY(0);
+      transition: transform 1s;
+    }
+
+    div:hover + ul, div + ul:hover {
+      display: block;
+      transform: scaleY(1);
+    }
+
+    li {
+      display: block;
+      list-style: none;
+    }
+  </style>
+  <div>Hamburger</div>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</body>
+</html>
