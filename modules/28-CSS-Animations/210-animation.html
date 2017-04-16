@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {padding: 0; margin: 0;}
+
+    div.with-animation {
+      animation: funtastic 3s infinite alternate;
+    }
+
+    @keyframes funtastic {
+      from {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px) translateY(10px);
+        color: red;
+        opacity: 0.5;
+      }
+      to {
+        transform: translateX(200px);
+      }
+    }
+
+    li {
+      display: block;
+      list-style: none;
+    }
+  </style>
+
+  <div id="animate-this">Hamburger</div>
+  <br>
+  <button onclick="document.getElementById('animate-this').classList.toggle('with-animation')">Toggle animation</button>
+</body>
+</html>
+
+<!--
+  * We wrap both in an element, in this case `<nav>` makes sense.
+  * And we make it `overflow: hidden`.
+
+  * And we're done!
+-->
