@@ -54,4 +54,11 @@
 
 ![contact](info-assets/contact.png)
 
-## Don't forget to BREATH, COMMIT and PUSH.
+
+## Full example
+
+![info page](info-assets/page-example.png)
+
+Don't forget to breath, commit, and push.
+
+
