@@ -1,18 +1,31 @@
 # Style your personal info page
 
-
 <!-- TOC depthFrom:2 -->
 
-- [Step 1 - Create a menu](#step-1---create-a-menu)
-- [Step 2 - Basic styling](#step-2---basic-styling)
-- [Step 3 - Header styling](#step-3---header-styling)
+- [Step 1 - Basic styling](#step-1---basic-styling)
+- [Step 2 - Header styling](#step-2---header-styling)
+- [Step 3 - Create a menu](#step-3---create-a-menu)
 
 <!-- /TOC -->
 
 - All work should be done in `projects > personal-page > styles.css`.
 
+## Step 1 - Basic styling
 
-## Step 1 - Create a menu
+- Set default body text color is `#888`.
+- Set default body font-family: "Lato", sans-serif;
+  - get it from here - [Lato](https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic)
+- Regular links should have an underline by default.
+  - On hover the color will change to `#64a2d0` and the underline will be removed.
+
+## Step 2 - Header styling
+
+- Set background color of header div to `#64a2d0` and the text color to `#D8E7F3`.
+- Set `H1` title that placed inside the header to have white `#ffffff` text color.
+- Center horizontally all the contents of the header.
+- Set the paragraph inside the header to have an `italic` font style.
+
+## Step 3 - Create a menu
 
 - Create a `div` with the class `header` at the top of the page.
   - Move your image, the main `H1` title and the paragraph inside the header div.
@@ -26,21 +39,4 @@
   have the color `#73ABD4`.
 - To make our menu take all the width of the parent container, override browsers default margin and padding to be 0.
 
-## Step 2 - Basic styling
-
-
-- Set default body page color is `#888`.
-- Set default body font-family: "Lato", sans-serif;
-  - get it from here - [Lato](https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic)
-- Regular links should have an underline by default.
-  - On hover the color will change to `#64a2d0` and the underline will be removed.
-
-
-## Step 3 - Header styling
-
-- Set background color of header div to `#64a2d0` and the text color to `#D8E7F3`.
-- Set `H1` title that placed inside the header to have white `#ffffff` text color.
-- Center horizontally all the contents of the header.
-- Set the paragraph inside the header to have an `italic` font style.
-
-
+![Menu](screenshots/menu.png)
