@@ -1,17 +1,18 @@
 # My Info Exercise
 
-<!-- TOC -->
+<!-- TOC depthFrom:2 -->
 
-- [My Info Exercise](#my-info-exercise)
-    - [Step 0 - Document title](#step-0---document-title)
-    - [Step 1 - Personal](#step-1---personal)
-    - [Step 2 - About me](#step-2---about-me)
-    - [Step 3 - Things you can do](#step-3---things-you-can-do)
-    - [Step 4 - Accomplishments](#step-4---accomplishments)
-    - [Step 5 - Contact](#step-5---contact)
-    - [Full example](#full-example)
+- [Step 0 - Document title](#step-0---document-title)
+- [Step 1 - Personal](#step-1---personal)
+- [Step 2 - About me](#step-2---about-me)
+- [Step 3 - Things you can do](#step-3---things-you-can-do)
+- [Step 4 - Accomplishments](#step-4---accomplishments)
+- [Step 5 - Contact](#step-5---contact)
+- [Full example](#full-example)
 
 <!-- /TOC -->
+
+- All work should be done in `projects > personal-page > index.html`.
 
 ## Step 0 - Document title
 
@@ -67,11 +68,8 @@
 
 ![contact](screenshots/contact.png)
 
-
 ## Full example
 
 ![info page](screenshots/page-example.png)
 
 Don't forget to breath, commit, and push.
-
-
