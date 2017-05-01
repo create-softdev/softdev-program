@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  ******** THIS FILE IS FOR THE SOFTWARE DEVELOPMENT COURSE ****************
+  ******** THIS FILE IS FOR THE FRONTEND COURSE ****************
 -->
 <body>
   <style>
@@ -9,7 +9,7 @@
       margin-top: 20px;
     }
   </style>
-  <form action="http://localhost:3000/data-get" method="GET">
+  <form action="more/data-get.html" method="GET">
     <label>Name:
       <input type="text" placeholder="Enter name" name="name" required maxlength="10">
     </label>
@@ -33,4 +33,7 @@
 <!--
   * To do more validation, you can use the 'submit' event to check more validation
   * Calling `preventDefault` on the event will make the form not submit.
+  * It reaches a static HTML, which displays the query part using `location.search`.
+  * Usually, this post will be received by a backend server, whicih will return an HTML
+  * based on the query parameters
 -->

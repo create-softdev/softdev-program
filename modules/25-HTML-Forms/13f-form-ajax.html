@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  ******** THIS FILE IS FOR THE SOFTWARE DEVELOPMENT COURSE ****************
+  ******** THIS FILE IS FOR THE FRONTEND COURSE ****************
 -->
 <body>
   <style>
@@ -22,13 +22,12 @@
     document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
       event.preventDefault()
       const xhr = new XMLHttpRequest()
-      xhr.open('POST', 'http://localhost:3000/data-json')
-
-      xhr.setRequestHeader('Content-Type', 'application/json')
+      xhr.open('POST', 'http://localhost:3000/items')
 
       const name = document.getElementsByName('name')[0].value
       const age = parseInt(document.getElementsByName('age')[0].value, 10)
 
+      xhr.setRequestHeader('Content-Type', 'application/json')
       xhr.send(JSON.stringify({name: name, age: age}))
 
       xhr.addEventListener('load', () => {
@@ -40,4 +39,5 @@
 <!--
   * Most form posts today use Ajax to send the request.
   * This is an example of how to do this, using the submit event.
+  * This is similar to what we did in module 20f (Ajax).
 -->
