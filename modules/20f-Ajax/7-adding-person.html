@@ -1,0 +1,97 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <div class="add-person">
+    <label>
+      Name: <input type="text" id="name-input">
+    </label>
+    <label>
+      Age: <input type="number" id="age-input">
+    </label>
+    <button>Add</button>
+  </div>
+  <script>
+    listPeople()
+
+    document.querySelector('.add-person button').addEventListener('click', () => {
+      addPerson()
+    })
+
+    function listPeople() {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('GET', 'https://create-softdev-items-server.now.sh/items')
+      xhr.addEventListener('load', () => {
+        const people = JSON.parse(xhr.responseText)
+
+        renderPeople(people)
+      })
+      xhr.send()
+    }
+
+    function renderPeople(people) {
+      for (const personIndex in people) {
+        addPersonToView(personIndex, people[personIndex])
+      }
+    }
+
+    function deletePerson(index) {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('DELETE', `https://create-softdev-items-server.now.sh/items/${index}`)
+      xhr.addEventListener('load', () => {
+        deletePersonFromView(index)
+      })
+
+      xhr.send()
+    }
+
+    function deletePersonFromView(index) {
+      document.querySelectorAll('.people li')[index].remove()
+    }
+
+    function addPerson() {
+      const xhr = new XMLHttpRequest()
+      const nameFromInput = document.querySelector('#name-input').value
+      const ageFromInput = parseInt(document.querySelector('#age-input').value)
+      const person = {name: nameFromInput, age: ageFromInput}
+
+      xhr.open('POST', 'https://create-softdev-items-server.now.sh/items')
+      xhr.addEventListener('load', () => {
+        addPersonToView(document.querySelectorAll('.people li').length, person)
+        document.querySelector('#name-input').value = ''
+        document.querySelector('#age-input').value = ''
+      })
+
+      xhr.setRequestHeader('content-type', 'application/json')
+      xhr.send(JSON.stringify(person))
+    }
+
+    function addPersonToView(personIndex, person) {
+      const peopleContainer = document.querySelector('.people')
+
+      const li = document.createElement('li')
+      li.textContent = `${person.name} (${person.age})`
+
+      const deleteButton = document.createElement('button')
+      deleteButton.textContent = 'delete'
+      li.appendChild(deleteButton)
+      deleteButton.addEventListener('click', () => {
+        deletePerson(personIndex)
+      })
+
+      peopleContainer.appendChild(li)
+    }
+  </script>
+</body>
+
+<!--
+  * Refactored - listPerson is separated with addPersonToView to make it reusable
+  * Refactored deletePerson to deletePerson that calls deletePersonFromView
+  * Added an "add person" row
+  * Logic for adding is in addPerson, which is split between XHR-ing to server
+    and adding person to view with addPersonToView.
+  * setRequestHeader when sending the JSON of the person
+-->
