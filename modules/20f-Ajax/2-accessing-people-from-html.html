@@ -1,0 +1,43 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    const xhr = new XMLHttpRequest()
+
+    xhr.open('GET', 'https://create-softdev-items-server.now.sh/items')
+    xhr.addEventListener('load', () => {
+      const people = JSON.parse(xhr.responseText)
+
+      renderPeople(people)
+    })
+    xhr.send()
+
+    function renderPeople(people) {
+      const peopleContainer = document.querySelector('.people')
+
+      for (const person of people) {
+        const li = document.createElement('li')
+        li.textContent = `${person.name} (${person.age})`
+
+        peopleContainer.appendChild(li)
+      }
+    }
+
+  </script>
+</body>
+
+<!--
+  * Don't forget to `curl -X POST https://create-softdev-items-server.now.sh/reset` before starting.
+
+  * XMLHttpRequest
+  * xhr.open
+  * 'load' event
+  * xhr.send
+  * xhr.responseText
+
+  * The moniker Ajax.
+
+  * Show network
+-->

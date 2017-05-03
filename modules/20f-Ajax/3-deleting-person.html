@@ -1,0 +1,61 @@
+<body>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <script>
+    listPeople()
+
+    function listPeople() {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('GET', 'https://create-softdev-items-server.now.sh/items')
+      xhr.addEventListener('load', () => {
+        const people = JSON.parse(xhr.responseText)
+
+        renderPeople(people)
+      })
+      xhr.send()
+    }
+
+    function renderPeople(people) {
+      const peopleContainer = document.querySelector('.people')
+
+      for (const personIndex in people) {
+        const person = people[personIndex]
+        const li = document.createElement('li')
+        li.textContent = `${person.name} (${person.age})`
+
+        const deleteButton = document.createElement('button')
+        deleteButton.textContent = 'delete'
+        li.appendChild(deleteButton)
+        deleteButton.addEventListener('click', () => {
+          deletePerson(personIndex)
+        })
+
+        peopleContainer.appendChild(li)
+      }
+    }
+
+    function deletePerson(index) {
+      const xhr = new XMLHttpRequest()
+
+      xhr.open('DELETE', `https://create-softdev-items-server.now.sh/items/${index}`)
+      xhr.addEventListener('load', () => {
+        document.querySelectorAll('.people li')[index].remove()
+      })
+
+      xhr.send()
+    }
+  </script>
+</body>
+
+<!--
+  * listPerson is added to make code nicer.
+  * Added a delete button. click handler calls deletePerson
+  * deletePerson - xhr DELETE to `/items/index`, and waits for response
+  * When gets response -
+  * It is very naive code. When two deletes happen at the same time, the index will be wrong
+    for one of them.
+  * What about errors? We'll see later.
+-->
