@@ -20,7 +20,7 @@ Problems with having all code in one JS file:
 * They are very similar.
 * We will first learn CommonJS modules.
 
-But before that, let's modularize the code without using CommonJS.
+But before that, let's modularize the code without using CommonJS. We just use multiple `<scriptsrc>`-s.
 
 * Separated into app javascripts (main and people-*) and util.js
 * util - helper functions that are not concerned specificall with people
