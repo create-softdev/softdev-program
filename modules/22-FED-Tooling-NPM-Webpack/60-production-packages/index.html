@@ -1,0 +1,27 @@
+<body>
+  <style>
+    #error-message {
+      position: fixed;
+      background-color: red;
+      padding: 10px;
+    }
+    .hidden {
+      display: none
+    }
+  </style>
+  <div id="error-message" class="hidden"></div>
+  <h1>People</h1>
+  <ul class='people'>
+
+  </ul>
+  <div class="add-person">
+    <label>
+      Name: <input type="text" id="name-input">
+    </label>
+    <label>
+      Age: <input type="number" id="age-input">
+    </label>
+    <button>Add</button>
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>

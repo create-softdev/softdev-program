@@ -1,0 +1,17 @@
+{
+  "name": "40-npm-packages",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack --entry ./main.js --output-filename dist/bundle.js",
+    "watch": "webpack --watch --entry ./main.js --output-filename dist/bundle.js"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "left-pad": "^1.1.3"
+  }
+}
