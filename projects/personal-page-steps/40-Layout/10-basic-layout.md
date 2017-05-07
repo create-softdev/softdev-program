@@ -1,8 +1,12 @@
-# Refactor the HTML to be semantic
+# Layout
 
+- Add basic two columns layout
 
-## Step 1 - Adding semantic tags and structure
+- set the #header section to be 20em width
+- make it position fixed
+- pin to right - right:0
+- height 100%
 
-- Wrap each section with `<section>` tag.
-- Refactor CSS to address the correct tags and ids.
+- set body base font size to 11px
 
+-

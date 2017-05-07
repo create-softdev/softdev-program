@@ -6,3 +6,7 @@
 - Wrap each section with `<section>` tag.
 - Refactor CSS to address the correct tags and ids.
 
+
+- extract CSS to separate file.
+
+- Add footer section

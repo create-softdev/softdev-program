@@ -7,52 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dimshik's Personal page</title>
 
-  <style>
-    @font-face {
-      font-family: "Lato";
-      src: url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
-    }
+  <link rel="stylesheet" href="styles.css">
 
-    body {
-      color: #888;
-      font-family: "Lato", sans-serif;
-    }
-
-    #header {
-      background: #64a2d0;
-      color: #D8E7F3;
-      text-align: center;
-    }
-
-    #header h1 {
-      color: #ffffff;
-    }
-
-    #header p {
-      font-style: italic;
-    }
-
-    .nav>ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav a {
-      color: #ffffff;
-      text-decoration: none;
-      padding: 0.85em 0;
-      display: block;
-    }
-
-    .nav li {
-      border-top: solid 2px #73ABD4;
-    }
-
-    .social {
-      list-style: none;
-    }
-  </style>
 
 </head>
 
@@ -68,7 +24,7 @@
     <nav class="nav">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#things">Things I Can Do</a></li>
+        <li><a href="#skills">Things I Can Do</a></li>
         <li><a href="#accomplishments">A Few Accomplishments</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -130,8 +86,24 @@
 
   <section id="contact">
     <h3>Contact Me</h3>
-    <p>Email: <a href="mailto:dimshik100@gmail.com">dimshik100@gmail.com</a>
-      <br> Tel: 054-12345678</p>
+    <p>Feel free to contact me if you have any interesting work/project that you need help with or just want to get in touch.</p>
+    <form method="post" action="#">
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input type="text" name="subject" id="subject" placeholder="Subject" />
+      <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+      <ul class="actions">
+        <li><input type="submit" class="special" value="Send Message" /></li>
+        <li><input type="reset" value="Reset Form" /></li>
+      </ul>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <p class="copyright">
+      &copy; Dimshik. All rights reserved.
+    </p>
   </section>
 </body>
 
