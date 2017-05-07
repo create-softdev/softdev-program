@@ -3,28 +3,32 @@
 * Example Model
 
 ```js
-const column1 = {
-  title: 'Todo',
-  tasks: ['task1', 'task2']
-}
-
-const column2 = {
-  title: 'In Progress',
-  tasks: ['task3', 'task4']
-}
-
 const state = {
-  taskColumns: [column1, column2],
-  members: {
-    member1: {name: 'Gil Tayar'},
-    member2: { name: 'Dima' },
-    member3: { name: 'Alex' }
-  },
-  tasks: {
-    task1: {
-      title: 'Wash dishes',
-      members: ['member1', 'member2']
+  taskColumns: [
+    {
+      id: 'column1',
+      title: 'Todo',
+      tasks: [{
+        id: 'task1',
+        title: 'Wash dishes',
+        members: ['member1', 'member2']
+      },
+      {
+        id: 'task2',
+        title: 'Do ךaundry',
+        members: ['member3']
+      }]
+    },
+    {
+      id: 'column2',
+      title: 'In Progress',
+      tasks: []
     }
-  }
+  ],
+  members: [
+    {id: 'member1', name: 'Gil Tayar'},
+    {id: 'member2', name: 'Dima' },
+    {id: 'member3', name: 'Alex' }
+  ]
 }
 ```
