@@ -6,7 +6,7 @@
  body {
    color: #888;
    font-family: "Lato", sans-serif;
-       font-size: 11pt;
+   font-size: 11pt;
  }
 
  #header {
@@ -15,11 +15,13 @@
    text-align: center;
    width: 20em;
    position: fixed;
-       right: 0;
-       height: 100%;
+   right: 0;
+   height: 100%;
  }
 
-
+ #wrapper {
+   padding-right: 20em;
+ }
 
  #header h1 {
    color: #ffffff;
@@ -48,4 +50,14 @@
 
  .social {
    list-style: none;
+ }
+
+ section .container {
+   padding: 4em 0 2em 0;
+ }
+
+ .container {
+   width: 42em;
+       margin-left: auto;
+    margin-right: auto;
  }
