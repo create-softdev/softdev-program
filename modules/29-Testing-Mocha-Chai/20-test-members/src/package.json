@@ -1,7 +1,0 @@
-{
-  "name": "taskboard-model-create",
-  "version": "1.0.0",
-  "dependencies": {
-    "uuid": "^3.0.1"
-  }
-}

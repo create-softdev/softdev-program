@@ -22,11 +22,11 @@ function deleteMember (memberId) {
 function updateMember (memberId, name) {
   const memberIndex = model.members.findIndex(member => member.id === memberId)
 
-  if (memberIndex === -1) return false
+  if (memberIndex === -1) return undefined
 
   model.members[memberIndex].name = name
 
-  return true
+  return model.members[memberIndex]
 }
 
 function getMemberInfo (memberId) {
