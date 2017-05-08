@@ -2,7 +2,7 @@ const uuid = require('uuid')
 const model = require('./model')
 
 function addMember (name) {
-  const newMember = {uuid: uuid.v4(), name: name}
+  const newMember = {id: uuid.v4(), name: name}
 
   model.members.push(newMember)
 
