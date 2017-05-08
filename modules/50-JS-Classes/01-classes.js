@@ -1,22 +1,43 @@
-class Button {
-    constructor (text, width = 100, height = 10) {
-        this.text = text
-        this.width = width
-        this.height = height
+const objectTodo = {
+  id: Math.random(),
+  title: 'untitled',
+  complete: false
+}
+
+class Todo {
+    constructor (title) {
+        this.id = Math.random()
+        this.title = title
+        this.completed = false
     }
-    click () {
-        console.log(this.text + " had been clicked!")
+    complete () {
+        this.completed = true
+    }
+
+    toString() {
+      return `${this.title}. completed: ${this.completed}`
     }
 }
 
-let runButton = new Button("Run")
-let stopButton = new Button("Stop", 200, 50)
-runButton.click() //Run had been clicked!
-stopButton.click() //Stop had been clicked!
+let laundryObj = objectTodo
+laundryObj.title = 'laundry'
+
+let laundry = new Todo('laundry')
+let callGrandma = new Todo('call grandma')
+
+console.log (laundry.toString()) //laundry. completed: false
+console.log (callGrandma.toString()) //call grandma. completed: false
+console.log (callGrandma.completed) //false
+
+callGrandma.complete()
+console.log (callGrandma.completed) //true
+console.log (callGrandma.toString()) //call grandma. completed: true
+
 
 /**
  * class is an object-oriented concept for delegated authority
  * constructor function is called on creation of the class
+ * you can
  * class contains **data members** and functions
  * data members can be types, arrays, objects and other classes
  * accessing data members are accessed using 'this.'

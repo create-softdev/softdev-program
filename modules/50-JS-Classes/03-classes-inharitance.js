@@ -1,42 +1,52 @@
-class Control{
-    constructor (name, width, height) {
-        this.name = name
-        this.width  = width
-        this.height = height
+class Todo {
+    constructor (title) {
+        this.id = Math.random()
+        this.title = title
+        this.completed = false
+    }
+    complete () {
+        this.completed = true
+    }
+
+    toString() {
+      return `${this.title}. completed: ${this.completed}`
     }
 }
-class Button extends Control {
-    constructor (name, width, height) {
-        super(name, width, height)
-    }
-}
-class Label extends Control {
-  constructor (name, width, height, isBold) {
-    super(name, width, height)
-    this.isBold = isBold
+
+class TodoWithOwner extends Todo {
+  constructor (title, owner) {
+    super (title)
+    this.owner = owner
+    this.changedOwnership = 0
+  }
+
+  changeOwnership(newOwner) {
+    this.changedOwnership++;
+    this.owner = newOwner
+  }
+
+  toString() {
+    return super.toString() + `, assigned to ${this.owner}`
   }
 }
 
-class UIManager {
-  constructor () {
-    this.controls = []
-  }
-  addButton (name, width, height) {
-    this.controls.push(new Button(name, width, height));
-  }
-  addLabel (name, width, height, isBold) {
-    this.controls.push(new Label(name, width, height, isBold));
-  }
-}
+let paintRoses = new TodoWithOwner('paint the roses red', 'servant1')
+paintRoses.toString()
 
-let uiManager = new UIManager();
-uiManager.addButton("run", 300,100);
-uiManager.addLabel("Settings", 400, 150, true);
-console.log(uiManager.controls); //[ Button { name: 'run', width: 300, height: 100 }, Label { name: 'Settings', width: 400, height: 150, isBold: true } ]
+//off with servant1's head!
+paintRoses.changeOwnership('servant2')
+console.log(paintRoses.toString())  //paint the roses red. completed: false, assigned to servant2
+console.log(paintRoses.changedOwnership)  //1
+paintRoses.toString()
+
+//off with his head too!
+paintRoses.changeOwnership('alice')
+console.log(paintRoses.toString())  //paint the roses red. completed: false, assigned to alice
+console.log(paintRoses.changedOwnership)  //2
 
 /**
  * inheritance is used when you can say "B is a kind of A"
  * the base class holds the common members and functions
  * each derived class holds its unique members and functionality
- * runnning base's constructor using "super"
+ * run base's constructor using "super"
  */

@@ -1,0 +1,34 @@
+# Mission
+
+Create a todo stack using classes (Object Oriented)
+
+A stack is a data structure that saves objects in LIFO (Last in First out) order.
+a stack has 2 main functions:
+Push that gets a new object and adds it to the structure.
+Pop that returns the last entered object and deletes it from the structure.
+
+## Hint
+
+1. Look at the 02-classes-multiple.js example.
+   In the example TodoList class is managing a simple data structure (list).
+   In this praxis you will replace the TodoList Class with a Stack class.
+
+2. Build a todo class.
+   You can use one of the examples shown in class.
+   You can also use the todo id to make sense.
+
+3. Build a stack class.
+   The class will have an array of ToDo objects.
+
+4. Add Push function.
+   The function should get a ToDo object as parameter
+   and add it to array of ToDo objects.
+   Javascript arrays have push function too.
+
+5. Add Pop function
+   The function should make a copy of the last entered ToDo object from the list,
+   delete it from the list, and return the copy
+   How can you know which object was entered last?
+   Javascript arrays don't have pop function. You need to use other functions.
+
+6. Test your classes

@@ -1,30 +1,45 @@
-class Button {
-    constructor (text, width = 100, height = 10) {
-        this.text = text
-        this.width = width
-        this.height = height
+class Todo {
+    constructor (title) {
+        this.id = Math.random()
+        this.title = title
+        this.completed = false
     }
-    click () {
-        console.log(this.text + " had been clicked!");
+    complete () {
+        this.completed = true
+    }
+
+    toString() {
+      return `${this.title}. completed: ${this.completed}`
     }
 }
 
-class Panel {
+class TodoList {
   constructor () {
-    this.buttons = []
+    this.todos = []
   }
-  addButton(button) {
-    this.buttons.push(button)
+  addTodoInstance(todo) {
+    this.todos.push(todo)
   }
-  click(index) {
-    this.buttons[index].click()
+  addTodo(title) {
+    let newTodo = new Todo(title)
+    this.todos.push(newTodo)
+  }
+  complete(index) {
+    todos[index].complete()
+  }
+  printTodos() {
+    for (const todo of this.todos) {
+      console.log(todo.toString())
+    }
   }
 }
 
-let panel = new Panel();
-panel.addButton(new Button("Run"))
-panel.click(0) //Run had been clicked!
-panel.buttons[0].click() //Run had been clicked!
+let todoList = new TodoList();
+todoList.addTodoInstance(new Todo('cook dinner'))
+todoList.addTodo('wash dishes')
+todoList.printTodos()
+//cook dinner. completed: false
+//wash dishes. completed: false
 
 /**
  * classes are used to seperate responsibilities
