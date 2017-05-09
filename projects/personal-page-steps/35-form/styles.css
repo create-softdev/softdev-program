@@ -42,3 +42,45 @@
  .social {
    list-style: none;
  }
+
+
+
+ h1, h2, h3, h4, h5, h6 {
+   color: #777;
+   font-weight: 700;
+   line-height: 1em;
+   margin: 0 0 0.5625em 0;
+ }
+
+ h2 {
+   font-size: 2em;
+   line-height: 1.5em;
+ }
+
+ h3 {
+   font-size: 1.75em;
+   line-height: 1.5em;
+ }
+
+ h4 {
+   font-size: 1.25em;
+   line-height: 1.5em;
+ }
+
+ h5 {
+   font-size: 0.9em;
+   line-height: 1.5em;
+ }
+
+ h6 {
+   font-size: 0.7em;
+   line-height: 1.5em;
+ }
+
+
+.row:after, .row:before {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}

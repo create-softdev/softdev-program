@@ -4,7 +4,8 @@
   - header and wrapper
 
 
-- set body base font size to 11px
+- set body base font size to 15px
+- reset body margin and padding
 
 - set the #header section to be 20em width
 - make it position fixed
@@ -18,3 +19,7 @@
   - center it horizontally
   - set base width to 42em
   - all containers inside sections should have padding `4em 0 2em 0`
+
+
+
+- style the footer
