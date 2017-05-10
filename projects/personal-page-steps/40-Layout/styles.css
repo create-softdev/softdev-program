@@ -1,7 +1,4 @@
- @font-face {
-   font-family: "Lato";
-   src: url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
- }
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic");
 
  body {
    color: #888;
