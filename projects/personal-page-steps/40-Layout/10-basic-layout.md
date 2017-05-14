@@ -1,5 +1,8 @@
 # Layout
 
+
+- Add reset `border-box`
+
 - Add basic two columns layout
   - header and wrapper
 
@@ -22,4 +25,18 @@
 
 
 
+
+- Style the `#header`
+  - use flex to spread the elements properly
+
+
+
 - style the footer
+
+
+- Add separators between accomplishments
+  width `3px` color `#f4f4f4`
+  space between each project and the separator `2.5em`
+- place the title and description to the right of the image
+- Image width should not be more than `250px`
+

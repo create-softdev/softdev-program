@@ -1,107 +1,118 @@
+/* Adding font-awsome css */
+
+@import url("../assets/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic");
 
- body {
-   color: #888;
-   font-family: "Lato", sans-serif;
-   font-size: 15px;
-   padding: 0;
-   margin: 0;
- }
+/* Reset */
 
- #header {
-   background: #64a2d0;
-   color: #D8E7F3;
-   text-align: center;
-   width: 20em;
-   position: fixed;
-   right: 0;
-   height: 100%;
- }
-
- #wrapper {
-   padding-right: 20em;
- }
-
- #header h1 {
-   color: #ffffff;
- }
-
- #header p {
-   font-style: italic;
- }
-
- .nav>ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
- }
-
- .nav a {
-   color: #ffffff;
-   text-decoration: none;
-   padding: 0.85em 0;
-   display: block;
- }
-
- .nav li {
-   border-top: solid 2px #73ABD4;
- }
-
- .social {
-   list-style: none;
- }
-
- section .container {
-   padding: 4em 0 2em 0;
- }
-
- .container {
-   width: 42em;
-       margin-left: auto;
-    margin-right: auto;
- }
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 
+/* End reset */
 
- h1, h2, h3, h4, h5, h6 {
-   color: #777;
-   font-weight: 700;
-   line-height: 1em;
-   margin: 0 0 0.5625em 0;
- }
+body {
+  color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
 
- h2 {
-   font-size: 2em;
-   line-height: 1.5em;
- }
+#header {
+  background: #64a2d0;
+  color: #D8E7F3;
+  text-align: center;
+  width: 20em;
+  position: fixed;
+  right: 0;
+  height: 100%;
+}
 
- h3 {
-   font-size: 1.75em;
-   line-height: 1.5em;
- }
+#wrapper {
+  padding-right: 20em;
+}
 
- h4 {
-   font-size: 1.25em;
-   line-height: 1.5em;
- }
+#header h1 {
+  color: #ffffff;
+}
 
- h5 {
-   font-size: 0.9em;
-   line-height: 1.5em;
- }
+#header p {
+  font-style: italic;
+}
 
- h6 {
-   font-size: 0.7em;
-   line-height: 1.5em;
- }
+.nav>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.85em 0;
+  display: block;
+}
+
+.nav li {
+  border-top: solid 2px #73ABD4;
+}
+
+.social {
+  list-style: none;
+}
+
+section .container {
+  padding: 4em 0 2em 0;
+}
+
+.container {
+  width: 42em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #777;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 0.5625em 0;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
 
 #footer {
-    background: #fafafa;
-    border-top: 0;
-    color: #c0c0c0;
-    overflow: hidden;
-    padding: 4em 0;
+  background: #fafafa;
+  border-top: 0;
+  color: #c0c0c0;
+  overflow: hidden;
+  padding: 4em 0;
 }
 
 #footer .container {
@@ -110,7 +121,228 @@
 
 #footer .copyright {
   line-height: 1;
-    padding: 0;
-    margin: 0;
-    font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
 }
+
+
+/* Header */
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header > header {
+  padding: 2em;
+  flex-shrink: 0;
+}
+
+#header > nav {
+  flex-grow: 1;
+}
+
+#header > footer {
+  flex-shrink: 0;
+  padding: 1.5em;
+  width: 100%;
+}
+
+
+/* End Header */
+
+
+/* accomplishments */
+
+.project {
+  border-top: solid 3px #f4f4f4;
+  margin-bottom: 2.25em;
+  padding-top: 2.25em;
+}
+
+.projects .project:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.project .image {
+  display: inline-block;
+  padding-right: 2.5em;
+  vertical-align: middle;
+  width: 48%;
+  border-radius: 5px;
+  border: 0;
+  ;
+  position: relative;
+}
+
+.project .image img{
+max-width: 250px;
+}
+
+.project .inner {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+
+/* End accomplishments */
+
+
+/*=============================================
+=            Form            =
+=============================================*/
+
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  border-radius: 5px;
+  border: none;
+  border: solid 2px #e4e4e4;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  margin: 1.5em 0 0 1.5em;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+  height: 2.75em;
+}
+
+input[type="submit"], input[type="reset"] {
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+input[type="submit"] {
+  background-color: #64a2d0;
+}
+
+input[type="submit"]:hover {
+  background-color: #78AED6;
+}
+
+input[type="reset"] {
+  background-color: #989898;
+}
+
+input[type="reset"]:hover {
+  background-color: #a5a5a5;
+}
+
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  padding: 0 1.125em 0 0;
+  vertical-align: middle;
+}
+
+
+/*=====  End of Form  ======*/
+
+
+/*=============================================
+=            Icon fonts           =
+=============================================*/
+
+#header > footer {
+  padding: 1.5em;
+}
+
+.social {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social li {
+  margin: 0 1em;
+}
+
+.icon:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.social .icon {
+  color: #C1D9EC;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.icon > .label {
+  display: none;
+}
+
+.skill-icons {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 2.25em 0;
+}
+
+.skill-icons li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0 1.6875em 0;
+  padding: 0.35em 0 0 3.5em;
+  position: relative;
+  vertical-align: top;
+  width: 48%;
+}
+
+.skill-icons li:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  /*text-transform: none !important;*/
+}
+
+.skill-icons li:before {
+  background: #64a2d0;
+  border-radius: 100%;
+  color: #ffffff;
+  display: block;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2.5em;
+}
+
+
+/*=====  End of Icon fonts  ======*/
