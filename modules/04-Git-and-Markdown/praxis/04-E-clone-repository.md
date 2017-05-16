@@ -14,7 +14,7 @@ This new repo is a "fork" of the original repo.
 The simplest way to think of it, is that this is a _copy_ of the original repo.
 
 1. Now clone it. But first we need to create a directory where all our work is done:
-1. Create a directory called `code` (or `work` or `projects` or `stuff`).
+1. Create a directory called `projects`.
 1. cd into it.
 1. Now clone it, as explained in theory time.
 1. cd into the repository
