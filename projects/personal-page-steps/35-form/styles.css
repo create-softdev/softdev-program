@@ -89,6 +89,10 @@
 =            Form            =
 =============================================*/
 
+form {
+  width: 95%;
+}
+
 
 input[type="text"], input[type="password"], input[type="email"], select, textarea {
   -moz-appearance: none;
